@@ -1,0 +1,792 @@
+<?xml version="1.0"?>
+<Skein rootNode="node-0x1d76abd0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Zoom</generator>
+  <activeNode nodeId="node-0x1d76abd0" />
+  <item nodeId="node-0x1d76abd0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+Underworld
+An Interactive Fiction by Devin Weaver
+Release 1 / Serial number 111101 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Garden
+You are at the bottom of a hill that is covered in florishing grass. Trees encompass the hill in the distance. A small garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill.
+
+&gt;</result>
+    <commentary xml:space="preserve">
+
+
+
+Underworld
+An Interactive Fiction by Devin Weaver
+Release 1 / Serial number 111101 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Garden
+You are at the bottom of a hill that is covered in florishing grass. Trees encompass the hill in the distance. A small garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="414">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a422f00" />
+      <child nodeId="node-0x1c8adba0" />
+      <child nodeId="node-0x1c8ada50" />
+      <child nodeId="node-0x1d76ab00" />
+      <child nodeId="node-0x1d76ac20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76ac20">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 0 out of a possible 10, in 1 turn, earning you the rank of an unawakened mind.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="414">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d76ac70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76ac70">
+    <command xml:space="preserve">search grass</command>
+    <result xml:space="preserve">You found a door knob!
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="414">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d76a940" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76a940">
+    <command xml:space="preserve">take knob</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="414">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d76a990" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76a990">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="414">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d76a9e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76a9e0">
+    <command xml:space="preserve">put knob on door</command>
+    <result xml:space="preserve">(the wooden door)
+You carefully slide the door knob onto the wooden door until you hear a small click. The door knob now looks like it is a part of the wooden door.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="414">YES</temporary>
+    <children>
+      <child nodeId="node-0x1d76aa30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76aa30">
+    <command xml:space="preserve">score</command>
+    <result xml:space="preserve">You have so far scored 10 out of a possible 10, in 5 turns, earning you the rank of an opened mind.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="413">YES</temporary>
+  </item>
+  <item nodeId="node-0x1d76ab00">
+    <command xml:space="preserve">inspect the flowers</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76ab50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76ab50">
+    <command xml:space="preserve">examine flowers</command>
+    <result xml:space="preserve">The flowers are neatly arranged by color. They have grown to great size and color. You notice something between the peddles that seems out of place.
+
+&gt;</result>
+    <commentary xml:space="preserve">The flowers are neatly arranged by color. They have grown to great size and color. You notice something between the peddles that seems out of place.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76aeb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76aeb0">
+    <command xml:space="preserve">search flowers</command>
+    <result xml:space="preserve">You found a door knob!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76af00" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76af00">
+    <command xml:space="preserve">examine door knob</command>
+    <result xml:space="preserve">A small plain brass door knob.
+
+&gt;</result>
+    <commentary xml:space="preserve">A small plain brass door knob.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76af50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76af50">
+    <command xml:space="preserve">look around</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b060" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b060">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Garden
+You are at the bottom of a hill that is covered in florishing grass. Trees encompass the hill in the distance. A small garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill.
+
+You can see a door knob here.
+
+&gt;</result>
+    <commentary xml:space="preserve">Garden
+You are at the bottom of a hill that is covered in florishing grass. Trees encompass the hill in the distance. A small garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill.
+
+You can see a door knob here.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76aa80" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76aa80">
+    <command xml:space="preserve">examine grass</command>
+    <result xml:space="preserve">The flowers are neatly arranged by color. They have grown to great size and color. 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b0b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b0b0">
+    <command xml:space="preserve">examine trees</command>
+    <result xml:space="preserve">You see nothing special about the trees.
+
+&gt;</result>
+    <commentary xml:space="preserve">You see nothing special about the trees.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b120" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b120">
+    <command xml:space="preserve">walk up hill</command>
+    <result xml:space="preserve">I only understood you as far as wanting to walk up.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b190" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b190">
+    <command xml:space="preserve">walk up</command>
+    <result xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</result>
+    <commentary xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b200" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b200">
+    <command xml:space="preserve">examine door</command>
+    <result xml:space="preserve">An ornate wodden door is set into the round alcove of the hill. You notice that the door knob has gone missing and there no way to open it now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b270" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b270">
+    <command xml:space="preserve">use door knob</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b2e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b2e0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76afa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76afa0">
+    <command xml:space="preserve">walk down</command>
+    <result xml:space="preserve">
+Garden
+You are at the bottom of a hill that is covered in florishing grass. Trees encompass the hill in the distance. A small garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill.
+
+You can see a door knob here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b370" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b370">
+    <command xml:space="preserve">pick up door knob</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1d76b010" />
+    </children>
+  </item>
+  <item nodeId="node-0x1d76b010">
+    <command xml:space="preserve">walk up</command>
+    <result xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8ad890" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8ad890">
+    <command xml:space="preserve">turn knob</command>
+    <result xml:space="preserve">Nothing obvious happens.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8ad900" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8ad900">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">(the wooden door)
+You cannot open this door with out replacing the missing door knob.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8ad970" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8ad970">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">(the wooden door with the door knob)
+You carefully slide the door knob onto the wooden door until you hear a small click. The door knob now looks like it is a part of the wooden door.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="384">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8ad9e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8ad9e0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the wooden door)
+
+Vestuble
+A rounded room that looks very much like the inside of a very large tree. The cealing has candleabras hanging from it which gives a soothing glow to the room. An opening the size of the wall opens north to another room. A small door leads outside to the south.
+
+You can see a giant three headed dog is laying here. There is a tag hanging that reads &quot;Cerberus&quot;. Each head has glistening teeth and verying degrees of slobber dripping from it&apos;s curled mouth. All six eyes are staring at you intensely.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="383">NO</temporary>
+  </item>
+  <item nodeId="node-0x1c8ada50">
+    <command xml:space="preserve">search flowers</command>
+    <result xml:space="preserve">You found a door knob!
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="224">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8adac0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8adac0">
+    <command xml:space="preserve">take it</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="223">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8adb30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8adb30">
+    <command xml:space="preserve">smell the flowers</command>
+    <result xml:space="preserve">The sweet scent of candy corn fills your nostrals.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="354">YES</temporary>
+  </item>
+  <item nodeId="node-0x1c8adba0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</result>
+    <commentary xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="393">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8adc10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8adc10">
+    <command xml:space="preserve">unlock the door</command>
+    <result xml:space="preserve">What do you want to unlock the wooden door with?
+
+&gt;</result>
+    <commentary xml:space="preserve">What do you want to unlock the wooden door with?
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="393">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8adc80" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8adc80">
+    <command xml:space="preserve">purloin knob</command>
+    <result xml:space="preserve">[Purloined.]
+
+&gt;</result>
+    <commentary xml:space="preserve">[Purloined.]
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="393">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8ad710" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8ad710">
+    <command xml:space="preserve">unlock the door with knob</command>
+    <result xml:space="preserve">(the wooden door with the door knob)
+You carefully slide the door knob onto the wooden door until you hear a small click. The door knob now looks like it is a part of the wooden door.
+
+&gt;</result>
+    <commentary xml:space="preserve">(the wooden door with the door knob)
+You carefully slide the door knob onto the wooden door until you hear a small click. The door knob now looks like it is a part of the wooden door.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="393">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8ad780" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8ad780">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">An ornate wodden door is set into the round alcove of the hill. 
+
+&gt;</result>
+    <commentary xml:space="preserve">An ornate wodden door is set into the round alcove of the hill. 
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="393">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c8ad7f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c8ad7f0">
+    <command xml:space="preserve">open it</command>
+    <result xml:space="preserve">You open the wooden door.
+
+&gt;</result>
+    <commentary xml:space="preserve">You open the wooden door.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="393">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c89e890" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c89e890">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Vestuble
+A rounded room that looks very much like the inside of a very large tree. The cealing has candleabras hanging from it which gives a soothing glow to the room. An opening the size of the wall opens north to another room. A small door leads outside to the south.
+
+You can see a giant three headed dog is laying here. There is a tag hanging that reads &quot;Cerberus&quot;. Each head has glistening teeth and verying degrees of slobber dripping from it&apos;s curled mouth. All six eyes are staring at you intensely.
+
+One of Cerberus&apos;s heads licks his paws.
+
+&gt;</result>
+    <commentary xml:space="preserve">
+Vestuble
+A rounded room that looks very much like the inside of a very large tree. The cealing has candleabras hanging from it which gives a soothing glow to the room. An opening the size of the wall opens north to another room. A small door leads outside to the south.
+
+You can see a giant three headed dog is laying here. There is a tag hanging that reads &quot;Cerberus&quot;. Each head has glistening teeth and verying degrees of slobber dripping from it&apos;s curled mouth. All six eyes are staring at you intensely.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="393">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c89e970" />
+      <child nodeId="node-0x1c89e900" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c89e900">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+One of Cerberus&apos;s heads shakes violently sending spit in every direction.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="392">YES</temporary>
+  </item>
+  <item nodeId="node-0x1c89e970">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</result>
+    <commentary xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="326">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c89e9e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c89e9e0">
+    <command xml:space="preserve">enter</command>
+    <result xml:space="preserve">You must supply a noun.
+
+&gt;</result>
+    <commentary xml:space="preserve">You must supply a noun.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="326">NO</temporary>
+    <children>
+      <child nodeId="node-0x1c89ea50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c89ea50">
+    <command xml:space="preserve">enter door</command>
+    <result xml:space="preserve">
+Vestuble
+A rounded room that looks very much like the inside of a very large tree. The cealing has candleabras hanging from it which gives a soothing glow to the room. An opening the size of the wall opens north to another room. A small door leads outside to the south.
+
+You can see a giant three headed dog is laying here. There is a tag hanging that reads &quot;Cerberus&quot;. Each head has glistening teeth and verying degrees of slobber dripping from it&apos;s curled mouth. All six eyes are staring at you intensly.
+
+&gt;</result>
+    <commentary xml:space="preserve">
+Vestuble
+A rounded room that looks very much like the inside of a very large tree. The cealing has candleabras hanging from it which gives a soothing glow to the room. An opening the size of the wall opens north to another room. A small door leads outside to the south.
+
+You can see a giant three headed dog is laying here. There is a tag hanging that reads &quot;Cerberus&quot;. Each head has glistening teeth and verying degrees of slobber dripping from it&apos;s curled mouth. All six eyes are staring at you intensly.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="326">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a422e90" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a422e90">
+    <command xml:space="preserve">take hound</command>
+    <result xml:space="preserve">I don&apos;t suppose Cerberus would care for that.
+
+&gt;</result>
+    <commentary xml:space="preserve">I don&apos;t suppose Cerberus would care for that.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="325">NO</temporary>
+  </item>
+  <item nodeId="node-0x1a422f00">
+    <command xml:space="preserve">x trees</command>
+    <result xml:space="preserve">You see nothing special about the trees.
+
+&gt;</result>
+    <commentary xml:space="preserve">You see nothing special about the trees.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a422f70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a422f70">
+    <command xml:space="preserve">x hill</command>
+    <result xml:space="preserve">You see nothing special about the hill.
+
+&gt;</result>
+    <commentary xml:space="preserve">You see nothing special about the hill.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a422fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a422fe0">
+    <command xml:space="preserve">x flowers</command>
+    <result xml:space="preserve">The flowers are neatly arranged by color. They have grown to great size and color. You notice something between the peddles that seems out of place.
+
+&gt;</result>
+    <commentary xml:space="preserve">The flowers are neatly arranged by color. They have grown to great size and color. You notice something between the peddles that seems out of place.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x158c7060" />
+    </children>
+  </item>
+  <item nodeId="node-0x158c7060">
+    <command xml:space="preserve">search flowers</command>
+    <result xml:space="preserve">You found a door knob!
+
+&gt;</result>
+    <commentary xml:space="preserve">You found a door knob!
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x158c70b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x158c70b0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a door knob
+
+&gt;</result>
+    <commentary xml:space="preserve">You are carrying:
+  a door knob
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x158c7100" />
+    </children>
+  </item>
+  <item nodeId="node-0x158c7100">
+    <command xml:space="preserve">x flowers</command>
+    <result xml:space="preserve">The flowers are neatly arranged by color. They have grown to great size and color. 
+
+&gt;</result>
+    <commentary xml:space="preserve">The flowers are neatly arranged by color. They have grown to great size and color. 
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x158c7170" />
+    </children>
+  </item>
+  <item nodeId="node-0x158c7170">
+    <command xml:space="preserve">search flowers</command>
+    <result xml:space="preserve">You find nothing of interest.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x158c71e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x158c71e0">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Front Yard
+This looks like the side of a hill and if you didn&apos;t know any better you would think that. You see a few round windows set within the grassy hill and a round inset with a door big enogh for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a40d4d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a40d4d0">
+    <command xml:space="preserve">search flowers</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a40d520" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a40d520">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">(the door knob)
+You see nothing special about the door knob.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a40d590" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a40d590">
+    <command xml:space="preserve">x wooden door</command>
+    <result xml:space="preserve">An ornate wodden door is set into the round alcove of the hill. You notice that there is no door knob and there for no way to open it at it is now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="204">NO</temporary>
+    <children>
+      <child nodeId="node-0x1a40d600" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a40d600">
+    <command xml:space="preserve">open wooden door</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="203">NO</temporary>
+  </item>
+</Skein>
