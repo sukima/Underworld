@@ -16,7 +16,8 @@ When play begins:
 	Then he realized there was a contradiction involved
 	here and merely hoped that there wasn't an afterlife.
 	
-	-- Douglas Adams".
+	-- Douglas Adams";
+	say "Life has been difficult. Stressed out, you decided to enlist the help of a local shaman. He will help you meditate. You close your eyes and slowly drift to another world."
 
 
 Section 1 - Setup
