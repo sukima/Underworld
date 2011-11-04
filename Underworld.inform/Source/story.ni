@@ -42,17 +42,18 @@ The player carries Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony.
 The Handbook for the Recently Deceased is a thing. The indefinite article is "The". The description is "desc."
 The player carries the handbook.
 Understand "book" or "guide" as the handbook.
+Instead of consulting the handbook about something, try examining the handbook.
 
 The player has a number called smoke-count. The smoke-count of the player is 0.
 
 
 Section 2 - Outside The Hut
 
-The door knob is a thing. The description is "A small plain brass door knob." The door knob can be found or lost. It is lost.
+The brass door knob is a thing. The description is "A small plain brass door knob." The door knob can be found or lost. It is lost.
 
 The Garden is a room. "You are at the bottom of a hill that is covered in florishing flowers. This garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill."
 Some trees and the hill are scenery in the garden.
-Some flowers are in the Garden. "The flowers are neatly arranged by color. They have grown to great size and color. [if the door knob is lost]You notice something between the peddles that seems out of place.[end if]". They are scenery.
+Some flowers are in the Garden. "The flowers are neatly arranged by color. They may be small but they have multiplied in such a manor to almost take over the boundries of the garden. [if the door knob is lost]You notice something between the peddles that seems out of place.[end if]". They are scenery.
 Understand "garden" or "peddles" as flowers.
 Instead of smelling the flowers: say "The sweet scent of candy corn fills your nostrals."
 Instead of searching the flowers when the door knob is lost:
@@ -93,6 +94,8 @@ Understand "dog" or "hound" or "three headed" as Cerberus.
 Understand "pet [something]" as touching.
 Every turn when the player can see Cerberus: 
 	say "One of Cerberus's heads [one of]licks his paws[or]growls at you and attepts to snap at you[or]shakes violently sending spit in every direction[or]sticks out it's tounge and starts panting[or]starts drooling profusly[or]twitches as his paw scratches behind the ear[at random]."
+Instead of smelling Cerberus, say "The intoxicating aroma of… wet dog?! Yuck!"
+Instead of kissing Cerberus, say "You have no interest in being covered in that much slobber.[if Cerberus is gaurding] And your pretty sure he might bite your head of if you try.[end if]".
 Instead of touching Cerberus:
 	if Cerberus is gaurding:
 		say "It is very clear by the look on each of his three faces that [Cerberus] has no intention of letting you touch him right now.";
@@ -115,14 +118,17 @@ Before going north from the vestuble when Cerberus is gaurding:
 The Main Hall is north of The Vestuble. "A room devoid of any home pleasentries. It seems it is used purely to move to and from the four ajoining rooms. To the east is a room bellowing out smoke. To the north is a small dinner. To the west is a large and beautiful ornate door. And your way back to the vestuble is to the south."
 
 The Huka Hut is east of the Main Hall. "This room has large cushions laying about the floor. All of then colored in tie die. The room is filled with smoke. No doubt from the large Huka standing in the center of the room."
-Some cushions are scenery and supporters in the huka hut. "The cushions are large and made of a tough knitted faberic styled like a tie died T-Shirt. They look very comfortable to sit in."
+Some cushions are enterable, scenery and supporters in the huka hut. "The cushions are large and made of a tough knitted faberic styled like a tie died T-Shirt. They look very comfortable to sit in."
+Understand "cushion" as the cushions.
+The glowing stone is a thing. The description is "A rock that glows brightly." It is lit.
+Understand "rock" as the glowing stone.
 A thing called the huka is in the huka hut. The huka is scenery. The description of the huka is "A large bottle shaped device stands in the middle of the room. It has several tubes coming out of it, water inside and smoke eminating from the top."
 Instead of smelling the huka: say "You smell a delightful scent of rose and honey just before you begin sneezing."
 Understand "pipe" or "tube" or "tubes" or "smoke" as the huka.
 Understand "smoke [something]" as tasting.
 Instead of taking, eating, tasting, or drinking the huka:
 	increment the smoke-count of the player;
-	say "You place a pipe from the side of [the huka] and put it in your mouth. You suck a large mouth full of smoke and attempt to hold your breath.[paragraph break][one of]Suddenly you start coughing violently[or]Your head begins to spin[or]You become nausius[or]The world is completely blurry. You don't feel well[or]The world is so faded that all you can see is black. You feel detached from your body[stopping].";
+	say "You place a pipe from the side of [the huka] and put it in your mouth. You suck a large mouth full of smoke and attempt to hold your breath.[paragraph break][if the smoke-count of the player is 1]Suddenly you start coughing violently[otherwise if the smoke-count of the player is 2]Your head begins to spin[otherwise if the smoke-count of the player is 3]You become nausius[otherwise if the smoke-count of the player is 4]The world is completely blurry. You don't feel well[otherwise]The world is so faded that all you can see is black. You feel detached from your body[end if].";
 	if the smoke-count of the player is greater than 4:
 		end the story saying "You have blacked out."
 Every turn when the smoke-count of the player is greater than 1:
@@ -135,27 +141,70 @@ Instead of examining the strange woman for the first time:
 	try examining the strange woman.
 Understand "girl" as the strange woman.
 Understand "Hecate" as the strange woman when the strange woman is proper-named.
-The glowing stone is a thing. The description is "A rock that glows brightly." It is lit.
-Understand "rock" as the glowing stone.
+Instead of telling the strange woman about something, try asking the strange woman about it.
+After asking the strange woman about a topic listed in the Table of Hecate's Replies, say "[The strange woman] looks at you and pauses to take another puff from [the huka]. She then calmly replies '[reply entry]'[paragraph break]".
+After asking the strange woman about a topic, say "After a long pause while she puffed on [the huka], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [huka][or]Have some of [the huka] with me and we can contemplate on that[purely at random].'". 
 Every turn when the player can see the strange woman:
 	say "[The strange woman] [one of]takes a deep puff from [the huka][or]looks at you for a moment and contemplates[or]seems to be lost in thought[or]coughs and then clears her throat[purely at random].".
+Instead of kissing the strange woman, say "[if the player carries lust]Seems your carying [lust] for a reason![otherwise]Didn[']t you already get ride of [lust]?[end if]".
 Instead of giving a sin (called the sin) to the strange woman:
 	if the strange woman is carrying a sin:
 		say "She smiles and says, 'I am very happy with [the list of sins carried by the strange woman]. I do not need [the sin].'";
 	otherwise:
 		move the sin to the strange woman;
 		move the glowing stone to the player;
+		increase the score by 5;
 		say "[The strange woman] gladdly takes [the sin] and smiles. She gives you [a glowing stone]. 'Good luck on your travels' she says and returns to her deep thoughts."
+Every turn when the smoke-count of the player is greater than 0 and the player is not in the huka hut:
+	decrement the smoke-count of the player;
+	say "[one of]The fog seems to be lifting[or]The world slows down spinning[or]You feel like your standing on both feet again[or]You begin to feel a bit calmer[at random]."
 
-The Dinner is north of the Main Hall. "TODO: Dinner."
+The Dinner is north of the Main Hall. "A small dinner. It has a counter an only one stool. Behind the counter is a stove and a boiling pot. You also see three italian cooks standing motionless in a row behind the counter."
+The counter is scenery and a supporter in the dinner. The description is "A plain laminated counter with rounded corners. It is white."
+The stool is enterable, scenery and a supporter in the dinner. The description is "A white stool. It[']s base is made of aluminum and it[']s seat is a white vinyl cushion."
+Understand "aluminum" or "vinyl" or "cushion" as the stool.
+The stove is scenery in the dinner. The description is "Your basic stove on which is a large pot that is boiling. The cooks seem disinterested."
+Understand "pot" or "boiling" as the stove.
+Some cooks are male people in the dinner. The cooks are scenery. The description of the cooks is "Three mean looking italian style cooks stand in a row behind the counter. They all look exactly the same and all stand motionless. Each has his arms crossed and is facing twards you. They all gaze forward never looking at you." The indefinite article is "three".
+Understand "cook" or "italian" or "italians" as the cooks.
+A utensil is a kind of thing. It is fixed in place.
+The soup bowl is a utensil on the counter. It can contain things. The description is "A plain white bowl. No doubt to eat from."
+The spoon is a utensil on the counter. The description is "A simple spoon to eat with." It is fixed in place.
+Instead of taking a utensil (called the utensil), say "The middle cook swiftly unfolds his arms. Grabs [the utensil] and pulls it from your reach. He crosses his arms again after replacing [the utensil] to it[']s former location."
+Instead of inserting something into the bowl, say "One of the cooks unfolds his arms and quickly swats at your hand as you try to put [the noun] into [the bowl]."
 
 The Ornate Door is west of the Main Hall and east of the Pathway to Ascension. It is a locked door and scenery. The description is "A large ornate double door blocks your way."
 The ornate key unlocks the ornate door.
 
-The description of the Pathway to Ascension is "TODO: Pathway."
+
+Section 4 - Ascension
+
+The Pathway to Ascension is dark. The description is "TODO: Pathway."
+
+Persephone's Chamber is north of the Pathway to Ascension. "TODO: Chamber."
 
 
-Section 4 - Menus and Hints
+Section 5 - Topics, Menus and Hints
+
+Table of Hecate's Replies
+Topic	Reply
+"stone/rock"	"[if the glowing stone is handled]It is a rock. It glows. What more do you want?[otherwise]That's Medusa[']s expertise.[end if]"
+"meaning of life"	"[one of]42[or]A wise man once told me not to think of such things[or]Wouldn[']t you like to know[or]The persuit of love and happiness of course[at random]."
+"huka/smoke/smoking"	"Mmmm. I really do love this stuff."
+"wrath"	"Why are you yelling at me?"
+"greed"	"I can share. There is no need to steal my [huka]."
+"sloth"	"I[']m too lazy to talk about that."
+"pride"	"Why do you need to rub it in? I need to save some face y[']know."
+"lust"	"Ohh I like that. You[']re a looker too. It must be my lucky day."
+"envy"	"Sure wish I had a smoking partner."
+"gluttony"	"I can[']t seem to get enough of this precious smoke."
+"cerberus/dog/hound"	"What a cute pup, don[']t you think?"
+"sin/sins"	"None of us down here can get enough of them."
+"cook/cooks"	"They make the very best soup. Latly they have been out of ingredients."
+"soup"	"Do you have any? It's so tasty!"
+"persephone"	"She is so lovely isn[']t she. I would love to smoke some [huka] with her."
+"dark/darkness"	"I know of a stone that glows like the sun."
+"medusa"	"I dated her once. Let[']s just say it was a little [italic type]hard[roman type] to deal with. And all I got out of it was [a glowing stone]."
 
 Table of Basic Help Options (continued)
 title	subtable	description
@@ -164,7 +213,7 @@ title	subtable	description
 "Hints"	Table of Hints	--
 
 The help request rule is not listed in any rulebook.
-Carry out asking for help: say "You should have been given a copy of '[The handbook]'."
+Carry out asking for help: say "You should have been given a copy of '[The handbook]'. Read the guide."
 
 Instead of examining the handbook:
 	now the current menu is the Table of Basic Help Options;
@@ -174,7 +223,7 @@ Instead of examining the handbook:
 
 When play begins:
 	choose row 1 in Table of Basic Help Options;
-	now description entry is "This was a guided meditation that I had during a Samhien ritual. The idea was to travel to the underworld and visit a few key players. When I took the journy I developed a stage that look simular to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I there I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift let me either pass or was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world."
+	now the description entry is "This was a guided meditation that I had during a Samhien ritual. The idea was to travel to the underworld and visit a few key players. When I took the journy I developed a stage that look simular to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I there I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift let me either pass or was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world."
 
 Table of Hints
 title	subtable	description	toggle
@@ -213,6 +262,18 @@ hint	used
 "Have you taken the time to chat with everyone?"
 "Talk to the strange woman. She wants something."
 "Give her one of your sins."
+
+
+Section 6 - Tests
+
+[Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
+Test me with "test woodendoor / test cerberus / test huka / test hecate / test cooks".
+Test woodendoor with "smell flowers / examine flowers / search flowers / take knob / examine knob / north / examine door / put knob on door / open door / north" in the garden.
+Test cerberus with "examine cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / give wrath to cerberus / examine cerberus / give greed to cerberus / examine cerberus / give envy to cerberus / examine cerberus / pet cerberus / kiss cerberus" in the vestuble.
+Test huka with "examine cushions / examine huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / west / z / z / z / z" in the huka hut.
+Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
+Test hecate with "examine hecate / examine woman / examine girl / examine hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / examine stone / examine rock / ask hecate about stone" in the huka hut.
+Test cooks with "examine stool / examine counter / examine stove / examine cooks / sit on counter / sit on stool / take bowl / take spoon / put pride in bowl" in the dinner.
 
 
 [FIN]
