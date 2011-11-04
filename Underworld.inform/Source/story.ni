@@ -42,6 +42,8 @@ The Handbook for the Recently Deceased is a thing. The indefinite article is "Th
 The player carries the handbook.
 Understand "book" or "guide" as the handbook.
 
+The player has a number called smoke-count. The smoke-count of the player is 0.
+
 
 Section 2 - Outside The Hut
 
@@ -111,11 +113,43 @@ Before going north from the vestuble when Cerberus is gaurding:
 
 The Main Hall is north of The Vestuble. "A room devoid of any home pleasentries. It seems it is used purely to move to and from the four ajoining rooms. To the east is a room bellowing out smoke. To the north is a small dinner. To the west is a large and beautiful ornate door. And your way back to the vestuble is to the south."
 
-The Huka Hut is east of the Main Hall. "TODO: Huka Hut."
+The Huka Hut is east of the Main Hall. "This room has large cushions laying about the floor. All of then colored in tie die. The room is filled with smoke. No doubt from the large Huka standing in the center of the room."
+Some cushions are scenery and supporters in the huka hut. "The cushions are large and made of a tough knitted faberic styled like a tie died T-Shirt. They look very comfortable to sit in."
+A thing called the huka is in the huka hut. The huka is scenery. The description of the huka is "A large bottle shaped device stands in the middle of the room. It has several tubes coming out of it, water inside and smoke eminating from the top."
+Instead of smelling the huka: say "You smell a delightful scent of rose and honey just before you begin sneezing."
+Understand "pipe" or "tube" or "tubes" or "smoke" as the huka.
+Understand "smoke [something]" as tasting.
+Instead of taking, eating, tasting, or drinking the huka:
+	increment the smoke-count of the player;
+	say "You place a pipe from the side of [the huka] and put it in your mouth. You suck a large mouth full of smoke and attempt to hold your breath.[paragraph break][one of]Suddenly you start coughing violently[or]Your head begins to spin[or]You become nausius[or]The world is completely blurry. You don't feel well[or]The world is so faded that all you can see is black. You feel detached from your body[stopping].";
+	if the smoke-count of the player is greater than 4:
+		end the story saying "You have blacked out."
+Every turn when the smoke-count of the player is greater than 1:
+	say "[one of]You see a strange fog roll in and encompasses you.[or]Suddenly, you see the walls twist and move as of they were under water.[or]You see blood dripping from the walls.[or]You see a pink elephant appear arround the corner and then run off.[or]You hear crying next to you but when you turn there is no one there.[or]You see the room burst into flames! Quickly closing your eyes, when you open them the flames are gone.[or]You notice a white rabbit with a large watch hanging from it's neck hop into the room then promptly hop back out.[or]Fear flows through you after hearing a booming voice from above shout 'Error: cannot devide by zero!'[or]You look at your hand and realize it has grown five times a big as it was.[or]You jump out of the way of a few hundred little bugs crawling accross the floor.[at random]".
+The strange woman is a female person in the huka hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopie-do! She may be all that but she is know looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
+Instead of examining the strange woman for the first time:
+	now the printed name of the strange woman is "Hecate";
+	now the strange woman is proper-named;
+	say "Once the smoke clears for a bit you can see that the woman is in fact Hecate, a greek goddess.";
+	try examining the strange woman.
+Understand "girl" as the strange woman.
+Understand "Hecate" as the strange woman when the strange woman is proper-named.
+The glowing stone is a thing. The description is "A rock that glows brightly." It is lit.
+Understand "rock" as the glowing stone.
+Every turn when the player can see the strange woman:
+	say "[The strange woman] [one of]takes a deep puff from [the huka][or]looks at you for a moment and contemplates[or]seems to be lost in thought[or]coughs and then clears her throat[purely at random].".
+Instead of giving a sin (called the sin) to the strange woman:
+	if the strange woman is carrying a sin:
+		say "She smiles and says, 'I am very happy with [the list of sins carried by the strange woman]. I do not need [the sin].'";
+	otherwise:
+		move the sin to the strange woman;
+		move the glowing stone to the player;
+		say "[The strange woman] gladdly takes [the sin] and smiles. She gives you [a glowing stone]. 'Good luck on your travels' she says and returns to her deep thoughts."
 
 The Dinner is north of the Main Hall. "TODO: Dinner."
 
-The Ornate Door door is west of the Main Hall and east of the Pathway to Ascension. It is a locked door and scenery. It is not lockable. The description is "TODO: Ornate Door."
+The Ornate Door is west of the Main Hall and east of the Pathway to Ascension. It is a locked door and scenery. The description is "A large ornate double door blocks your way."
+The ornate key unlocks the ornate door.
 
 The description of the Pathway to Ascension is "TODO: Pathway."
 
@@ -124,7 +158,7 @@ Section 4 - Menus and Hints
 
 Table of Basic Help Options (continued)
 title	subtable	description
-"About the author"	--	"[Story author] is a new Interactive Fiction writer. He learned Inform 6 back in the 1990's and then gave up finishing any work till now (2011) when he started learning Inform 7.[paragraph break]He can be found on the ifMUD as 'Suki' or you can send him some feedback / kudos / beer money to 'suki (at) tritarget.org'."
+"About the Author"	--	"[Story author] is a new Interactive Fiction writer. He learned Inform 6 back in the 1990's and then gave up finishing any work till now (2011) when he started learning Inform 7.[paragraph break]He can be found on the ifMUD as 'Suki' or you can send him some feedback / kudos / beer money to 'suki (at) tritarget.org'.[paragraph break]Thanks for playing!"
 "Settings"	Table of Setting Options	--
 "Hints"	Table of Hints	--
 
@@ -144,7 +178,10 @@ When play begins:
 Table of Hints
 title	subtable	description	toggle
 "How do I get inside the hut?"	Table H1	""	hint toggle rule
-
+"How do you get past Cerberus?"	Table H2	""	hint toggle rule
+"What is the huka for?"	Table H3	""	hint toggle rule
+"How do you open the door?"	Table H4	""	hint toggle rule
+"It's to dark!"	Table H5	""	hint toggle rule
 
 Table H1 - Outside the Hut
 hint	used
@@ -153,6 +190,28 @@ hint	used
 "SEARCH GARDEN. NORTH. PUT KNOB ON DOOR."
 
 Table H2 - Cerberus
+hint	used
+"Cerberus is hungry."	a number
+"Try giving something you don't want to him."
+"GIVE WRATH TO CERBERUS"
+"He has three heads. He need three sins."
+
+Table H3 - Huka
+hint	used
+"Have you tried smoking it?"	a number
+"Really?! That is such a bad habbit!"
+"Red Herring…"
+
+Table H4 - The cooks
+hint	used
+"TODO"	a number
+
+Table H5 - Hecate
+hint	used
+"You will need a light."	a number
+"Have you taken the time to chat with everyone?"
+"Talk to the strange woman. She wants something."
+"Give her one of your sins."
 
 
 [FIN]
