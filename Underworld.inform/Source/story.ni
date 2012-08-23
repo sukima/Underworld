@@ -126,7 +126,14 @@ Before going north from the vestibule when Cerberus is guarding:
 The Main Hall is north of The Vestibule. "A room devoid of any home pleasantries. It seems it is used purely to move to and from the four adjoining rooms. To the east is a room bellowing out smoke. To the north is a small dinner. To the west is a large and beautiful ornate door. And your way back to the vestibule is to the south."
 
 
-Section 3 - The Huka Hut
+Section 3 - The Bedroom
+
+The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
+A 
+A Diary is in The Bedroom.
+
+
+Section 4 - The Huka Hut
 
 The Huka hut is east of the Main Hall. "This room has large cushions laying about the floor. All of then colored in tie die. The room is filled with smoke. No doubt from the large Huka standing in the center of the room."
 Some cushions are enterable, scenery and supporters in the Huka hut. "The cushions are large and made of a tough knitted fabric styled like a tie died T-Shirt. They look very comfortable to sit in."
@@ -168,10 +175,10 @@ Instead of giving a sin (called the sin) to the strange woman:
 		say "[The strange woman] gladly takes [the sin] and smiles. She gives you [a glowing stone]. 'Good luck on your travels' she says and returns to her deep thoughts."
 Every turn when the smoke-count of the player is greater than 0 and the player can not see the Huka:
 	decrement the smoke-count of the player;
-	say "[one of]The fog seems to be lifting[or]The spinning world slows down a bit[or]You feel like your standing on both feet again[or]You begin to feel a bit calmer[at random]."	
-	
+	say "[one of]The fog seems to be lifting[or]The spinning world slows down a bit[or]You feel like your standing on both feet again[or]You begin to feel a bit calmer[at random]."
 
-Section 4 - The Dinner
+
+Section 5 - The Dinner
 
 The Dinner is north of the Main Hall. "A small dinner. It has a counter an only one stool. Behind the counter is a stove and a boiling pot. You also see three Italian cooks standing motionless in a row behind the counter."
 The counter is scenery and a supporter in the dinner. The description is "A plain laminated counter with rounded corners. It is white."
@@ -216,7 +223,7 @@ Instead of giving a sin (called the sin) to the cooks:
 				remove item from play.
 			
 
-Section 5 - The Ascension
+Section 6 - The Ascension
 
 The Ornate Door is west of the Main Hall and east of the Pathway to Ascension. It is a locked door and scenery. The description is "A large ornate double door blocks your way."
 The ornate key unlocks the ornate door.
