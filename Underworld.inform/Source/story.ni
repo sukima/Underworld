@@ -129,8 +129,14 @@ The Main Hall is north of The Vestibule. "A room devoid of any home pleasantries
 Section 3 - The Bedroom
 
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
-A 
-A Diary is in The Bedroom.
+
+The diary is in The Bedroom.
+Instead of examining the diary:
+	[now the diary is called "foobar";]
+	now the current menu is the Table of Diary Entries;
+	carry out the displaying activity;
+	clear the screen;
+	try looking.
 
 
 Section 4 - The Huka Hut
@@ -282,7 +288,7 @@ Instead of attacking the Huka:
 		say "[the strange woman] starts yelling in another language. She looks very upset. It does not seem wise to attempt that while she is using it."
 
 
-Section 6 - Topics, Menus and Hints
+Section 7 - Topics, Menus and Hints
 
 Table of Hecate's Replies
 Topic	Reply
@@ -328,6 +334,10 @@ Instead of examining the handbook:
 When play begins:
 	choose row 1 in Table of Basic Help Options;
 	now the description entry is "This was a guided meditation that I had during a Samhain ritual. The idea was to travel to the underworld and visit a few key players. When I took the journey I developed a stage that look similar to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I there I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift let me either pass or was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world."
+
+Table of Diary Entries
+title	subtable	description
+"Jan 1, 1970"	--	"lorem ipsum"
 
 Table of Hints
 title	subtable	description	toggle
