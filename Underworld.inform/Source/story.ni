@@ -135,12 +135,15 @@ Section 4 - The Bedroom
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
 
 The diary is in The Bedroom.
+The diary is proper-named.
+The printed name of the diary is "[if the diary is examined]Persephone's Diary[otherwise]a diary".
 Instead of examining the diary:
-	[now the diary is called "foobar";]
+	now the diary is examined;
 	now the current menu is the Table of Diary Entries;
 	carry out the displaying activity;
 	clear the screen;
 	try looking.
+Understand "persephone's diary" or "persephone's journal" or "journal" as the diary.
 
 
 Section 5 - The Huka Hut
