@@ -134,8 +134,16 @@ Section 4 - The Bedroom
 
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
 
-The diary is in The Bedroom.
-The diary is proper-named.
+The north dresser is scenery in the Bedroom.
+Before doing something with the north dresser:
+	if the current action is not examining:
+		instead say "[one of]You shouldn[']t have to do anything with someone else's mess.[or]With a mess like that who knows what could be lurking. Better not touch it.[at random]".
+The south dresser is a supporter and scenery in the Bedroom.
+The drawer is an closed container and part of the south dresser. The drawer is openable.
+Before inserting something into the south dresser: try inserting the noun into the drawer instead.
+Understand "drawers" as the drawer.
+
+The diary is in The drawer. The diary is proper-named.
 The printed name of the diary is "[if the diary is examined]Persephone's Diary[otherwise]a diary".
 Instead of examining the diary:
 	now the diary is examined;
