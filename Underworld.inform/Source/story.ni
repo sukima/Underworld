@@ -126,7 +126,7 @@ Before going north from the vestibule when Cerberus is guarding:
 The Main Hall is north of The Vestibule. "A room devoid of any home pleasantries. It seems it is used purely to move to and from the four adjoining rooms. To the east is a room bellowing out smoke. To the north is a small dinner. To the west is a large and beautiful ornate door. And your way back to the vestibule is to the south."
 
 
-Section 3 - The Bedroom
+Section 4 - The Bedroom
 
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
 
@@ -139,7 +139,7 @@ Instead of examining the diary:
 	try looking.
 
 
-Section 4 - The Huka Hut
+Section 5 - The Huka Hut
 
 The Huka hut is east of the Main Hall. "This room has large cushions laying about the floor. All of then colored in tie die. The room is filled with smoke. No doubt from the large Huka standing in the center of the room."
 Some cushions are enterable, scenery and supporters in the Huka hut. "The cushions are large and made of a tough knitted fabric styled like a tie died T-Shirt. They look very comfortable to sit in."
@@ -184,7 +184,7 @@ Every turn when the smoke-count of the player is greater than 0 and the player c
 	say "[one of]The fog seems to be lifting[or]The spinning world slows down a bit[or]You feel like your standing on both feet again[or]You begin to feel a bit calmer[at random]."
 
 
-Section 5 - The Dinner
+Section 6 - The Dinner
 
 The Dinner is north of the Main Hall. "A small dinner. It has a counter an only one stool. Behind the counter is a stove and a boiling pot. You also see three Italian cooks standing motionless in a row behind the counter."
 The counter is scenery and a supporter in the dinner. The description is "A plain laminated counter with rounded corners. It is white."
@@ -229,7 +229,7 @@ Instead of giving a sin (called the sin) to the cooks:
 				remove item from play.
 			
 
-Section 6 - The Ascension
+Section 7 - The Ascension
 
 The Ornate Door is west of the Main Hall and east of the Pathway to Ascension. It is a locked door and scenery. The description is "A large ornate double door blocks your way."
 The ornate key unlocks the ornate door.
@@ -288,7 +288,7 @@ Instead of attacking the Huka:
 		say "[the strange woman] starts yelling in another language. She looks very upset. It does not seem wise to attempt that while she is using it."
 
 
-Section 7 - Topics, Menus and Hints
+Section 8 - Topics, Menus and Hints
 
 Table of Hecate's Replies
 Topic	Reply
@@ -398,7 +398,7 @@ Rule for amusing a victorious player:
 	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Huka]?"
 
 
-Section 7 - Tests - Not for release
+Section 9 - Tests - Not for release
 
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
 Test me with "test woodendoor / test ornatedoor / test cerberus / test huka / test hecate / test cooks / test persephone / amusing".
