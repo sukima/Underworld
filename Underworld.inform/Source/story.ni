@@ -48,6 +48,10 @@ Instead of consulting the handbook about something, try examining the handbook.
 
 The player has a number called smoke-count. The smoke-count of the player is 0.
 
+A thing can be examined or unexamined.
+Carry out examining something:
+	now the noun is examined.
+
 A thing can be out-of-reach.
 Before doing something:
 	if the noun is out-of-reach or the second noun is out-of-reach:
