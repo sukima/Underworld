@@ -182,7 +182,7 @@ Understand "girl" as the strange woman.
 Understand "Hecate" as the strange woman when the strange woman is proper-named.
 Instead of telling the strange woman about something, try asking the strange woman about it.
 After asking the strange woman about a topic listed in the Table of Hecate's Replies, say "[The strange woman] looks at you and pauses to take another puff from [the Huka]. She then calmly replies '[reply entry]'[paragraph break]".
-After asking the strange woman about a topic, say "After a long pause while she puffed on [the Huka], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [Huka][or]Have some of [the Huka] with me and we can contemplate on that[purely at random].'". 
+After asking the strange woman about a topic, say "After a long pause while she puffed on [the Huka], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [Huka][or]Have some of [the Huka] with me and we can contemplate on that[purely at random].'[paragraph break]". 
 Every turn when the player can see the strange woman and the location of Persephone is not the Huka hut:
 	say "[The strange woman] [one of]takes a deep puff from [the Huka][or]looks at you for a moment and contemplates[or]seems to be lost in thought[or]coughs and then clears her throat[purely at random].".
 Instead of kissing a person, say "[if the player carries lust]Seems your carrying [lust] for a reason![otherwise]Didn[']t you already get ride of [lust]?[end if]".
@@ -272,12 +272,13 @@ Every turn when in Persephone's Chamber and the player can see Persephone and Pe
 			say "Persephone sits back down on [the throne] and leans on her elbow.";
 		otherwise:
 			say "Persephone [one of]begins pacing back and forth.[or]places her head in her hands for a few moments.[or]says 'You know what the worst part is? She doesn[']t even have the nerve to apologize!'[or]asks 'Is there something wrong with me?'[or]starts crying. She stops pacing to compose herself before continuing her pacing.[or]says 'I used to like [the Huka] to. But something went wrong.'[at random]".
-After telling Persephone about something, say "She replies 'I[']m sorry, I really can[']t think about that right now."
+Instead of telling Persephone about something, try asking Persephone about it.
 After asking Persephone about "talking to Hecate":
 	now Persephone is following;
 	increase the score by 5;
 	say "She says 'OK, I[']ll try it. Take me to her.'".
-After asking Persephone about a topic listed in the Table of Persephone's Replies, say "Persephone looks at you for a moment and says '[reply entry]'".
+After asking Persephone about a topic listed in the Table of Persephone's Replies, say "Persephone looks at you for a moment and says '[reply entry]'[paragraph break]".
+After asking Persephone about something, say "She replies 'I[']m sorry, I really can[']t think about that right now."
 Every turn when Persephone is following:
 	if the location of Persephone is not the location of the player:
 		let the way be the best route from the location of Persephone to the location of the player, using doors;
@@ -325,11 +326,13 @@ Topic	Reply
 "dark/darkness"	"I know of a stone that glows like the sun."
 "Medusa"	"I dated her once. Let[']s just say it was a little [italic type]hard[roman type] to deal with. And all I got out of it was [a glowing stone]."
 "apology/sorry/apologize"	"Why should I when all I need is right here in this room?"
+"diary/journal"	"Really, why would anyone waste time writing in a diary when they can contemplate the universe right here with this [Huka]."
 
 Table of Persephone's Replies
 Topic	Reply
 "woman/Hecate"	"Hecate and I used to be very close. We had a small argument a while back and ever since she has been completely consumed with [the Huka]."
 "Huka/smoke/smoking"	"I used to like that to. But after seeing what it does to Hecate… I just wish [the Huka] was gone."
+"diary/journal"	"Yes I wrote in that some time ago. It makes me long for how things used to be. Sigh."
 
 Table of Basic Help Options (continued)
 title	subtable	description
@@ -416,9 +419,10 @@ Rule for amusing a victorious player:
 Section 9 - Tests - Not for release
 
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
-Test me with "test woodendoor / test ornatedoor / test cerberus / test huka / test hecate / test cooks / test persephone / amusing".
+Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / n / s" in the vestibule.
+Test diary with "x north dresser / x south dresser / x drawer / open drawer / take diary / drop diary / gonear Huka Hut / ask woman about diary / gonear Persephone[']s Chamber / ask Persephone about diary" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
 Test hecate with "x hecate / x woman / x girl / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
