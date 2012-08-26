@@ -58,6 +58,8 @@ Before doing something:
 		unless examining:
 			say "You can't reach that from here." instead.
 
+[TODO: create the reading rules]
+
 
 Section 2 - Outside The Hut
 
@@ -134,17 +136,20 @@ Section 4 - The Bedroom
 
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
 
-The north dresser is scenery in the Bedroom. "TODO: lorem Ipsum."
+The north dresser is a supporter and scenery in the Bedroom. "TODO: lorem Ipsum."
+Understand "mess" or "cloths" or "clothing" as the north dresser.
 Before doing something with the north dresser:
 	if the current action is not examining:
-		instead say "[one of]You shouldn[']t have to do anything with someone else's mess.[or]With a mess like that who knows what could be lurking. Better not touch it.[at random]".
+		instead say "[one of]You shouldn[']t have to do anything with someone else's mess.[or]With a mess like that who knows what could be lurking. Better not touch it.[or]Even if you tried I don't think it would do any good. It[']s just to messy.[at random]".
+
 The south dresser is a supporter and scenery in the Bedroom. "TODO: lorem ipsum."
-The drawer is an closed openable container and part of the south dresser. "TODO: lorem ipsum."
+The drawer is a closed openable container and part of the south dresser. "TODO: lorem ipsum."
 Before inserting something into the south dresser: try inserting the noun into the drawer instead.
 Understand "drawers" as the drawer.
 
 The diary is in The drawer. The diary is proper-named.
 The printed name of the diary is "[if the diary is examined]Persephone's Diary[otherwise]a diary".
+Instead of consulting the handbook about something, try examining the handbook.
 Instead of examining the diary:
 	now the diary is examined;
 	now the current menu is the Table of Diary Entries;
@@ -430,7 +435,7 @@ Section 9 - Tests - Not for release
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / n / s" in the vestibule.
-Test diary with "x north dresser / x south dresser / x drawer / open drawer / take diary / drop diary / gonear Huka Hut / ask woman about diary / gonear Persephone[']s Chamber / ask Persephone about diary" in the bedroom.
+Test diary with "x north dresser / take cloths / x south dresser / x drawer / open drawer / take diary / x diary / drop diary" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
 Test hecate with "x hecate / x woman / x girl / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
