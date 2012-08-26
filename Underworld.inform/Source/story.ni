@@ -152,6 +152,7 @@ Instead of examining the diary:
 	clear the screen;
 	try looking.
 Understand "persephone's diary" or "persephone's journal" or "journal" as the diary.
+[TODO: We should add a puzzle or lock for the diary to add a little challenge.]
 
 
 Section 5 - The Huka Hut
@@ -355,7 +356,14 @@ When play begins:
 
 Table of Diary Entries
 title	subtable	description
-"Jan 1, 1970"	--	"lorem ipsum"
+"Imbolc"	--	"lorem ipsum"
+"Ostara"	--	"lorem ipsum"
+"Beltane"	--	"lorem ipsum"
+"Litha"	--	"lorem ipsum"
+"Lammas"	--	"lorem ipsum"
+"Mabon"	--	"lorem ipsum"
+"Samhain"	--	"lorem ipsum"
+"Yule"	--	"lorem ipsum"
 
 Table of Hints
 title	subtable	description	toggle
