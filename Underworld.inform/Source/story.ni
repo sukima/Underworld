@@ -41,20 +41,6 @@ Instead of throwing or dropping a sin (called the sin): say "[one of]If only it 
 Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony are sins.
 The player carries Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony.
 
-The Handbook for the Recently Deceased is a thing. The indefinite article is "The".
-The description is "A green leather bound book about twice the size of your hand. It is torn and frayed. And has the words '[The handbook]' scrawled across the front."
-Understand "book" or "guide" as the handbook.
-Instead of consulting the handbook about something, try reading the handbook.
-Instead of reading the handbook:
-	now the current menu is the Table of Basic Help Options;
-	carry out the displaying activity;
-	clear the screen;
-	try looking.
-The player carries the handbook.
-
-The help request rule is not listed in any rulebook.
-Carry out asking for help: say "You should have been given a copy of '[The handbook]'. Read the guide."
-
 The player has a number called smoke-count. The smoke-count of the player is 0.
 
 A thing can be examined or unexamined.
@@ -72,6 +58,20 @@ Reading is an action applying to one thing.
 Understand "read [something]" as reading.
 Carry out reading:
 	say "That's not something worth reading into."
+
+The Handbook for the Recently Deceased is a thing. The indefinite article is "The".
+The description is "A green leather bound book about twice the size of your hand. It is torn and frayed. And has the words '[The handbook]' scrawled across the front."
+Understand "book" or "guide" as the handbook.
+Instead of consulting the handbook about something, try reading the handbook.
+Instead of reading the handbook:
+	now the current menu is the Table of Basic Help Options;
+	carry out the displaying activity;
+	clear the screen;
+	try looking.
+The player carries the handbook.
+
+The help request rule is not listed in any rulebook.
+Carry out asking for help: say "You should have been given a copy of '[The handbook]'. Read the guide."
 
 
 Section 2 - Outside The Hut
