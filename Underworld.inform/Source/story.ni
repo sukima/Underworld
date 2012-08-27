@@ -149,17 +149,25 @@ Section 4 - The Bedroom
 
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
 
-The north dresser is a supporter and scenery in the Bedroom. "TODO: lorem Ipsum."
+The skeleton key is a thing. The description is "Your basic metal skeleton key yet smaller then most."
+
+The north dresser is a supporter and scenery in the Bedroom. "This is a complete mess. Cloths are just poring out of the drawers. It looks like it was hit by a tornado. The dresser is made of wood and looks like an antique (if it were clean). ."
 Understand "mess" or "cloths" or "clothing" as the north dresser.
+Instead of searching the north dresser for the first time:
+	move the skeleton key to the player;
+	say "Against your better judgment you skillfully toss a few articles of clothing aside while holding your hand out at arms length and holding your nose closed with the other hand. Under one of the crusty undergarments you manage to discover [a skeleton key]."
+Instead of searching the north dresser, say "As you shudder you resolve that there is no need to touch that mess again, really."
+Instead of smelling the north dresser, say "You attempt to take a whiff of the messy dresser and make it about a quarter of a sniff before you start to feel nauseous. The offensive oder emanating from years of dirty laundry is probably the most foul thing you could imagine. (Well that, and the oder that comes from your sisters cooking)."
 Before doing something with the north dresser:
-	if the current action is not examining:
+	if the current action is not examining and not searching and not smelling:
 		instead say "[one of]You shouldn[']t have to do anything with someone else's mess.[or]With a mess like that who knows what could be lurking. Better not touch it.[or]Even if you tried I don't think it would do any good. It[']s just to messy.[at random]".
 
-The south dresser is a supporter and scenery in the Bedroom. "TODO: lorem ipsum."
-The drawer is a closed openable container and part of the south dresser.
-The description is "TODO: lorem ipsum."
+The south dresser is a supporter and scenery in the Bedroom. "Your basic wooden dresser with lots of well carved curves and detailed accents. The drawers each have a small key hole."
+The drawer is a closed openable lockable container and part of the south dresser. The drawer is locked.
+The description is "Each drawer has a small key hole in it. Only the top drawer seems flush while the others are slightly open enough for you to tell there is nothing in them."
+The skeleton key unlocks the drawer.
 Before inserting something into the south dresser: try inserting the noun into the drawer instead.
-Understand "drawers" as the drawer.
+Understand "top drawer" or "drawers" as the drawer.
 
 The diary is in the drawer. The description is "[first time]You gently brush off a layer of dust to reveal the beautiful treasure.[paragraph break][only]An ornate book with the word 'diary' on the cover. It looks impressive because it is encrusted with jewels and sparkling sand. Many colors glisten as you hold the book in your hands."
 The diary is proper-named.
@@ -172,7 +180,6 @@ Instead of reading the diary:
 	clear the screen;
 	try looking.
 Understand "persephone's diary" or "persephone's journal" or "journal" as the diary.
-[TODO: We should add a puzzle or lock for the diary to add a little challenge.]
 
 
 Section 5 - The Huka Hut
