@@ -370,7 +370,7 @@ title	subtable	description
 
 When play begins:
 	choose row 1 in Table of Basic Help Options;
-	now the description entry is "This was a guided meditation that I had during a Samhain ritual. The idea was to travel to the underworld and visit a few key players. When I took the journey I developed a stage that look similar to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I there I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift let me either pass or was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world."
+	now the description entry is "This was a guided meditation that I had during a Samhain ritual. The idea was to travel to the underworld and visit a few key players. When I took the journey I developed a stage that look similar to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift I gave them let me either pass or I was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world.[paragraph break]I wrote this to help me learn Inform 7 and writing a cohesive story. I hope you like it and ask only that if you did enjoy this work to consider sending me a 'Hey, that was cool' email. I could use the self esteem boost. [italic type]wink[roman type][paragraph break]The source for this is available at [fixed letter spacing]http://github.com/sukima/Underworld/[variable letter spacing][line break]You can find this and other IF I've worked on at [fixed letter spacing]http://tritarget.org/if/[variable letter spacing][paragraph break]~ Devin Weaver [fixed letter spacing]<suki@tritarget.org>[variable letter spacing]".
 
 Table of Diary Entries
 title	subtable	description
@@ -387,11 +387,12 @@ Table of Hints
 title	subtable	description	toggle
 "How do I get inside the hut?"	Table H1	""	hint toggle rule
 "How do you get past Cerberus?"	Table H2	""	hint toggle rule
-"What is the Huka for?"	Table H3	""	hint toggle rule
-"How do you open the door?"	Table H4	""	hint toggle rule
-"It's to dark!"	Table H5	""	hint toggle rule
-"What do I do with Persephone?"	Table H6	""	hint toggle rule
-"How do I get Persephone and Hecate to stop arguing?"	Table H7	""	hint toggle rule
+"What do I do in the bedroom?"	Table H3	""	hint toggle rule
+"What is the Huka for?"	Table H4	""	hint toggle rule
+"How do you open the door?"	Table H5	""	hint toggle rule
+"It's to dark!"	Table H6	""	hint toggle rule
+"What do I do with Persephone?"	Table H7	""	hint toggle rule
+"How do I get Persephone and Hecate to stop arguing?"	Table H8	""	hint toggle rule
 
 Table H1 - Outside the Hut
 hint	used
@@ -402,37 +403,44 @@ hint	used
 Table H2 - Cerberus
 hint	used
 "Cerberus is hungry."	a number
-"Try giving something you don't want to him."
+"Try giving him something you don't want."
 "GIVE WRATH TO CERBERUS"
-"He has three heads. He need three sins."
+"He has three heads. He needs three sins."
 
-Table H3 - Huka
+Table H3 - Bedroom
+hint	used
+"The south dresser is locked, You'll need a key."	a number
+"Try searching the north dresser."
+"Use the key to unlock the drawer."
+"The diary only provides more back history and is not needed to win."
+
+Table H4 - Huka
 hint	used
 "Have you tried smoking it?"	a number
 "Really?! That is such a bad habit!"
-"Red Herring…"
+"You need Persephone to be in the room to do anything meaningful."
 
-Table H4 - The cooks
+Table H5 - The cooks
 hint	used
 "Have you had anything to eat lately?"	a number
 "Ask [the strange woman] about [the cooks]."
 "Give the cooks your sins."
 "And how was the soup?"
 
-Table H5 - Hecate
+Table H6 - Hecate
 hint	used
 "You will need a light."	a number
 "Have you taken the time to chat with everyone?"
 "Talk to the strange woman. She wants something."
 "Give her one of your sins."
 
-Table H6 - Persephone
+Table H7 - Persephone
 hint	used
 "Have you asked her about [the strange woman]?"	a number
 "Have you asked her about talking to Hecate?"
 "You need to lead her to the Huka hut."
 
-Table H7 - Breaking the Huka
+Table H8 - Breaking the Huka
 hint	used
 "Have you tried to break [the Huka]?"	a number
 "You need to distract [the strange woman]."
