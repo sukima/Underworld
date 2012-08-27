@@ -42,9 +42,18 @@ Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony are sins.
 The player carries Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony.
 
 The Handbook for the Recently Deceased is a thing. The indefinite article is "The".
-The player carries the handbook.
+The description is "A green leather bound book about twice the size of your hand. It is torn and frayed. And has the words '[The handbook]' scrawled across the front."
 Understand "book" or "guide" as the handbook.
-Instead of consulting the handbook about something, try examining the handbook.
+Instead of consulting the handbook about something, try reading the handbook.
+Instead of reading the handbook:
+	now the current menu is the Table of Basic Help Options;
+	carry out the displaying activity;
+	clear the screen;
+	try looking.
+The player carries the handbook.
+
+The help request rule is not listed in any rulebook.
+Carry out asking for help: say "You should have been given a copy of '[The handbook]'. Read the guide."
 
 The player has a number called smoke-count. The smoke-count of the player is 0.
 
@@ -58,7 +67,11 @@ Before doing something:
 		unless examining:
 			say "You can't reach that from here." instead.
 
-[TODO: create the reading rules]
+Understand the command "read" as something new.
+Reading is an action applying to one thing.
+Understand "read [something]" as reading.
+Carry out reading:
+	say "That's not something worth reading into."
 
 
 Section 2 - Outside The Hut
@@ -143,14 +156,16 @@ Before doing something with the north dresser:
 		instead say "[one of]You shouldn[']t have to do anything with someone else's mess.[or]With a mess like that who knows what could be lurking. Better not touch it.[or]Even if you tried I don't think it would do any good. It[']s just to messy.[at random]".
 
 The south dresser is a supporter and scenery in the Bedroom. "TODO: lorem ipsum."
-The drawer is a closed openable container and part of the south dresser. "TODO: lorem ipsum."
+The drawer is a closed openable container and part of the south dresser.
+The description is "TODO: lorem ipsum."
 Before inserting something into the south dresser: try inserting the noun into the drawer instead.
 Understand "drawers" as the drawer.
 
-The diary is in The drawer. The diary is proper-named.
+The diary is in the drawer. The description is "[first time]You gently brush off a layer of dust to reveal the beautiful treasure.[paragraph break][only]An ornate book with the word 'diary' on the cover. It looks impressive because it is encrusted with jewels and sparkling sand. Many colors glisten as you hold the book in your hands."
+The diary is proper-named.
 The printed name of the diary is "[if the diary is examined]Persephone's Diary[otherwise]a diary".
 Instead of consulting the handbook about something, try examining the handbook.
-Instead of examining the diary:
+Instead of reading the diary:
 	now the diary is examined;
 	now the current menu is the Table of Diary Entries;
 	carry out the displaying activity;
@@ -346,15 +361,6 @@ title	subtable	description
 "Settings"	Table of Setting Options	--
 "Hints"	Table of Hints	--
 
-The help request rule is not listed in any rulebook.
-Carry out asking for help: say "You should have been given a copy of '[The handbook]'. Read the guide."
-
-Instead of examining the handbook:
-	now the current menu is the Table of Basic Help Options;
-	carry out the displaying activity;
-	clear the screen;
-	try looking.
-
 When play begins:
 	choose row 1 in Table of Basic Help Options;
 	now the description entry is "This was a guided meditation that I had during a Samhain ritual. The idea was to travel to the underworld and visit a few key players. When I took the journey I developed a stage that look similar to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I there I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift let me either pass or was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world."
@@ -435,7 +441,7 @@ Section 9 - Tests - Not for release
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / n / s" in the vestibule.
-Test diary with "x north dresser / take cloths / x south dresser / x drawer / open drawer / take diary / x diary / drop diary" in the bedroom.
+Test diary with "x north dresser / take cloths / x south dresser / x drawer / open drawer / take diary / x diary / x diary / drop diary" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
 Test hecate with "x hecate / x woman / x girl / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
