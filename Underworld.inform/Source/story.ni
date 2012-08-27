@@ -200,7 +200,7 @@ Instead of taking, eating, tasting, or drinking the Huka:
 		end the story saying "You have blacked out."
 Every turn when the smoke-count of the player is greater than 1:
 	say "[one of]You see a strange fog roll in and encompasses you.[or]Suddenly, you see the walls twist and move as of they were under water.[or]You see blood dripping from the walls.[or]You see a pink elephant appear around the corner and then run off.[or]You hear crying next to you but when you turn there is no one there.[or]You see the room burst into flames! Quickly closing your eyes, when you open them the flames are gone.[or]You notice a white rabbit with a large watch hanging from it's neck hop into the room then promptly hop back out.[or]Fear flows through you after hearing a booming voice from above shout 'Error: cannot divide by zero!'[or]You look at your hand and realize it has grown five times a big as it was.[or]You jump out of the way of a few hundred little bugs crawling across the floor.[at random]".
-The strange woman is a female person in the Huka hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopee-do! She may be all that but she is know looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
+The strange woman is a female person in the Huka hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopee-do! She may be all that but she is so not a looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
 Instead of examining the strange woman for the first time:
 	now the printed name of the strange woman is "Hecate";
 	now the strange woman is proper-named;
@@ -326,7 +326,7 @@ Understand "kick [something]" or "punch [something]" as attacking.
 Instead of attacking the Huka:
 	if the location of Persephone is the Huka hut:
 		say "You break [the Huka]. Shards of glass fall to the floor. The fire that produced the smoke is extinguished when it falls in the large puddle of water. [The strange woman] turns in horror at the mess. [Persephone] is silent.[paragraph break][The strange woman] was about to say something when her body suddenly changes. Her wrinkles go away. Her nose returns to a normal size. Even her eyes seem to brighten up. She becomes quite beautiful.[paragraph break][Persephone] exclaims 'Hecate! You… Oh my! You look how I remember you did before we got that terrible [Huka].'[paragraph break][the strange woman] looks back at [Persephone] and says 'I… I feel so different. What happened? [Persephone], I… I[']m so sorry.[paragraph break][Persephone] replies with a gentle smile 'Oh it so good to have you back Hecate.' And she quickly kisses [the strange woman].[paragraph break][Persephone] turns to you and says 'Thank you so very much. I will return you from where you came. You will always have our blessings.'";
-		say "[Persephone] approaches you and takes your hand. She kisses your forehead and you find yourself awake in the Shaman's hut. You feel relieved of your burdens and with a smile trot out of the hut to enjoy your life.";
+		say "[Persephone] approaches you and takes your hand. She kisses your forehead and you find yourself awake in the Shaman's hut. You feel relieved of your burdens and with a smile you trot out of the hut to enjoy your life.";
 		end the story finally;
 	otherwise:
 		say "[the strange woman] starts yelling in another language. She looks very upset. It does not seem wise to attempt that while she is using it."
@@ -360,7 +360,7 @@ Table of Persephone's Replies
 Topic	Reply
 "woman/Hecate"	"Hecate and I used to be very close. We had a small argument a while back and ever since she has been completely consumed with [the Huka]."
 "Huka/smoke/smoking"	"I used to like that to. But after seeing what it does to Hecate… I just wish [the Huka] was gone."
-"diary/journal"	"Yes I wrote in that some time ago. It makes me long for how things used to be. Sigh."
+"diary/journal"	"Yes I wrote in a diary some time ago. It makes me long for how things used to be. Sigh."
 
 Table of Basic Help Options (continued)
 title	subtable	description
@@ -370,18 +370,18 @@ title	subtable	description
 
 When play begins:
 	choose row 1 in Table of Basic Help Options;
-	now the description entry is "This was a guided meditation that I had during a Samhain ritual. The idea was to travel to the underworld and visit a few key players. When I took the journey I developed a stage that look similar to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift I gave them let me either pass or I was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world.[paragraph break]I wrote this to help me learn Inform 7 and writing a cohesive story. I hope you like it and ask only that if you did enjoy this work to consider sending me a 'Hey, that was cool' email. I could use the self esteem boost. [italic type]wink[roman type][paragraph break]The source for this is available at [fixed letter spacing]http://github.com/sukima/Underworld/[variable letter spacing][line break]You can find this and other IF I've worked on at [fixed letter spacing]http://tritarget.org/if/[variable letter spacing][paragraph break]~ Devin Weaver [fixed letter spacing]<suki@tritarget.org>[variable letter spacing]".
+	now the description entry is "This was a guided meditation that I had during a Samhain ritual. The idea was to travel to the underworld and visit a few key players. When I took the journey I developed a stage that look similar to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift I gave them let me either pass or I was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world.[paragraph break]I wrote this to help me learn Inform 7 and writing a cohesive story. I hope you like it and ask only that if you did enjoy this work to consider sending me a 'Hey, that was cool' email. I could use the self esteem boost. [italic type]wink[roman type][paragraph break]The source for this is available at [fixed letter spacing]http://github.com/sukima/Underworld/[variable letter spacing][line break]You can find this and other IF I've worked on at [fixed letter spacing]http://tritarget.org/if/[variable letter spacing][paragraph break]~ Devin Weaver [fixed letter spacing]<suki (at) tritarget.org>[variable letter spacing]".
 
 Table of Diary Entries
 title	subtable	description
-"Imbolc"	--	"lorem ipsum"
-"Ostara"	--	"lorem ipsum"
-"Beltane"	--	"lorem ipsum"
-"Litha"	--	"lorem ipsum"
-"Lammas"	--	"lorem ipsum"
-"Mabon"	--	"lorem ipsum"
-"Samhain"	--	"lorem ipsum"
-"Yule"	--	"lorem ipsum"
+"Imbolc"	--	"I can't believe it. I met someone today. She is so pretty. I was out in the garden tending to some flowers when I heard Cerberus barking. When I looked up I saw he the color of the sun, the moon, and fire all at the same time. Her body shaped to please anyone men, women, and animal. I was in awe and had to force myself to close my mouth as she approached.[paragraph break]I think I blushed when she greeted me. I asked her what she was doing in this part of the multiverse and she explained how she had gotten lost and really had no where to go but to walk. I asked if she wanted to come inside and relax for a while. I offered tea.[paragraph break]She told me all about the world of magic from her past and I told her all about myself (blushing of course). I even offered her to stay over night. She was very happy and I was infatuated with her smile."
+"Ostara"	--	"So I offered Hecate a place to stay for a while. It seemed a little bit odd but I had a plan. I wanted to step things up. So I asked her out on a date. I nearly fainted when she said 'Yes'.[paragraph break]I went to work right away with the cooks to make the best dinner ever. I instructed them on making the perfect soup. I was so happy to have a date with Hacate. TODO"
+"Beltane"	--	"TODO: Made Love"
+"Litha"	--	"TODO: angst and reassurance"
+"Lammas"	--	"TODO: Huka found"
+"Mabon"	--	"TODO: Uneasy feeling"
+"Samhain"	--	"TODO: Hecate ignoring Persephone"
+"Yule"	--	"TODO: Big fight"
 
 Table of Hints
 title	subtable	description	toggle
