@@ -43,10 +43,6 @@ The player carries Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony.
 
 The player has a number called smoke-count. The smoke-count of the player is 0.
 
-A thing can be examined or unexamined.
-Carry out examining something:
-	now the noun is examined.
-
 A thing can be out-of-reach.
 Before doing something:
 	if the noun is out-of-reach or the second noun is out-of-reach:
@@ -149,9 +145,14 @@ Section 4 - The Bedroom
 
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
 
+The bed is a supporter and enterable in the bedroom. The description is "TODO."
+Instead of looking under or searching the bed, say "TODO."
+
 The skeleton key is a thing. The description is "Your basic metal skeleton key yet smaller then most."
 
-The north dresser is a supporter and scenery in the Bedroom. "This is a complete mess. Cloths are just poring out of the drawers. It looks like it was hit by a tornado. The dresser is made of wood and looks like an antique (if it were clean). ."
+The north dresser is a supporter and fixed in place in the Bedroom.
+The description is "This is a complete mess. Cloths are just poring out of the drawers. It looks like it was hit by a tornado. The dresser is made of wood and looks like an antique (if it were clean)."
+The indefinite article is "the".
 Understand "mess" or "cloths" or "clothing" as the north dresser.
 Instead of searching the north dresser for the first time:
 	move the skeleton key to the player;
@@ -162,7 +163,11 @@ Before doing something with the north dresser:
 	if the current action is not examining and not searching and not smelling:
 		instead say "[one of]You shouldn[']t have to do anything with someone else's mess.[or]With a mess like that who knows what could be lurking. Better not touch it.[or]Even if you tried I don't think it would do any good. It[']s just to messy.[at random]".
 
-The south dresser is a supporter and scenery in the Bedroom. "Your basic wooden dresser with lots of well carved curves and detailed accents. The drawers each have a small key hole."
+Does the player mean putting on the north dresser: it is very likely.
+
+The south dresser is a supporter and fixed in place in the Bedroom.
+The description is "Your basic wooden dresser with lots of well carved curves and detailed accents. The drawers each have a small key hole."
+The indefinite article is "the".
 The drawer is a closed openable lockable container and part of the south dresser. The drawer is locked.
 The description is "Each drawer has a small key hole in it. Only the top drawer seems flush while the others are slightly open enough for you to tell there is nothing in them."
 The skeleton key unlocks the drawer.
@@ -170,16 +175,16 @@ Before inserting something into the south dresser: try inserting the noun into t
 Understand "top drawer" or "drawers" as the drawer.
 
 The diary is in the drawer. The description is "[first time]You gently brush off a layer of dust to reveal the beautiful treasure.[paragraph break][only]An ornate book with the word 'diary' on the cover. It looks impressive because it is encrusted with jewels and sparkling sand. Many colors glisten as you hold the book in your hands."
-The diary is proper-named.
-The printed name of the diary is "[if the diary is examined]Persephone's Diary[otherwise]a diary".
 Instead of consulting the handbook about something, try examining the handbook.
 Instead of reading the diary:
-	now the diary is examined;
+	now the printed name of the diary is "Persephone's Diary";
+	now the diary is proper-named;
 	now the current menu is the Table of Diary Entries;
 	carry out the displaying activity;
 	clear the screen;
 	try looking.
-Understand "persephone's diary" or "persephone's journal" or "journal" as the diary.
+Understand "persephone's diary" or "persephone's journal" as the diary when the diary is proper-named.
+Understand "journal" as the diary.
 
 
 Section 5 - The Huka Hut
@@ -200,6 +205,7 @@ Instead of taking, eating, tasting, or drinking the Huka:
 		end the story saying "You have blacked out."
 Every turn when the smoke-count of the player is greater than 1:
 	say "[one of]You see a strange fog roll in and encompasses you.[or]Suddenly, you see the walls twist and move as of they were under water.[or]You see blood dripping from the walls.[or]You see a pink elephant appear around the corner and then run off.[or]You hear crying next to you but when you turn there is no one there.[or]You see the room burst into flames! Quickly closing your eyes, when you open them the flames are gone.[or]You notice a white rabbit with a large watch hanging from it's neck hop into the room then promptly hop back out.[or]Fear flows through you after hearing a booming voice from above shout 'Error: cannot divide by zero!'[or]You look at your hand and realize it has grown five times a big as it was.[or]You jump out of the way of a few hundred little bugs crawling across the floor.[at random]".
+
 The strange woman is a female person in the Huka hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopee-do! She may be all that but she is so not a looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
 Instead of examining the strange woman for the first time:
 	now the printed name of the strange woman is "Hecate";
@@ -378,8 +384,8 @@ Table of Diary Entries
 title	subtable	description
 "Imbolc"	--	"I can't believe it. I met someone today. She is so pretty. I was out in the garden tending to some flowers when I heard Cerberus barking. When I looked up I saw he the color of the sun, the moon, and fire all at the same time. Her body shaped to please anyone men, women, and animal. I was in awe and had to force myself to close my mouth as she approached.[paragraph break]I think I blushed when she greeted me. I asked her what she was doing in this part of the multiverse and she explained how she had gotten lost and really had no where to go but to walk. I asked if she wanted to come inside and relax for a while. I offered tea.[paragraph break]She told me all about the world of magic from her past and I told her all about myself (blushing of course). I even offered her to stay over night. She was very happy and I was infatuated with her smile."
 "Ostara"	--	"So I offered Hecate a place to stay for a while. It seemed a nice thing to do. Even so I have to admit the offer was a bit selfish. I asked her out on a date. I nearly fainted when she said 'Yes'.[paragraph break]I went to work right away with the cooks to make the best dinner ever. I instructed them on making the perfect soup. I was so happy to have a date with Hecate.[paragraph break]To bad the cooks can't make soup. Sigh, It was a disaster. I nearly spit the soup all over poor Hecate. Strangely she loved the soup. I just don't get it but we laughed till we fell asleep in each other's arms."
-"Beltane"	--	"TODO: Made Love"
-"Litha"	--	"TODO: angst and reassurance"
+"Beltane"	--	"Tonight was the most amazing nigt ever. Hecate and I spent the day picking flowers and playing little tickle games. Then she kissed me! Oh, I can not begin to explain how electrifying it was. I love her so much. We layed down together and found was of pleasing eachother that I didn't know could exists. I will never forget this night. Sigh."
+"Litha"	--	"Oh I can't begin to understand this. I got so upset I ran out of the house crying with Cerberus running after me. I thought I messed the whole thing up. I woke and Hecate was gone. I knew it was too good to be true. I must have moved to fast or maybe I forced myself on her. Oh dear! maybe it was my comment about her mess that used to be her dresser! Oh everything has gone to hell.[paragraph break]Hecate returned to see me sobbing on th bed. I was so scared to see her I nearly jumped under the bed. TODO"
 "Lammas"	--	"TODO: Huka found"
 "Mabon"	--	"TODO: Uneasy feeling"
 "Samhain"	--	"TODO: Hecate ignoring Persephone"
@@ -458,7 +464,7 @@ Section 9 - Tests - Not for release
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / n / s" in the vestibule.
-Test diary with "x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / drop diary" in the bedroom.
+Test diary with "look / x bed / take bed / get on bed / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
 Test hecate with "x hecate / x woman / x girl / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
