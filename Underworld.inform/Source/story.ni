@@ -145,7 +145,8 @@ Section 4 - The Bedroom
 
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
 
-The bed is a supporter and enterable in the bedroom. The description is "TODO."
+The bed is a supporter and enterable in the bedroom. The description is "This is a rather simple bed. Basic wood head board and a ragged spring mattress which is bare other then a simple sheet. There seems to be no blankets just another sheet crumpled at the foot of the bed. It looks as though it hasn't been slept in for some time."
+The head board, the mattress, and the sheets are part of the bed.
 Instead of looking under the bed, say "Unlike [the north dresser], the [the bed] has nothing but dust under it."
 Instead of jumping while in the bed, say "One little monkey jumping on the bed.[line break]One fell off and bumped it's head.[line break]Moma called the doctor, and the doctor said.[line break]No, no, try doing something else instead."
 Instead of sleeping while in the bed, say "It's not polite to sleep in other peoples['] beds. Look what happened to Goldylocks."
@@ -478,7 +479,7 @@ Section 12 - Tests - Not for release
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / n / s" in the vestibule.
-Test diary with "look / x bed / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
+Test diary with "look / x bed / take sheets / x sheets / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
 Test hecate with "x hecate / x woman / x girl / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
