@@ -146,8 +146,8 @@ Section 4 - The Bedroom
 The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed in the very middle. Cloths are strewn everywhere. Two dressers stand on either side of the bed north and south. The one on the north wall has drawers half open with cloths over flowing out of it. Where the one on the south wall is completely closed with nothing on it."
 
 The bed is a supporter and enterable in the bedroom. The description is "TODO."
-Instead of looking under or searching the bed, say "TODO."
-Instead of jumping while in the bed, say "One little monkey jumping on the bed.[line break]One fell off and bumped their head.[line break]Mom called the doctor, and the doctor said.[line break]No, no, no. Try doing something else instead."
+Instead of looking under the bed, say "Unlike [the north dresser], the [the bed] has nothing but dust under it."
+Instead of jumping while in the bed, say "One little monkey jumping on the bed.[line break]One fell off and bumped it's head.[line break]Moma called the doctor, and the doctor said.[line break]No, no, try doing something else instead."
 Instead of sleeping while in the bed, say "It's not polite to sleep in other peoples['] beds. Look what happened to Goldylocks."
 
 The skeleton key is a thing. The description is "Your basic metal skeleton key yet smaller then most."
@@ -164,8 +164,7 @@ Instead of smelling the north dresser, say "You attempt to take a whiff of the m
 Before doing something with the north dresser:
 	if the current action is not examining and not searching and not smelling:
 		instead say "[one of]You shouldn[']t have to do anything with someone else's mess.[or]With a mess like that who knows what could be lurking. Better not touch it.[or]Even if you tried I don't think it would do any good. It[']s just to messy.[at random]".
-
-Does the player mean putting on the north dresser: it is very likely.
+Understand "hecate's dresser" as the north dresser when the north dresser is proper-named.
 
 The south dresser is a supporter and fixed in place in the Bedroom.
 The description is "Your basic wooden dresser with lots of well carved curves and detailed accents. The drawers each have a small key hole."
@@ -175,12 +174,19 @@ The description is "Each drawer has a small key hole in it. Only the top drawer 
 The skeleton key unlocks the drawer.
 Before inserting something into the south dresser: try inserting the noun into the drawer instead.
 Understand "top drawer" or "drawers" as the drawer.
+Understand "persephone's dresser" as the south dresser when the south dresser is proper-named.
+Does the player mean putting on the south dresser: it is very likely.
 
 The diary is in the drawer. The description is "[first time]You gently brush off a layer of dust to reveal the beautiful treasure.[paragraph break][only]An ornate book with the word 'diary' on the cover. It looks impressive because it is encrusted with jewels and sparkling sand. Many colors glisten as you hold the book in your hands."
 Instead of consulting the handbook about something, try examining the handbook.
 Instead of reading the diary:
-	now the printed name of the diary is "Persephone's Diary";
-	now the diary is proper-named;
+	if the diary is not proper-named:
+		now the printed name of the diary is "Persephone's Diary";
+		now the diary is proper-named;
+		now the printed name of the south dresser is "Persphone's dresser";
+		now the south dresser is proper-named;
+		now the printed name of the north dresser is "Hecate's dresser";
+		now the north dresser is proper-named;
 	now the current menu is the Table of Diary Entries;
 	carry out the displaying activity;
 	clear the screen;
