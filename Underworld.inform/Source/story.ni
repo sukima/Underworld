@@ -138,7 +138,7 @@ Before going north from the vestibule when Cerberus is guarding:
 		say "[Cerberus] lurches at you barking loudly. There is no way to pass without risking a limb.";
 		stop the action.
 
-The Main Hall is north of The Vestibule. "A room devoid of any home pleasantries. It seems it is used purely to move to and from the four adjoining rooms. To the east is a room bellowing out smoke. To the north is a small dinner. To the west is a large and beautiful ornate door. And your way back to the vestibule is to the south."
+The Main Hall is north of The Vestibule. "A room devoid of any home pleasantries. It seems it is used purely to move to and from the four adjoining rooms. To the east is a room bellowing out smoke. To the north is a small dinner. To the west is a large and beautiful ornate door. And your way back to the vestibule is to the south. There is also a small doorway to the southwest that you almost missed at first glance."
 
 
 Section 4 - The Bedroom
@@ -147,6 +147,8 @@ The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed
 
 The bed is a supporter and enterable in the bedroom. The description is "TODO."
 Instead of looking under or searching the bed, say "TODO."
+Instead of jumping while in the bed, say "One little monkey jumping on the bed.[line break]One fell off and bumped their head.[line break]Mom called the doctor, and the doctor said.[line break]No, no, no. Try doing something else instead."
+Instead of sleeping while in the bed, say "It's not polite to sleep in other peoples['] beds. Look what happened to Goldylocks."
 
 The skeleton key is a thing. The description is "Your basic metal skeleton key yet smaller then most."
 
@@ -464,7 +466,7 @@ Section 9 - Tests - Not for release
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / n / s" in the vestibule.
-Test diary with "look / x bed / jump on bed / take bed / get on bed / jump on bed / sleep in bed / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
+Test diary with "look / x bed / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
 Test hecate with "x hecate / x woman / x girl / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
