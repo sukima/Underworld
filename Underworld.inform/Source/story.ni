@@ -346,7 +346,7 @@ Instead of attacking the Huka:
 		say "[the strange woman] starts yelling in another language. She looks very upset. It does not seem wise to attempt that while she is using it."
 
 
-Section 8 - Topics, Menus and Hints
+Section 8 - Conversations and Topics
 
 Table of Hecate's Replies
 Topic	Reply
@@ -378,6 +378,8 @@ Topic	Reply
 "soup"	"Don't eat it it tastes awful."
 "cook/cooks"	"You need to be careful with them. They make a nasty soup."
 
+Section 9 - Help Menu
+
 Table of Basic Help Options (continued)
 title	subtable	description
 "About the Author"	--	"[Story author] is a new Interactive Fiction writer. He learned Inform 6 back in the 1990's and then gave up finishing any work till now (2011) when he started learning Inform 7.[paragraph break]He can be found on the ifMUD as 'Suki' or you can send him some feedback / kudos / beer money to 'suki (at) tritarget.org'.[paragraph break]Thanks for playing!"
@@ -388,16 +390,20 @@ When play begins:
 	choose row 1 in Table of Basic Help Options;
 	now the description entry is "This was a guided meditation that I had during a Samhain ritual. The idea was to travel to the underworld and visit a few key players. When I took the journey I developed a stage that look similar to Bilbo Baggins hobbit hut from the Lord of The Rings movie. I met Cerberus, Hecate, and Persephone there. I had to give the characters a gift (something I didn't want). Each gift I gave them let me either pass or I was given a bit of advise. Eventually I made it to Persephone who ascended me back to the real world.[paragraph break]I wrote this to help me learn Inform 7 and writing a cohesive story. I hope you like it and ask only that if you did enjoy this work to consider sending me a 'Hey, that was cool' email. I could use the self esteem boost. [italic type]wink[roman type][paragraph break]The source for this is available at [fixed letter spacing]http://github.com/sukima/Underworld/[variable letter spacing][line break]You can find this and other IF I've worked on at [fixed letter spacing]http://tritarget.org/if/[variable letter spacing][paragraph break]~ Devin Weaver [fixed letter spacing]<suki (at) tritarget.org>[variable letter spacing]".
 
+Section 10 - Diary Entries
+
 Table of Diary Entries
 title	subtable	description
 "Imbolc"	--	"I can't believe it. I met someone today. She is so pretty. I was out in the garden tending to some flowers when I heard Cerberus barking. When I looked up I saw he the color of the sun, the moon, and fire all at the same time. Her body shaped to please anyone men, women, and animal. I was in awe and had to force myself to close my mouth as she approached.[paragraph break]I think I blushed when she greeted me. I asked her what she was doing in this part of the multiverse and she explained how she had gotten lost and really had no where to go but to walk. I asked if she wanted to come inside and relax for a while. I offered tea.[paragraph break]She told me all about the world of magic from her past and I told her all about myself (blushing of course). I even offered her to stay over night. She was very happy and I was infatuated with her smile."
 "Ostara"	--	"So I offered Hecate a place to stay for a while. It seemed a nice thing to do. Even so I have to admit the offer was a bit selfish. I asked her out on a date. I nearly fainted when she said 'Yes'.[paragraph break]I went to work right away with the cooks to make the best dinner ever. I instructed them on making the perfect soup. I was so happy to have a date with Hecate.[paragraph break]To bad the cooks can't make soup. Sigh, It was a disaster. I nearly spit the soup all over poor Hecate. Strangely she loved the soup. I just don't get it but we laughed till we fell asleep in each other's arms."
-"Beltane"	--	"Tonight was the most amazing nigt ever. Hecate and I spent the day picking flowers and playing little tickle games. Then she kissed me! Oh, I can not begin to explain how electrifying it was. I love her so much. We layed down together and found was of pleasing eachother that I didn't know could exists. I will never forget this night. Sigh."
-"Litha"	--	"Oh I can't begin to understand this. I got so upset I ran out of the house crying with Cerberus running after me. I thought I messed the whole thing up. I woke and Hecate was gone. I knew it was too good to be true. I must have moved to fast or maybe I forced myself on her. Oh dear! maybe it was my comment about her mess that used to be her dresser! Oh everything has gone to hell.[paragraph break]Hecate returned to see me sobbing on th bed. I was so scared to see her I nearly jumped under the bed. TODO"
-"Lammas"	--	"TODO: Huka found"
-"Mabon"	--	"TODO: Uneasy feeling"
+"Beltane"	--	"Tonight was the most amazing night ever. Hecate and I spent the day picking flowers and playing little tickle games. Then she kissed me! Oh, I can not begin to explain how electrifying it was. I love her so much. We laid down together and found ways of pleasing each other that I didn't know could exists. I will never forget this night. Sigh."
+"Litha"	--	"TODO: Outing and discovery of huka"
+"Lammas"	--	"TODO: First try of hula"
+"Mabon"	--	"TODO: Uneasy feeling and vow to stop using huka"
 "Samhain"	--	"TODO: Hecate ignoring Persephone"
 "Yule"	--	"TODO: Big fight"
+
+Section 11 - Hints
 
 Table of Hints
 title	subtable	description	toggle
@@ -466,7 +472,7 @@ Rule for amusing a victorious player:
 	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Huka]?"
 
 
-Section 9 - Tests - Not for release
+Section 12 - Tests - Not for release
 
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
