@@ -361,6 +361,8 @@ Topic	Reply
 "woman/Hecate"	"Hecate and I used to be very close. We had a small argument a while back and ever since she has been completely consumed with [the Huka]."
 "Huka/smoke/smoking"	"I used to like that to. But after seeing what it does to Hecate… I just wish [the Huka] was gone."
 "diary/journal"	"Yes I wrote in a diary some time ago. It makes me long for how things used to be. Sigh."
+"soup"	"Don't eat it it tastes awful."
+"cook/cooks"	"You need to be careful with them. They make a nasty soup."
 
 Table of Basic Help Options (continued)
 title	subtable	description
@@ -375,7 +377,7 @@ When play begins:
 Table of Diary Entries
 title	subtable	description
 "Imbolc"	--	"I can't believe it. I met someone today. She is so pretty. I was out in the garden tending to some flowers when I heard Cerberus barking. When I looked up I saw he the color of the sun, the moon, and fire all at the same time. Her body shaped to please anyone men, women, and animal. I was in awe and had to force myself to close my mouth as she approached.[paragraph break]I think I blushed when she greeted me. I asked her what she was doing in this part of the multiverse and she explained how she had gotten lost and really had no where to go but to walk. I asked if she wanted to come inside and relax for a while. I offered tea.[paragraph break]She told me all about the world of magic from her past and I told her all about myself (blushing of course). I even offered her to stay over night. She was very happy and I was infatuated with her smile."
-"Ostara"	--	"So I offered Hecate a place to stay for a while. It seemed a little bit odd but I had a plan. I wanted to step things up. So I asked her out on a date. I nearly fainted when she said 'Yes'.[paragraph break]I went to work right away with the cooks to make the best dinner ever. I instructed them on making the perfect soup. I was so happy to have a date with Hacate. TODO"
+"Ostara"	--	"So I offered Hecate a place to stay for a while. It seemed a nice thing to do. Even so I have to admit the offer was a bit selfish. I asked her out on a date. I nearly fainted when she said 'Yes'.[paragraph break]I went to work right away with the cooks to make the best dinner ever. I instructed them on making the perfect soup. I was so happy to have a date with Hecate.[paragraph break]To bad the cooks can't make soup. Sigh, It was a disaster. I nearly spit the soup all over poor Hecate. Strangely she loved the soup. I just don't get it but we laughed till we fell asleep in each other's arms."
 "Beltane"	--	"TODO: Made Love"
 "Litha"	--	"TODO: angst and reassurance"
 "Lammas"	--	"TODO: Huka found"
