@@ -17,7 +17,7 @@ When play begins:
 	here and merely hoped that there wasn't an afterlife.
 	
 	-- Douglas Adams";
-	say "Life has been difficult. Stressed out, you decided to enlist the help of a local shaman. He will help you meditate. You close your eyes and slowly drift to another world."
+	say "Life has been difficult. Stressed out, you decided to enlist the help of a local shaman. He will help you meditate. You close your eyes and slowly drift to another world.[paragraph break][italic type](For begginers you have been given [the handbook]. You can read it with the command 'READ BOOK')[roman type]".
 
 
 Section 1 - Setup
@@ -473,7 +473,16 @@ Rule for amusing a victorious player:
 	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Huka]?"
 
 
-Section 12 - Tests - Not for release
+Section 12 - Testing - Not for release
+
+Table of Basic Help Options (continued)
+title	subtable	description
+"Notes for Testers"	--	"Thank you for taking the time to test this game.[paragraph break]A few notes:[line break]Before you begin playing [italic type]please[roman type] start a transcript by typing the command [fixed letter spacing]SCRIPT[variable letter spacing].[paragraph break]You can make notes, comments, annotations, and kudos by typing an asterisks followed by the note:[paragraph break][fixed letter spacing]> * this is a comment[line break]Annotation noted.[variable letter spacing][paragraph break]This will save to the transcript when recording is enabled.[paragraph break]Again, I thank you for helping make my first Interactive Fiction game better."
+
+Understand "* [text]" as a mistake ("Annotation noted.").
+
+When play begins:
+	say "[line break]TESTERS: Please read the notes on testing provided in the handbook ('READ BOOK').".
 
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
@@ -488,4 +497,5 @@ Test ornatedoor with "x door / open door / unlock door with key / lock door with
 Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / ask persephone about talking to hecate / s / unlock door with key / e / e / z/ z / z / w / w / n / ask persephone about talking to hecate / s / e / e / kick huka" holding the ornate key and the glowing stone in Persephone's Chamber.
 
 
+[ vim: set wrap ts=2 noet: ]
 [FIN]
