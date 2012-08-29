@@ -2,9 +2,9 @@
 
 The story headline is "An Interactive Meditation".
 The story genre is "Surreal".
-The release number is 1.
+The release number is 2.
 The story description is "During a guided meditation I did on the eve of Samhain I envisioned the following story. Travel to the underworld and meet a few mythical people and animals like Hecate, Persephone, and Cerberus. Can you give up enough negativity to make it back out?"
-The story creation year is 2011.
+The story creation year is 2012.
 
 Release along with the library card, a website, an interpreter, and the source text.
 
