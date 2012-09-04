@@ -1,4 +1,3 @@
-(A) Enter vestuble first see cerberus described as "a three headed dog" Add name tag to queue player
 (A) ask persephone about talking to hecate: does not tell player that she is following.
 (A) ask woman about persephone: response grammer
 (A) attach knob to door
