@@ -17,7 +17,7 @@ When play begins:
 	here and merely hoped that there wasn't an afterlife.
 	
 	-- Douglas Adams";
-	say "Life has been difficult. Stressed out, you decided to enlist the help of a local shaman. He will help you meditate. You close your eyes and slowly drift to another world.[paragraph break][italic type](For beginers you have been given [the handbook]. You can read it with the command 'READ BOOK')[roman type]".
+	say "Life has been difficult. Stressed out, you decided to enlist the help of a local shaman. He will help you meditate. You close your eyes and slowly drift to another world.[paragraph break][italic type](For beginners you have been given [the handbook]. You can read it with the command 'READ BOOK')[roman type]".
 
 
 Section 1 - Setup
@@ -43,6 +43,7 @@ The player carries Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony.
 
 The player has a number called smoke-count. The smoke-count of the player is 0.
 
+A thing can be examined or not. A thing is usually not examined.
 A thing can be out-of-reach.
 Before doing something:
 	if the noun is out-of-reach or the second noun is out-of-reach:
@@ -216,16 +217,25 @@ Every turn when the smoke-count of the player is greater than 1:
 	say "[one of]You see a strange fog roll in and encompasses you.[or]Suddenly, you see the walls twist and move as of they were under water.[or]You see blood dripping from the walls.[or]You see a pink elephant appear around the corner and then run off.[or]You hear crying next to you but when you turn there is no one there.[or]You see the room burst into flames! Quickly closing your eyes, when you open them the flames are gone.[or]You notice a white rabbit with a large watch hanging from it's neck hop into the room then promptly hop back out.[or]Fear flows through you after hearing a booming voice from above shout 'Error: cannot divide by zero!'[or]You look at your hand and realize it has grown five times a big as it was.[or]You jump out of the way of a few hundred little bugs crawling across the floor.[at random]".
 
 The strange woman is a female person in the Huka hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopee-do! She may be all that but she is so not a looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
+To learn Hecate's name:
+	if the strange woman is not examined:
+		now the printed name of the strange woman is "Hecate";
+		now the strange woman is proper-named;
+		now the strange woman is examined.
 Instead of examining the strange woman for the first time:
-	now the printed name of the strange woman is "Hecate";
-	now the strange woman is proper-named;
+	learn Hecate's name;
 	say "Once the smoke clears for a bit you can see that the woman is in fact Hecate, a Greek goddess.";
 	try examining the strange woman.
 Understand "girl" as the strange woman.
 Understand "Hecate" as the strange woman when the strange woman is proper-named.
 Instead of telling the strange woman about something, try asking the strange woman about it.
 After asking the strange woman about a topic listed in the Table of Hecate's Replies, say "[The strange woman] looks at you and pauses to take another puff from [the Huka]. She then calmly replies '[reply entry]'[paragraph break]".
-After asking the strange woman about a topic, say "After a long pause while she puffed on [the Huka], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [Huka][or]Have some of [the Huka] with me and we can contemplate on that[purely at random].'[paragraph break]". 
+After asking the strange woman about a topic:
+	if the topic understood includes "herself/woman":
+		learn Hecate's name;
+		say "My name is Hecate and it is a pleasure to see you.";
+	otherwise:
+		say "After a long pause while she puffed on [the Huka], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [Huka][or]Have some of [the Huka] with me and we can contemplate on that[purely at random].'[paragraph break]". 
 Every turn when the player can see the strange woman and the location of Persephone is not the Huka hut:
 	say "[The strange woman] [one of]takes a deep puff from [the Huka][or]looks at you for a moment and contemplates[or]seems to be lost in thought[or]coughs and then clears her throat[purely at random].".
 Instead of kissing a person, say "[if the player carries lust]Seems your carrying [lust] for a reason![otherwise]Didn[']t you already get ride of [lust]?[end if]".
@@ -491,7 +501,7 @@ Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus 
 Test diary with "look / x bed / take sheets / x sheets / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
-Test hecate with "x hecate / x woman / x girl / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
+Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
 Test cooks with "x stool / x counter / x stove / x cooks / x bowl / x spoon / sit on counter / sit on stool / take bowl / take spoon / put pride in bowl / ask cooks about dog / touch stove / touch pot / smell pot / x pot / give pride to cooks / x pot / give sloth to cooks / x pot / give gluttony to cooks / x pot / x bowl / take bowl / x soup / smell soup / taste soup / eat soup / x key / take key / s / n" in the dinner.
 Test ornatedoor with "x door / open door / unlock door with key / lock door with key / unlock door with key / open door / w / close door / l / n / s / open door / e" holding the ornate key and the glowing stone in the main hall.
 Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / ask persephone about talking to hecate / s / unlock door with key / e / e / z/ z / z / w / w / n / ask persephone about talking to hecate / s / e / e / kick huka" holding the ornate key and the glowing stone in Persephone's Chamber.
