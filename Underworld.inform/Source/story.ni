@@ -70,6 +70,9 @@ The player carries the handbook.
 The help request rule is not listed in any rulebook.
 Carry out asking for help: say "You should have been given a copy of '[The handbook]'. Read the guide."
 
+A goddess is a kind of person who is female.
+Instead of attacking a goddess, say "It is not polite to be violent towards a goddess regardless of your feelings towards her."
+
 
 Section 2 - Outside The Hut
 
@@ -120,6 +123,7 @@ Every turn when the player can see Cerberus:
 	say "One of Cerberus's heads [one of]licks his paws[or]growls at you and attempts to snap at you[or]shakes violently sending spit in every direction[or]sticks out it's tongue and starts panting[or]starts drooling profusely[or]twitches as his paw scratches behind the ear[at random]."
 Instead of smelling Cerberus, say "The intoxicating aroma of… wet dog?! Yuck!"
 Instead of kissing Cerberus, say "You have no interest in being covered in that much slobber.[if Cerberus is guarding] And your pretty sure he might bite your head of if you try.[end if]".
+Instead of attacking Cerberus, say "[if Cerberus is guarding]You want to what?! It's a huge angry three headed dog![paragraph break]Sanity check failed, you freeze on the spot in panic instead.[otherwise]But Cerberus is a poor innocent little three headed dog! Why hurt the poor thing?[end if]".
 Instead of touching Cerberus:
 	if Cerberus is guarding:
 		say "It is very clear by the look on each of his three faces that [Cerberus] has no intention of letting you touch him right now.";
@@ -216,7 +220,9 @@ Instead of taking, eating, tasting, or drinking the Huka:
 Every turn when the smoke-count of the player is greater than 1:
 	say "[one of]You see a strange fog roll in and encompasses you.[or]Suddenly, you see the walls twist and move as of they were under water.[or]You see blood dripping from the walls.[or]You see a pink elephant appear around the corner and then run off.[or]You hear crying next to you but when you turn there is no one there.[or]You see the room burst into flames! Quickly closing your eyes, when you open them the flames are gone.[or]You notice a white rabbit with a large watch hanging from it's neck hop into the room then promptly hop back out.[or]Fear flows through you after hearing a booming voice from above shout 'Error: cannot divide by zero!'[or]You look at your hand and realize it has grown five times a big as it was.[or]You jump out of the way of a few hundred little bugs crawling across the floor.[at random]".
 
-The strange woman is a female person in the Huka hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopee-do! She may be all that but she is so not a looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
+The strange woman is a goddess in the Huka hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopee-do! She may be all that but she is so not a looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
+Understand "girl" as the strange woman.
+Understand "Hecate" as the strange woman when the strange woman is proper-named.
 To learn Hecate's name:
 	if the strange woman is not examined:
 		now the printed name of the strange woman is "Hecate";
@@ -226,8 +232,6 @@ Instead of examining the strange woman for the first time:
 	learn Hecate's name;
 	say "Once the smoke clears for a bit you can see that the woman is in fact Hecate, a Greek goddess.";
 	try examining the strange woman.
-Understand "girl" as the strange woman.
-Understand "Hecate" as the strange woman when the strange woman is proper-named.
 Instead of telling the strange woman about something, try asking the strange woman about it.
 After asking the strange woman about a topic listed in the Table of Hecate's Replies, say "[The strange woman] looks at you and pauses to take another puff from [the Huka]. She then calmly replies '[reply entry]'[paragraph break]".
 After asking the strange woman about a topic:
@@ -280,8 +284,7 @@ The description of the ornate key is "A very detailed key made of cast metal. It
 Some cooks are male people in the dinner. The cooks are scenery. The description of the cooks is "Three mean looking Italian style cooks stand in a row behind the counter. They all look exactly the same and all stand motionless. Each has his arms crossed and is facing towards you. They all gaze forward never looking at you." The indefinite article is "three".
 The cooks can be full-of-sin.
 Understand "cook" or "Italian" or "Italians" as the cooks.
-Instead of telling the cooks about something, try asking the cooks about it.
-Instead of asking the cooks about something, say "They remain motionless. Arms still crossed and a dead stare at some distant object far away."
+Instead of doing something except examining with the cooks, say "They remain motionless. Arms still crossed and a dead stare at some distant object far away."
 Instead of giving a sin (called the sin) to the cooks:
 	if the cooks are full-of-sin:
 		say "None of the cooks seem interested. They are motionless.";
@@ -308,7 +311,7 @@ The silk is in the Pathway to Ascension. It is scenery. The description is "As s
 Persephone's Chamber is north of the Pathway to Ascension. "A large chamber made of crystal. Clear clean light descends from the crystal walls. The only exit is back to the south."
 Some crystals are here. They are scenery. The description is "Beautiful crystals line the chamber. They have an eerie glow coming from them. You also can not see what would be behind them as the crystals block any vision beyond them. You presume it's just part of the hut you in."
 The throne is here. It is a supporter. It is fixed in place. The description is "A standard ."
-Persephone is a female person. She is on the throne. The description is "You recognize her as Persephone. She is so beautiful that you are in awe of her beauty. Long silk white hair flows like water down her neck and back. Her eyes the color of deep green. Simply angelic."
+Persephone is a goddess. She is on the throne. The description is "You recognize her as Persephone. She is so beautiful that you are in awe of her beauty. Long silk white hair flows like water down her neck and back. Her eyes the color of deep green. Simply angelic."
 A person can be following.
 Instead of entering the throne:
 	say "[if Persephone is on the throne]I doubt very much that Persephone would be pleased if you sat on her.[otherwise]It would be very impolite to sit on Persephone's throne. It is hers.[end if]".
@@ -497,14 +500,14 @@ When play begins:
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
-Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / n / s" in the vestibule.
+Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / attack cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / attack cerberus / n / s" in the vestibule.
 Test diary with "look / x bed / take sheets / x sheets / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
-Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / x stone / x rock / ask hecate about stone" in the huka hut.
-Test cooks with "x stool / x counter / x stove / x cooks / x bowl / x spoon / sit on counter / sit on stool / take bowl / take spoon / put pride in bowl / ask cooks about dog / touch stove / touch pot / smell pot / x pot / give pride to cooks / x pot / give sloth to cooks / x pot / give gluttony to cooks / x pot / x bowl / take bowl / x soup / smell soup / taste soup / eat soup / x key / take key / s / n" in the dinner.
+Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / attack hecate / x stone / x rock / ask hecate about stone" in the huka hut.
+Test cooks with "x cooks / attack cooks / x stool / x counter / x stove / x cooks / x bowl / x spoon / sit on counter / sit on stool / take bowl / take spoon / put pride in bowl / ask cooks about dog / touch stove / touch pot / smell pot / x pot / give pride to cooks / x pot / give sloth to cooks / x pot / give gluttony to cooks / x pot / x bowl / take bowl / x soup / smell soup / taste soup / eat soup / x key / take key / s / n / kiss cooks" in the dinner.
 Test ornatedoor with "x door / open door / unlock door with key / lock door with key / unlock door with key / open door / w / close door / l / n / s / open door / e" holding the ornate key and the glowing stone in the main hall.
-Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / ask persephone about talking to hecate / s / unlock door with key / e / e / z/ z / z / w / w / n / ask persephone about talking to hecate / s / e / e / kick huka" holding the ornate key and the glowing stone in Persephone's Chamber.
+Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / ask persephone about talking to hecate / s / unlock door with key / e / e / z/ z / z / w / w / n / attack persephone / ask persephone about talking to hecate / s / e / e / kick huka" holding the ornate key and the glowing stone in Persephone's Chamber.
 
 
 [ vim: set wrap ts=2 noet: ]
