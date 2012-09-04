@@ -17,7 +17,7 @@ When play begins:
 	here and merely hoped that there wasn't an afterlife.
 	
 	-- Douglas Adams";
-	say "Life has been difficult. Stressed out, you decided to enlist the help of a local shaman. He will help you meditate. You close your eyes and slowly drift to another world.[paragraph break][italic type](For begginers you have been given [the handbook]. You can read it with the command 'READ BOOK')[roman type]".
+	say "Life has been difficult. Stressed out, you decided to enlist the help of a local shaman. He will help you meditate. You close your eyes and slowly drift to another world.[paragraph break][italic type](For beginers you have been given [the handbook]. You can read it with the command 'READ BOOK')[roman type]".
 
 
 Section 1 - Setup

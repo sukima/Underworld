@@ -1,0 +1,24 @@
+(A) Ask woman about herself: should make you know her name
+(A) Attack Woman: missleading response
+(A) Enter vestuble first see cerberus described as "a three headed dog" Add name tag to queue player
+(A) ask persephone about talking to hecate: does not tell player that she is following.
+(A) ask woman about persephone: response grammer
+(A) attach knob to door
+(A) examone throne
+(A) look under bed: confusing
+(A) open south dresser
+(A) search bed
+(A) search north dresser: gives key with no indication to reader
+(A) talk to ...: unknown verb
+(B) Make hints reveal only when available to the player
+(B) add full score command
+Examine AMUSING regarding the huka smoking
+Give [a 4th sin] to cerberus: seems odd
+You are carrying ["the sin of" / "the sins of"] ...
+ask hecate about persephone grammer
+eat flowers / take flowers
+examine me
+medusa: what point is this here
+persephone's random responses have an extra [paragraph break]
+plugh / xyzzy
+sit on flowers
