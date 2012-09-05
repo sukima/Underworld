@@ -64,6 +64,10 @@ Instead of attacking a goddess, say "It is not polite to be violent towards a go
 
 Understand "kick [something]" or "punch [something]" as attacking.
 
+Talking is an action applying to one thing. Carry out talking:
+	say "It is possible that [the noun] would be more interested in a specific topic instead of idle chit chat. Try asking [the noun] about a topic instead."
+Understand "talk to [a person]" as talking.
+
 
 Section 2 - Outside The Hut
 
