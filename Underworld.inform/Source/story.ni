@@ -9,6 +9,7 @@ The story creation year is 2012.
 Release along with the library card, a website, an interpreter, and the source text.
 
 Include Basic Help Menu by Emily Short.
+Include Version 4 of Achievements by Mikael Segercrantz.
 
 When play begins:
 	display the boxed quotation
@@ -21,18 +22,6 @@ When play begins:
 
 
 Section 1 - Setup
-
-Table 1 - Rankings
-Score	Rank
-0	"someone who is not paying attention"
-5	"a beginners mind"
-10	"an opened mind"
-25	"a free mind"
-30	"a wise mind"
-45	"a trained mind"
-50	"an enlightened mind"
-
-The maximum score is 50.
 
 A sin is a kind of thing. The description of a sin is "[if the player carries the noun]After deep reflection you realize you are still burdened with [the noun][otherwise]It was hard enough letting go of [the noun]. You really don't want it back[end if]."
 Before listing contents: group sins together.
@@ -89,7 +78,6 @@ Instead of searching the flowers when the door knob is lost:
 	now the door knob is found;
 	move door knob to the Garden;
 	set pronouns from knob;
-	increase the score by 5;
 	say "You found [a door knob]!".
 Instead of searching the flowers: say "Further searching reveals nothing more."
 
@@ -103,11 +91,13 @@ Understand "glow" or "movement" or "inset" as round windows.
 
 The wooden door is north of the Front Yard and south of the Vestibule. It is a locked door and scenery. It is not lockable. The description is "An ornate wooden door is set into the round alcove of the hill. [if locked]You notice that the door knob has gone missing and there no way to open it now.[end if]".
 Instead of opening the wooden door when the wooden door is locked: say "You cannot open this door with out replacing the missing door knob."
-Instead of putting the door knob on the wooden door:
+To fix the door:
 	say "You carefully slide [the door knob] onto [the wooden door] until you hear a small click. [The door knob] now looks like it is a part of [the wooden door].";
 	remove the door knob from play;
 	now the wooden door is unlocked;
-	increase the score by 5;
+	score the achievement with message "fixing the wooden door".
+Instead of putting the door knob on the wooden door, fix the door.
+Instead of tying the door knob to the wooden door, fix the door.
 Instead of unlocking the wooden door with the door knob: try putting the door knob on the wooden door.
 Does the player mean doing something to the wooden door: it is very likely.
 Does the player mean putting something on the wooden door: it is likely.
@@ -135,10 +125,10 @@ Instead of giving a sin (called the sin) to Cerberus:
 	if Cerberus is carrying more than 2 sins:
 		say "[Cerberus] [one of]does not have any more heads[or]is not interested in any more[or]is content playing with what he has already[purely at random].";
 	otherwise:
-		increase the score by 5;
 		move the sin to Cerberus;
 		say "You carefully hand [Cerberus] [the sin]. One of his heads bends down takes it and begins to chew vigorously on [the sin].[first time] (How is that even possible?)[only]";
 		if Cerberus has more than 2 sins:
+			score the achievement with message "giving Cerberus some chew toys";
 			now Cerberus is not guarding;
 			say "[Cerberus] seems very happy. He trots off to the side and lays down chewing on [the list of sins carried by Cerberus]."
 Before going north from the vestibule when Cerberus is guarding:
@@ -191,7 +181,7 @@ Instead of reading the diary:
 	if the diary is not proper-named:
 		now the printed name of the diary is "Persephone's Diary";
 		now the diary is proper-named;
-		now the printed name of the south dresser is "Persphone's dresser";
+		now the printed name of the south dresser is "Persephone's dresser";
 		now the south dresser is proper-named;
 		now the printed name of the north dresser is "Hecate's dresser";
 		now the north dresser is proper-named;
@@ -258,7 +248,7 @@ Instead of giving a sin (called the sin) to the strange woman:
 	otherwise:
 		move the sin to the strange woman;
 		move the glowing stone to the player;
-		increase the score by 5;
+		score the achievement with message "bartering with Hecate";
 		say "[The strange woman] gladly takes [the sin] and smiles. She gives you [a glowing stone]. 'Good luck on your travels' she says and returns to her deep thoughts."
 Every turn when the smoke-count of the player is greater than 0 and the player can not see the Huka:
 	decrement the smoke-count of the player;
@@ -299,9 +289,9 @@ Instead of giving a sin (called the sin) to the cooks:
 		say "None of the cooks seem interested. They are motionless.";
 	otherwise:
 		move the sin to the pot;
-		increase the score by 5;
 		say "You put your hand out to offer [the sin] to [the cooks]. [one of]One of them[or]Another cook[or]The last cook[cycling] unfolds his arms and takes [the sin]. He turns around and places it into [the pot]. It bubbles as he stirs. He then returns to his motionless gaze with his arms crossed.";
 		if the pot contains more than 2 sins:
+			score the achievement with message "giving the cooks some sinful ingredients";
 			now the cooks are full-of-sin;
 			move the soup to the bowl;
 			say "The middle cook grabs [the bowl] turns and fills it with [the soup] then places [the bowl] back on [the counter].";
@@ -362,7 +352,7 @@ After asking Persephone about a topic:
 		otherwise:
 			now Persephone is following;
 			now the argument counter is 0;
-			increase score by 5; [TODO: should only happen once]
+			score the achievement with message "convincing Persephone to talk to Hecate";
 			say "[Persephone] says 'Maybe I should talk to Hecate. Oh but I[']m nervous can you take me to her? I'll follow you.'";
 	otherwise:
 		say "She [if the location of Persephone is the Huka Hut]ignores you[otherwise]replies 'I[']m sorry, I really can[']t think about that right now[end if].".
@@ -462,7 +452,36 @@ title	subtable	description
 "Samhain"	--	"Hecate has gotten visibly older. My concerns were true. All she wants to do is smoke that huka. I'm so angry [bold type]this isn't fair![roman type] I've cried so much lately. I think I have officially lost my beloved.[paragraph break]I tried to confront her about it and she lashed out at me. Called me a ninny. Said I was bring all the good things down. I had to run away for a while."
 "Yule"	--	"There is no talking to her anymore. I can't get a word in edge wise. Oh how I wish I could destroy that damn huka. Every time I try she nearly attacks me. She has gotten so old now. I can't even bare to be in the house; it's too painful to remember. The only place I still feel safe is in my throne room. I'm so sad. I don't even have the energy to write in her anymore."
 
-Section 11 - Hints
+
+Section 11 - Scoring
+
+Table of Achievements (continued)
+used	points	message
+0	5	"fixing the wooden door"
+0	5	"giving Cerberus some chew toys"
+0	5	"bartering with Hecate"
+0	5	"giving the cooks some sinful ingredients"
+0	10	"convincing Persephone to talk to Hecate"
+
+Table of Scored Objects (continued)
+used	points	object
+0	5	door knob
+0	5	diary
+0	5	ornate key
+0	5	skeleton key
+
+Table of Achievement Rankings (continued)
+minimum	rank
+0	"someone who is not paying attention"
+5	"a beginners mind"
+10	"an opened mind"
+25	"a free mind"
+30	"a wise mind"
+45	"a trained mind"
+50	"an enlightened mind"
+
+
+Section 12 - Hints
 
 Table of Hints
 title	subtable	description	toggle
@@ -531,7 +550,7 @@ Rule for amusing a victorious player:
 	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Huka]?"
 
 
-Section 12 - Testing - Not for release
+Section 13 - Testing - Not for release
 
 Table of Basic Help Options (continued)
 title	subtable	description
@@ -543,10 +562,10 @@ When play begins:
 	say "[line break]TESTERS: Please read the notes on testing provided in the handbook ('READ BOOK').".
 
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
-Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / test ending / amusing".
+Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / test ending / amusing / full".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / attack cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / attack cerberus / n / s" in the vestibule.
-Test diary with "look / x bed / take sheets / x sheets / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
+Test diary with "look / x bed / take sheets / x sheets / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x skeleton key / unlock drawer with skeleton key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
 Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
 Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
 Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / attack hecate / x stone / x rock / ask hecate about stone" in the huka hut.

@@ -1,4 +1,4 @@
-(A) add full score command
+(A) Fix huka to hookah
 (A) ask woman about persephone: response grammer
 (A) attach knob to door
 (A) examone throne
