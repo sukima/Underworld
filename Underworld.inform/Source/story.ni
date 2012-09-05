@@ -10,6 +10,8 @@ Release along with the library card, a website, an interpreter, and the source t
 
 Include Basic Help Menu by Emily Short.
 Include Version 4 of Achievements by Mikael Segercrantz.
+Include Smarter Parser by Aaron Reed.
+Include Commonly Unimplemented by Aaron Reed.
 
 When play begins:
 	display the boxed quotation
@@ -67,6 +69,8 @@ Understand "kick [something]" or "punch [something]" as attacking.
 Talking is an action applying to one thing. Carry out talking:
 	say "It is possible that [the noun] would be more interested in a specific topic instead of idle chit-chat. Try asking [the noun] about a topic instead."
 Understand "talk to [a person]" as talking.
+
+The description of the player is "[one of]Gasp! you're missing a shoe! one shoe![or]You feel a wave of relief when you realize this is [bold type]not[roman type] one of those dreams where you find your self naked.[or]1…2…3…4…5. Yup you still have all your fingers.[or]No wait, vanity is a sin right? No it isn[']t. Or maybe… Nah could[']t be.[or]You look just smashing![purely at random]".
 
 
 Section 2 - Outside The Hut

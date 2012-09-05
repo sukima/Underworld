@@ -1,6 +1,4 @@
-examine me
 medusa: what point is this here
-persephone's random responses have an extra [paragraph break]
 plugh / xyzzy
 sit on flowers
 Make hints reveal only when available to the player (not worth it)
