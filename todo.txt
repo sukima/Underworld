@@ -1,12 +1,7 @@
-(B) Make hints reveal only when available to the player
-Do something more amusing with sit on throne
-Examine AMUSING regarding the huka smoking
-Give [a 4th sin] to cerberus: seems odd
-You are carrying ["the sin of" / "the sins of"] ...
-ask hecate about persephone grammer
-eat flowers / take flowers
 examine me
 medusa: what point is this here
 persephone's random responses have an extra [paragraph break]
 plugh / xyzzy
 sit on flowers
+Make hints reveal only when available to the player (not worth it)
+You are carrying ["the sin of" / "the sins of"] ...

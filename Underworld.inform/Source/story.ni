@@ -65,7 +65,7 @@ Instead of attacking a goddess, say "It is not polite to be violent towards a go
 Understand "kick [something]" or "punch [something]" as attacking.
 
 Talking is an action applying to one thing. Carry out talking:
-	say "It is possible that [the noun] would be more interested in a specific topic instead of idle chit chat. Try asking [the noun] about a topic instead."
+	say "It is possible that [the noun] would be more interested in a specific topic instead of idle chit-chat. Try asking [the noun] about a topic instead."
 Understand "talk to [a person]" as talking.
 
 
@@ -84,6 +84,8 @@ Instead of searching the flowers when the door knob is lost:
 	set pronouns from knob;
 	say "You found [a door knob]!".
 Instead of searching the flowers: say "Further searching reveals nothing more."
+Instead of eating or tasting the flowers, say "They do not look very appetizing."
+Instead of taking the flowers, say "Please don't harm the plant life."
 
 The Front Yard is north of the Garden. "This looks like the side of a hill and if you didn't know any better you would think that was the case. Instead, you see a few round windows set within the grassy hill and a round inset with a door big enough for you to enter if you were to crouch down a bit. There is a warn path winding down the hill to the garden."
 
@@ -127,7 +129,7 @@ Instead of touching Cerberus:
 		say "[Cerberus] lifts one of his heads to help you reach a particularly difficult spot behind one of his ears."
 Instead of giving a sin (called the sin) to Cerberus:
 	if Cerberus is carrying more than 2 sins:
-		say "[Cerberus] [one of]does not have any more heads[or]is not interested in any more[or]is content playing with what he has already[purely at random].";
+		say "[Cerberus] [one of]is busy chewing on the sins you already gave him[or]is not interested in any more[or]is content playing with what he has already[purely at random].";
 	otherwise:
 		move the sin to Cerberus;
 		say "You carefully hand [Cerberus] [the sin]. One of his heads bends down takes it and begins to chew vigorously on [the sin].[first time] (How is that even possible?)[only]";
@@ -317,7 +319,7 @@ The silk is in the Pathway to Ascension. It is scenery. The description is "As s
 
 Persephone's Chamber is north of the Pathway to Ascension. "A large chamber made of crystal. Clear clean light descends from the crystal walls. The only exit is back to the south."
 Some crystals are here. They are scenery. The description is "Beautiful crystals line the chamber. They have an eerie glow coming from them. You also can not see what would be behind them as the crystals block any vision beyond them. You presume it's just part of the hut you in."
-The throne is here. It is a supporter. It is fixed in place. The description is "This is your basic throne. It sits in the center of the room. In fact it seems it is the only piece of furniture in the room at all! It does have some nice ornaments, a few jewels, some gold. But with the dust and tarnish it really isn't all that impressive."
+The throne is here. It is a supporter. It is fixed in place and enterable. The description is "This is your basic throne. It sits in the center of the room. In fact it seems it is the only piece of furniture in the room at all! It does have some nice ornaments, a few jewels, some gold. But with the dust and tarnish it really isn't all that impressive."
 
 To send her home:
 	now Persephone is not following;
@@ -337,8 +339,7 @@ Understand "ask persephone to stop following" as stop following.
 
 Persephone is a goddess. She is on the throne. The description is "You recognize her as Persephone. Long silk white hair flows like water down her neck and back. Her eyes the color of deep green. Simply angelic."
 A person can be following.
-Instead of entering the throne:
-	say "[if Persephone is on the throne]I doubt very much that Persephone would be pleased if you sat on her.[otherwise]It would be very impolite to sit on Persephone's throne. It is hers.[end if]".
+Instead of entering the throne when Persephone is on the throne, say "I doubt very much that Persephone would be pleased if you sat on her."
 Every turn when in Persephone's Chamber and the player can see Persephone and Persephone is not following:
 	if Persephone is on the throne:
 		if a random chance of 1 in 4 succeeds:
@@ -348,8 +349,11 @@ Every turn when in Persephone's Chamber and the player can see Persephone and Pe
 			say "Persephone [one of]seems lost in thought.[or]says 'I just don[']t understand her.'[or]fidgets with her hands.[or]shifts herself uncomfortably from side to side.[or]mutters something under her breath.[or]begins to cry a little and then composes herself again.[or]slams her hand on the throne in anger.[at random]";
 	otherwise:
 		if a random chance of 1 in 3 succeeds:
-			move Persephone to the throne;
-			say "Persephone sits back down on [the throne] and leans on her elbow.";
+			if the player is on the throne:
+				say "[Persephone] says 'If you don't mind, I feel I might need to sit down.'";
+			otherwise:
+				move Persephone to the throne;
+				say "Persephone sits back down on [the throne] and leans on her elbow.";
 		otherwise:
 			say "Persephone [one of]begins pacing back and forth.[or]places her head in her hands for a few moments.[or]says 'You know what the worst part is? She doesn[']t even have the nerve to apologize!'[or]asks 'Is there something wrong with me?'[or]starts crying. She stops pacing to compose herself before continuing her pacing.[or]says 'I used to like [the Hookah] to. But something went wrong.'[at random]".
 Instead of telling Persephone about something, try asking Persephone about it.
@@ -555,7 +559,7 @@ hint	used
 "Did you try to break [the Hookah] while Persephone distracted [the strange woman]?"
 
 Rule for amusing a victorious player:
-	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Hookah]?"
+	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Hookah] a bunch of times?"
 
 
 Section 13 - Testing - Not for release
