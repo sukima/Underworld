@@ -73,6 +73,8 @@ Carry out asking for help: say "You should have been given a copy of '[The handb
 A goddess is a kind of person who is female.
 Instead of attacking a goddess, say "It is not polite to be violent towards a goddess regardless of your feelings towards her."
 
+Understand "kick [something]" or "punch [something]" as attacking.
+
 
 Section 2 - Outside The Hut
 
@@ -233,13 +235,20 @@ Instead of examining the strange woman for the first time:
 	say "Once the smoke clears for a bit you can see that the woman is in fact Hecate, a Greek goddess.";
 	try examining the strange woman.
 Instead of telling the strange woman about something, try asking the strange woman about it.
-After asking the strange woman about a topic listed in the Table of Hecate's Replies, say "[The strange woman] looks at you and pauses to take another puff from [the Huka]. She then calmly replies '[reply entry]'[paragraph break]".
-After asking the strange woman about a topic:
-	if the topic understood includes "herself/woman":
-		learn Hecate's name;
-		say "My name is Hecate and it is a pleasure to see you.";
+After asking the strange woman about a topic listed in the Table of Hecate's Replies:
+	if the location of Persephone is the Huka Hut:
+		say "She ignores you.";
 	otherwise:
-		say "After a long pause while she puffed on [the Huka], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [Huka][or]Have some of [the Huka] with me and we can contemplate on that[purely at random].'[paragraph break]". 
+		say "[The strange woman] looks at you and pauses to take another puff from [the Huka]. She then calmly replies '[reply entry]'[paragraph break]".
+After asking the strange woman about a topic:
+	if the location of Persephone is the Huka Hut:
+		say "She ignores you.";
+	otherwise:
+		if the topic understood includes "herself/woman":
+			learn Hecate's name;
+			say "My name is Hecate and it is a pleasure to see you.";
+		otherwise:
+			say "After a long pause while she puffed on [the Huka], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [Huka][or]Have some of [the Huka] with me and we can contemplate on that[purely at random].'[paragraph break]". 
 Every turn when the player can see the strange woman and the location of Persephone is not the Huka hut:
 	say "[The strange woman] [one of]takes a deep puff from [the Huka][or]looks at you for a moment and contemplates[or]seems to be lost in thought[or]coughs and then clears her throat[purely at random].".
 Instead of kissing a person, say "[if the player carries lust]Seems your carrying [lust] for a reason![otherwise]Didn[']t you already get ride of [lust]?[end if]".
@@ -311,7 +320,24 @@ The silk is in the Pathway to Ascension. It is scenery. The description is "As s
 Persephone's Chamber is north of the Pathway to Ascension. "A large chamber made of crystal. Clear clean light descends from the crystal walls. The only exit is back to the south."
 Some crystals are here. They are scenery. The description is "Beautiful crystals line the chamber. They have an eerie glow coming from them. You also can not see what would be behind them as the crystals block any vision beyond them. You presume it's just part of the hut you in."
 The throne is here. It is a supporter. It is fixed in place. The description is "A standard ."
-Persephone is a goddess. She is on the throne. The description is "You recognize her as Persephone. She is so beautiful that you are in awe of her beauty. Long silk white hair flows like water down her neck and back. Her eyes the color of deep green. Simply angelic."
+
+To send her home:
+	now Persephone is not following;
+	now the argument counter is 0;
+	move Persephone to Persephone's Chamber.
+
+Stop following is an action applying to nothing. Carry out stop following:
+	if Persephone is following:
+		send her home;
+		say "You send [Persephone] on her way. She walks back from whence she came.";
+	otherwise:
+		say "No one seems to be following you at the moment.".
+Understand "stop following" as stop following.
+Understand "tell persephone to stop following" as stop following.
+Understand "ask persephone to stop following" as stop following.
+
+
+Persephone is a goddess. She is on the throne. The description is "You recognize her as Persephone. Long silk white hair flows like water down her neck and back. Her eyes the color of deep green. Simply angelic."
 A person can be following.
 Instead of entering the throne:
 	say "[if Persephone is on the throne]I doubt very much that Persephone would be pleased if you sat on her.[otherwise]It would be very impolite to sit on Persephone's throne. It is hers.[end if]".
@@ -329,28 +355,47 @@ Every turn when in Persephone's Chamber and the player can see Persephone and Pe
 		otherwise:
 			say "Persephone [one of]begins pacing back and forth.[or]places her head in her hands for a few moments.[or]says 'You know what the worst part is? She doesn[']t even have the nerve to apologize!'[or]asks 'Is there something wrong with me?'[or]starts crying. She stops pacing to compose herself before continuing her pacing.[or]says 'I used to like [the Huka] to. But something went wrong.'[at random]".
 Instead of telling Persephone about something, try asking Persephone about it.
-After asking Persephone about "talking to Hecate":
-	now Persephone is following;
-	increase the score by 5;
-	say "She says 'OK, I[']ll try it. Take me to her.'".
-After asking Persephone about a topic listed in the Table of Persephone's Replies, say "Persephone looks at you for a moment and says '[reply entry]'[paragraph break]".
-After asking Persephone about something, say "She replies 'I[']m sorry, I really can[']t think about that right now."
+After asking Persephone about a topic:
+	if the topic understood includes "talk/talking/follow/following":
+		if Persephone is following:
+			say "[Persephone] says 'Yes I know, please take me to her before I lose my nerve.'";
+		otherwise:
+			now Persephone is following;
+			now the argument counter is 0;
+			increase score by 5; [TODO: should only happen once]
+			say "[Persephone] says 'Maybe I should talk to Hecate. Oh but I[']m nervous can you take me to her? I'll follow you.'";
+	otherwise:
+		say "She [if the location of Persephone is the Huka Hut]ignores you[otherwise]replies 'I[']m sorry, I really can[']t think about that right now[end if].".
+After asking Persephone about a topic listed in the Table of Persephone's Replies, say "[Persephone] looks at you for a moment and says '[reply entry]'[paragraph break]".
+Instead of asking Persephone to try stop following:
+	try stop following.
+Instead of asking Persephone to try doing something, say "She seems to stand still despite your request."
+
 Every turn when Persephone is following:
 	if the location of Persephone is not the location of the player:
 		let the way be the best route from the location of Persephone to the location of the player, using doors;
 		try Persephone going the way;
 	otherwise:
-		say "[one of]Persephone asks, 'You really think this will work?'[or]Persephone looks nervous[or]Persephone gives out a sigh.[purely at random]";
+		say "[Persephone] [one of]asks, 'You really think this will work?'[or]looks nervous[or]gives out a long sigh.[purely at random]";
 	if the location of Persephone is the Huka hut:
 		now Persephone is not following;
 		Persephone leaves in 3 turns from now;
 		say "As Persephone enters [the Huka hut], [the strange woman] stands up and turns to meet her."
+The argument counter is a number variable.
 At the time when Persephone leaves:
 	say "[if the player can see Persephone]Persephone bursts out crying leaving [the Huka hut][otherwise]You hear Persephone crying. The sound fades[end if].";
-	move Persephone to Persephone's Chamber.
+	send her home.
 Every turn when the location of Persephone is the Huka hut:
-	say "[one of][Persephone] asks [the strange woman] 'Please, I beg you, can we talk?'[or][the strange woman] replies 'And what's to say? You'll just complain about my [Huka].'[or][Persephone] says 'Well your always so consumed by the damn thing.'[or][the strange woman] shouts 'See I told you so. Now get out!' and she sits back down and takes another puff of [the Huka].[cycling]".
-Understand "kick [something]" or "punch [something]" as attacking.
+	increment the argument counter;
+	if the player can see Persephone:
+		if argument counter is:
+			-- 1: say "[Persephone] asks [the strange woman] 'Please, I beg you, can we talk?'";
+			-- 2: say "[the strange woman] replies 'And what's to say? You'll just complain about my [Huka].'";
+			-- 3: say "[Persephone] says 'Well your always so consumed by the damn thing.'";
+			-- 4: say "[the strange woman] shouts 'See I told you so. Now get out!' and she sits back down and takes another puff of [the Huka].";
+	otherwise:
+		say "You can hear an argument unsung in the distance.".
+
 Instead of attacking the Huka:
 	if the location of Persephone is the Huka hut:
 		say "You break [the Huka]. Shards of glass fall to the floor. The fire that produced the smoke is extinguished when it falls in the large puddle of water. [The strange woman] turns in horror at the mess. [Persephone] is silent.[paragraph break][The strange woman] was about to say something when her body suddenly changes. Her wrinkles go away. Her nose returns to a normal size. Even her eyes seem to brighten up. She becomes quite beautiful.[paragraph break][Persephone] exclaims 'Hecate! You… Oh my! You look how I remember you did before we got that terrible [Huka].'[paragraph break][the strange woman] looks back at [Persephone] and says 'I… I feel so different. What happened? [Persephone], I… I[']m so sorry.[paragraph break][Persephone] replies with a gentle smile 'Oh it so good to have you back Hecate.' And she quickly kisses [the strange woman].[paragraph break][Persephone] turns to you and says 'Thank you so very much. I will return you from where you came. You will always have our blessings.'";
@@ -498,7 +543,7 @@ When play begins:
 	say "[line break]TESTERS: Please read the notes on testing provided in the handbook ('READ BOOK').".
 
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
-Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / amusing".
+Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / test ending / amusing".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / attack cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / attack cerberus / n / s" in the vestibule.
 Test diary with "look / x bed / take sheets / x sheets / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x key / unlock drawer with key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
@@ -507,7 +552,9 @@ Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
 Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / attack hecate / x stone / x rock / ask hecate about stone" in the huka hut.
 Test cooks with "x cooks / attack cooks / x stool / x counter / x stove / x cooks / x bowl / x spoon / sit on counter / sit on stool / take bowl / take spoon / put pride in bowl / ask cooks about dog / touch stove / touch pot / smell pot / x pot / give pride to cooks / x pot / give sloth to cooks / x pot / give gluttony to cooks / x pot / x bowl / take bowl / x soup / smell soup / taste soup / eat soup / x key / take key / s / n / kiss cooks" in the dinner.
 Test ornatedoor with "x door / open door / unlock door with key / lock door with key / unlock door with key / open door / w / close door / l / n / s / open door / e" holding the ornate key and the glowing stone in the main hall.
-Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / ask persephone about talking to hecate / s / unlock door with key / e / e / z/ z / z / w / w / n / attack persephone / ask persephone about talking to hecate / s / e / e / kick huka" holding the ornate key and the glowing stone in Persephone's Chamber.
+Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / attack persephone / persephone, go south / test following" in Persephone's Chamber.
+Test following with "stop following / persephone, go north / ask persephone about talking to hecate / s / unlock door with key / e / e / ask woman about dog / ask persephone about dog / z / w / w / n / ask persephone about talking / ask persephone about following / s / e / e / w / e / w / w / n / ask persephone about following / stop following / ask persephone about following / persephone, stop following / ask persephone about following / tell persephone to stop following" holding the ornate key and the glowing stone in Persephone's Chamber.
+Test ending with "ask persephone about talking to hecate / s / e / e / kick huka" holding the ornate key and the glowing stone in Persephone's Chamber.
 
 
 [ vim: set wrap ts=2 noet: ]

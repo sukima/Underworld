@@ -1,4 +1,4 @@
-(A) ask persephone about talking to hecate: does not tell player that she is following.
+(A) add full score command
 (A) ask woman about persephone: response grammer
 (A) attach knob to door
 (A) examone throne
@@ -8,7 +8,7 @@
 (A) search north dresser: gives key with no indication to reader
 (A) talk to ...: unknown verb
 (B) Make hints reveal only when available to the player
-(B) add full score command
+Do something more amusing with sit on throne
 Examine AMUSING regarding the huka smoking
 Give [a 4th sin] to cerberus: seems odd
 You are carrying ["the sin of" / "the sins of"] ...
