@@ -414,7 +414,7 @@ Topic	Reply
 "sin/sins"	"None of us down here can get enough of them."
 "cook/cooks"	"They make the very best soup. Lately they have been out of ingredients."
 "soup"	"Do you have any? It's so tasty!"
-"Persephone"	"She seems upset with me. I found it easier to deal with by smoking some [Hookah]."
+"Persephone"	"She seems upset with me. I found it easier to deal with the problem by smoking more from my [Hookah]."
 "dark/darkness"	"I know of a stone that glows like the sun."
 "Medusa"	"I dated her once. Let[']s just say it was a little [italic type]hard[roman type] to deal with. And all I got out of it was [a glowing stone]."
 "apology/sorry/apologize"	"Why should I when all I need is right here in this room?"
