@@ -193,26 +193,27 @@ Understand "persephone's diary" or "persephone's journal" as the diary when the 
 Understand "journal" as the diary.
 
 
-Section 5 - The Huka Hut
+Section 5 - The Hookah Hut
 
-The Huka hut is east of the Main Hall. "This room has large cushions laying about the floor. All of then colored in tie die. The room is filled with smoke. No doubt from the large Huka standing in the center of the room."
-Some cushions are enterable, scenery and supporters in the Huka hut. "The cushions are large and made of a tough knitted fabric styled like a tie died T-Shirt. They look very comfortable to sit in."
+The Hookah hut is east of the Main Hall. "This room has large cushions laying about the floor. All of then colored in tie die. The room is filled with smoke. No doubt from the large Hookah standing in the center of the room."
+Understand "huka" or "hukka" or "huqqah" or "waterpipe" or "pipe" as the hookah.
+Some cushions are enterable, scenery and supporters in the Hookah hut. "The cushions are large and made of a tough knitted fabric styled like a tie died T-Shirt. They look very comfortable to sit in."
 Understand "cushion" as the cushions.
 The glowing stone is a thing. The description is "A rock that glows brightly." It is lit.
 Understand "rock" as the glowing stone.
-A thing called the Huka is in the Huka hut. The Huka is fixed in place. The description of the Huka is "A large bottle shaped device stands in the middle of the room. It has several tubes coming out of it, water inside and smoke emanating from the top."
-Instead of smelling the Huka: say "You smell a delightful scent of rose and honey just before you begin sneezing."
-Understand "pipe" or "tube" or "tubes" or "smoke" as the Huka.
+A thing called the Hookah is in the Hookah hut. The Hookah is fixed in place. The description of the Hookah is "A large bottle shaped device stands in the middle of the room. It has several tubes coming out of it, water inside and smoke emanating from the top."
+Instead of smelling the Hookah: say "You smell a delightful scent of rose and honey just before you begin sneezing."
+Understand "pipe" or "tube" or "tubes" or "smoke" as the Hookah.
 Understand "smoke [something]" as tasting.
-Instead of taking, eating, tasting, or drinking the Huka:
+Instead of taking, eating, tasting, or drinking the Hookah:
 	increment the smoke-count of the player;
-	say "You place a pipe from the side of [the Huka] and put it in your mouth. You suck a large mouth full of smoke and attempt to hold your breath.[paragraph break][if the smoke-count of the player is 1]Suddenly you start coughing violently[otherwise if the smoke-count of the player is 2]Your head begins to spin[otherwise if the smoke-count of the player is 3]You become nauseous[otherwise if the smoke-count of the player is 4]The world is completely blurry. You don't feel well[otherwise]The world is so faded that all you can see is black. You feel detached from your body[end if].";
+	say "You place a pipe from the side of [the Hookah] and put it in your mouth. You suck a large mouth full of smoke and attempt to hold your breath.[paragraph break][if the smoke-count of the player is 1]Suddenly you start coughing violently[otherwise if the smoke-count of the player is 2]Your head begins to spin[otherwise if the smoke-count of the player is 3]You become nauseous[otherwise if the smoke-count of the player is 4]The world is completely blurry. You don't feel well[otherwise]The world is so faded that all you can see is black. You feel detached from your body[end if].";
 	if the smoke-count of the player is greater than 4:
 		end the story saying "You have blacked out."
 Every turn when the smoke-count of the player is greater than 1:
 	say "[one of]You see a strange fog roll in and encompasses you.[or]Suddenly, you see the walls twist and move as of they were under water.[or]You see blood dripping from the walls.[or]You see a pink elephant appear around the corner and then run off.[or]You hear crying next to you but when you turn there is no one there.[or]You see the room burst into flames! Quickly closing your eyes, when you open them the flames are gone.[or]You notice a white rabbit with a large watch hanging from it's neck hop into the room then promptly hop back out.[or]Fear flows through you after hearing a booming voice from above shout 'Error: cannot divide by zero!'[or]You look at your hand and realize it has grown five times a big as it was.[or]You jump out of the way of a few hundred little bugs crawling across the floor.[at random]".
 
-The strange woman is a goddess in the Huka hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopee-do! She may be all that but she is so not a looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
+The strange woman is a goddess in the Hookah hut. The description of the strange woman is "Hecate, Greek goddess of the three paths, guardian of the household, protector of everything newly born, and the goddess of witchcraft. Yeah, yeah, yeah. Whoopee-do! She may be all that but she is so not a looker. She looks like she is strung out and looking for a fix. [if the strange woman carries a sin]She is smiling at you[otherwise]She seems dismissive of you[end if]."
 Understand "girl" as the strange woman.
 Understand "Hecate" as the strange woman when the strange woman is proper-named.
 To learn Hecate's name:
@@ -226,21 +227,21 @@ Instead of examining the strange woman for the first time:
 	try examining the strange woman.
 Instead of telling the strange woman about something, try asking the strange woman about it.
 After asking the strange woman about a topic listed in the Table of Hecate's Replies:
-	if the location of Persephone is the Huka Hut:
+	if the location of Persephone is the Hookah Hut:
 		say "She ignores you.";
 	otherwise:
-		say "[The strange woman] looks at you and pauses to take another puff from [the Huka]. She then calmly replies '[reply entry]'[paragraph break]".
+		say "[The strange woman] looks at you and pauses to take another puff from [the Hookah]. She then calmly replies '[reply entry]'[paragraph break]".
 After asking the strange woman about a topic:
-	if the location of Persephone is the Huka Hut:
+	if the location of Persephone is the Hookah Hut:
 		say "She ignores you.";
 	otherwise:
 		if the topic understood includes "herself/woman":
 			learn Hecate's name;
 			say "My name is Hecate and it is a pleasure to see you.";
 		otherwise:
-			say "After a long pause while she puffed on [the Huka], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [Huka][or]Have some of [the Huka] with me and we can contemplate on that[purely at random].'[paragraph break]". 
-Every turn when the player can see the strange woman and the location of Persephone is not the Huka hut:
-	say "[The strange woman] [one of]takes a deep puff from [the Huka][or]looks at you for a moment and contemplates[or]seems to be lost in thought[or]coughs and then clears her throat[purely at random].".
+			say "After a long pause while she puffed on [the Hookah], she turns to you to say '[one of]I[']m sorry, I really don[']t know what your talking about[or]I can not conjecture on that now[or]I think you have been smoking a little to much of this [Hookah][or]Have some of [the Hookah] with me and we can contemplate on that[purely at random].'[paragraph break]". 
+Every turn when the player can see the strange woman and the location of Persephone is not the Hookah hut:
+	say "[The strange woman] [one of]takes a deep puff from [the Hookah][or]looks at you for a moment and contemplates[or]seems to be lost in thought[or]coughs and then clears her throat[purely at random].".
 Instead of kissing a person, say "[if the player carries lust]Seems your carrying [lust] for a reason![otherwise]Didn[']t you already get ride of [lust]?[end if]".
 Instead of giving a sin (called the sin) to the strange woman:
 	if the strange woman is carrying a sin:
@@ -250,7 +251,7 @@ Instead of giving a sin (called the sin) to the strange woman:
 		move the glowing stone to the player;
 		score the achievement with message "bartering with Hecate";
 		say "[The strange woman] gladly takes [the sin] and smiles. She gives you [a glowing stone]. 'Good luck on your travels' she says and returns to her deep thoughts."
-Every turn when the smoke-count of the player is greater than 0 and the player can not see the Huka:
+Every turn when the smoke-count of the player is greater than 0 and the player can not see the Hookah:
 	decrement the smoke-count of the player;
 	say "[one of]The fog seems to be lifting[or]The spinning world slows down a bit[or]You feel like your standing on both feet again[or]You begin to feel a bit calmer[at random]."
 
@@ -343,7 +344,7 @@ Every turn when in Persephone's Chamber and the player can see Persephone and Pe
 			move Persephone to the throne;
 			say "Persephone sits back down on [the throne] and leans on her elbow.";
 		otherwise:
-			say "Persephone [one of]begins pacing back and forth.[or]places her head in her hands for a few moments.[or]says 'You know what the worst part is? She doesn[']t even have the nerve to apologize!'[or]asks 'Is there something wrong with me?'[or]starts crying. She stops pacing to compose herself before continuing her pacing.[or]says 'I used to like [the Huka] to. But something went wrong.'[at random]".
+			say "Persephone [one of]begins pacing back and forth.[or]places her head in her hands for a few moments.[or]says 'You know what the worst part is? She doesn[']t even have the nerve to apologize!'[or]asks 'Is there something wrong with me?'[or]starts crying. She stops pacing to compose herself before continuing her pacing.[or]says 'I used to like [the Hookah] to. But something went wrong.'[at random]".
 Instead of telling Persephone about something, try asking Persephone about it.
 After asking Persephone about a topic:
 	if the topic understood includes "talk/talking/follow/following":
@@ -355,7 +356,7 @@ After asking Persephone about a topic:
 			score the achievement with message "convincing Persephone to talk to Hecate";
 			say "[Persephone] says 'Maybe I should talk to Hecate. Oh but I[']m nervous can you take me to her? I'll follow you.'";
 	otherwise:
-		say "She [if the location of Persephone is the Huka Hut]ignores you[otherwise]replies 'I[']m sorry, I really can[']t think about that right now[end if].".
+		say "She [if the location of Persephone is the Hookah Hut]ignores you[otherwise]replies 'I[']m sorry, I really can[']t think about that right now[end if].".
 After asking Persephone about a topic listed in the Table of Persephone's Replies, say "[Persephone] looks at you for a moment and says '[reply entry]'[paragraph break]".
 Instead of asking Persephone to try stop following:
 	try stop following.
@@ -367,28 +368,28 @@ Every turn when Persephone is following:
 		try Persephone going the way;
 	otherwise:
 		say "[Persephone] [one of]asks, 'You really think this will work?'[or]looks nervous[or]gives out a long sigh.[purely at random]";
-	if the location of Persephone is the Huka hut:
+	if the location of Persephone is the Hookah hut:
 		now Persephone is not following;
 		Persephone leaves in 3 turns from now;
-		say "As Persephone enters [the Huka hut], [the strange woman] stands up and turns to meet her."
+		say "As Persephone enters [the Hookah hut], [the strange woman] stands up and turns to meet her."
 The argument counter is a number variable.
 At the time when Persephone leaves:
-	say "[if the player can see Persephone]Persephone bursts out crying leaving [the Huka hut][otherwise]You hear Persephone crying. The sound fades[end if].";
+	say "[if the player can see Persephone]Persephone bursts out crying leaving [the Hookah hut][otherwise]You hear Persephone crying. The sound fades[end if].";
 	send her home.
-Every turn when the location of Persephone is the Huka hut:
+Every turn when the location of Persephone is the Hookah hut:
 	increment the argument counter;
 	if the player can see Persephone:
 		if argument counter is:
 			-- 1: say "[Persephone] asks [the strange woman] 'Please, I beg you, can we talk?'";
-			-- 2: say "[the strange woman] replies 'And what's to say? You'll just complain about my [Huka].'";
+			-- 2: say "[the strange woman] replies 'And what's to say? You'll just complain about my [Hookah].'";
 			-- 3: say "[Persephone] says 'Well your always so consumed by the damn thing.'";
-			-- 4: say "[the strange woman] shouts 'See I told you so. Now get out!' and she sits back down and takes another puff of [the Huka].";
+			-- 4: say "[the strange woman] shouts 'See I told you so. Now get out!' and she sits back down and takes another puff of [the Hookah].";
 	otherwise:
 		say "You can hear an argument unsung in the distance.".
 
-Instead of attacking the Huka:
-	if the location of Persephone is the Huka hut:
-		say "You break [the Huka]. Shards of glass fall to the floor. The fire that produced the smoke is extinguished when it falls in the large puddle of water. [The strange woman] turns in horror at the mess. [Persephone] is silent.[paragraph break][The strange woman] was about to say something when her body suddenly changes. Her wrinkles go away. Her nose returns to a normal size. Even her eyes seem to brighten up. She becomes quite beautiful.[paragraph break][Persephone] exclaims 'Hecate! You… Oh my! You look how I remember you did before we got that terrible [Huka].'[paragraph break][the strange woman] looks back at [Persephone] and says 'I… I feel so different. What happened? [Persephone], I… I[']m so sorry.[paragraph break][Persephone] replies with a gentle smile 'Oh it so good to have you back Hecate.' And she quickly kisses [the strange woman].[paragraph break][Persephone] turns to you and says 'Thank you so very much. I will return you from where you came. You will always have our blessings.'";
+Instead of attacking the Hookah:
+	if the location of Persephone is the Hookah hut:
+		say "You break [the Hookah]. Shards of glass fall to the floor. The fire that produced the smoke is extinguished when it falls in the large puddle of water. [The strange woman] turns in horror at the mess. [Persephone] is silent.[paragraph break][The strange woman] was about to say something when her body suddenly changes. Her wrinkles go away. Her nose returns to a normal size. Even her eyes seem to brighten up. She becomes quite beautiful.[paragraph break][Persephone] exclaims 'Hecate! You… Oh my! You look how I remember you did before we got that terrible [Hookah].'[paragraph break][the strange woman] looks back at [Persephone] and says 'I… I feel so different. What happened? [Persephone], I… I[']m so sorry.[paragraph break][Persephone] replies with a gentle smile 'Oh it so good to have you back Hecate.' And she quickly kisses [the strange woman].[paragraph break][Persephone] turns to you and says 'Thank you so very much. I will return you from where you came. You will always have our blessings.'";
 		say "[Persephone] approaches you and takes your hand. She kisses your forehead and you find yourself awake in the Shaman's hut. You feel relieved of your burdens and with a smile you trot out of the hut to enjoy your life.";
 		end the story finally;
 	otherwise:
@@ -401,9 +402,9 @@ Table of Hecate's Replies
 Topic	Reply
 "stone/rock"	"[if the glowing stone is handled]It is a rock. It glows. What more do you want?[otherwise]That's Medusa[']s expertise.[end if]"
 "meaning of life"	"[one of]42[or]A wise man once told me not to think of such things[or]Wouldn[']t you like to know[or]The pursuit of love and happiness of course[at random]."
-"Huka/smoke/smoking"	"Mmmm. I really do love this stuff."
+"Hookah/smoke/smoking"	"Mmmm. I really do love this stuff."
 "wrath"	"Why are you yelling at me?"
-"greed"	"I can share. There is no need to steal my [Huka]."
+"greed"	"I can share. There is no need to steal my [Hookah]."
 "sloth"	"I[']m too lazy to talk about that."
 "pride"	"Why do you need to rub it in? I need to save some face y[']know."
 "lust"	"Ohh I like that. You[']re a looker too. It must be my lucky day."
@@ -413,16 +414,16 @@ Topic	Reply
 "sin/sins"	"None of us down here can get enough of them."
 "cook/cooks"	"They make the very best soup. Lately they have been out of ingredients."
 "soup"	"Do you have any? It's so tasty!"
-"Persephone"	"She seems upset with me. I found it easier to deal with by smoking some [Huka]."
+"Persephone"	"She seems upset with me. I found it easier to deal with by smoking some [Hookah]."
 "dark/darkness"	"I know of a stone that glows like the sun."
 "Medusa"	"I dated her once. Let[']s just say it was a little [italic type]hard[roman type] to deal with. And all I got out of it was [a glowing stone]."
 "apology/sorry/apologize"	"Why should I when all I need is right here in this room?"
-"diary/journal"	"Really, why would anyone waste time writing in a diary when they can contemplate the universe right here with this [Huka]."
+"diary/journal"	"Really, why would anyone waste time writing in a diary when they can contemplate the universe right here with this [Hookah]."
 
 Table of Persephone's Replies
 Topic	Reply
-"woman/Hecate"	"Hecate and I used to be very close. We had a small argument a while back and ever since she has been completely consumed with [the Huka]."
-"Huka/smoke/smoking"	"I used to like that to. But after seeing what it does to Hecate… I just wish [the Huka] was gone."
+"woman/Hecate"	"Hecate and I used to be very close. We had a small argument a while back and ever since she has been completely consumed with [the Hookah]."
+"Hookah/smoke/smoking"	"I used to like that to. But after seeing what it does to Hecate… I just wish [the Hookah] was gone."
 "diary/journal"	"Yes I wrote in a diary some time ago. It makes me long for how things used to be. Sigh."
 "soup"	"Don't eat it it tastes awful."
 "cook/cooks"	"You need to be careful with them. They make a nasty soup."
@@ -446,11 +447,11 @@ title	subtable	description
 "Imbolc"	--	"I can't believe it. I met someone today. She is so pretty. I was out in the garden tending to some flowers when I heard Cerberus barking. When I looked up I saw her. With hair the color of the sun, the moon, and fire all at the same time. Her body shaped to please anyone men, women, or animal. I was in awe and had to force myself to close my mouth as she approached.[paragraph break]I think I blushed when she greeted me. I asked her what she was doing in this part of the multiverse and she explained how she had gotten lost and really had no where to go but to walk. I asked if she wanted to come inside and relax for a while. I offered tea.[paragraph break]She told me all about the world of magic from her past and I told her all about myself (blushing of course). I even offered her to stay over night. She was very happy and I was infatuated with her smile."
 "Ostara"	--	"So I offered Hecate a place to stay for a while. It seemed a nice thing to do. Even so I have to admit the offer was a bit selfish. I asked her out on a date. I nearly fainted when she said 'Yes'.[paragraph break]I went to work right away with the cooks to make the best dinner ever. I instructed them on making the perfect soup. I was so happy to have a date with Hecate.[paragraph break]To bad the cooks can't make soup. Sigh, It was a disaster. I nearly spit the soup all over poor Hecate. Strangely she loved the soup. I just don't get how she could have like it but we laughed till we fell asleep in each other's arms."
 "Beltane"	--	"Tonight was the most amazing night ever. Hecate and I spent the day picking flowers and playing little tickle games. Then she kissed me! Oh, I can not begin to explain how electrifying it was. I love her so much. We laid down together and found ways of pleasing each other that I didn't know could exist. I will never forget this night. Sigh."
-"Litha"	--	"Hecate and I went out on a little road trip. We found a small tree on  a hill and decided to 'cuddle' under it. We were kissing when a little gnome showed up and said he knew just how to brighten our day even further. He explained how he has a magical smoking bottle that makes the feelings you have now even more fantastic. I asked him his name and he simply replied it wasn't important.[paragraph break]We followed him to a little cave and we found this large bottle with smoke coming out it and a few hoses attached. The gnome said it was a huka and you just inhale the smoke. He then said we could have it for only a few gold pieces. Hecate convinced me it was a good deal and we purchased it from the little gnome.[paragraph break]It was late when we got home so we put the huka in the living room and went to bed."
-"Lammas"	--	"We tried the huka today. It was exquisite. I felt all tingling all over. Hecate and I were laughing and giggling. It was a lot of fun. We kissed and hugged. The room got so smoky that I could barely see.[paragraph break]After some time I asked if Hecate wanted anything to eat and she refused. I even offered the cooks to make some soup and she said 'sure' in a noncommittal way which seemed a little unusual for her. She loves that stuff?!"
-"Mabon"	--	"Hecate doesn't seem to want to do anything today. She is just sitting by that huka. I tried to talk with her and she was just smiling like she wasn't really there. I don't get it she was all about spending time with me and now she isn't really paying attention to anything anymore. She looks like she hasn't slept in days. Come to think of it, she hasn't come to bed with me in a few days.[paragraph break]I really don't like this huka any more."
-"Samhain"	--	"Hecate has gotten visibly older. My concerns were true. All she wants to do is smoke that huka. I'm so angry [bold type]this isn't fair![roman type] I've cried so much lately. I think I have officially lost my beloved.[paragraph break]I tried to confront her about it and she lashed out at me. Called me a ninny. Said I was bring all the good things down. I had to run away for a while."
-"Yule"	--	"There is no talking to her anymore. I can't get a word in edge wise. Oh how I wish I could destroy that damn huka. Every time I try she nearly attacks me. She has gotten so old now. I can't even bare to be in the house; it's too painful to remember. The only place I still feel safe is in my throne room. I'm so sad. I don't even have the energy to write in her anymore."
+"Litha"	--	"Hecate and I went out on a little road trip. We found a small tree on  a hill and decided to 'cuddle' under it. We were kissing when a little gnome showed up and said he knew just how to brighten our day even further. He explained how he has a magical smoking bottle that makes the feelings you have now even more fantastic. I asked him his name and he simply replied it wasn't important.[paragraph break]We followed him to a little cave and we found this large bottle with smoke coming out it and a few hoses attached. The gnome said it was a hookah and you just inhale the smoke. He then said we could have it for only a few gold pieces. Hecate convinced me it was a good deal and we purchased it from the little gnome.[paragraph break]It was late when we got home so we put the hookah in the living room and went to bed."
+"Lammas"	--	"We tried the hookah today. It was exquisite. I felt all tingling all over. Hecate and I were laughing and giggling. It was a lot of fun. We kissed and hugged. The room got so smoky that I could barely see.[paragraph break]After some time I asked if Hecate wanted anything to eat and she refused. I even offered the cooks to make some soup and she said 'sure' in a noncommittal way which seemed a little unusual for her. She loves that stuff?!"
+"Mabon"	--	"Hecate doesn't seem to want to do anything today. She is just sitting by that hookah. I tried to talk with her and she was just smiling like she wasn't really there. I don't get it she was all about spending time with me and now she isn't really paying attention to anything anymore. She looks like she hasn't slept in days. Come to think of it, she hasn't come to bed with me in a few days.[paragraph break]I really don't like this hookah any more."
+"Samhain"	--	"Hecate has gotten visibly older. My concerns were true. All she wants to do is smoke that hookah. I'm so angry [bold type]this isn't fair![roman type] I've cried so much lately. I think I have officially lost my beloved.[paragraph break]I tried to confront her about it and she lashed out at me. Called me a ninny. Said I was bring all the good things down. I had to run away for a while."
+"Yule"	--	"There is no talking to her anymore. I can't get a word in edge wise. Oh how I wish I could destroy that damn hookah. Every time I try she nearly attacks me. She has gotten so old now. I can't even bare to be in the house; it's too painful to remember. The only place I still feel safe is in my throne room. I'm so sad. I don't even have the energy to write in her anymore."
 
 
 Section 11 - Scoring
@@ -488,7 +489,7 @@ title	subtable	description	toggle
 "How do I get inside the hut?"	Table H1	""	hint toggle rule
 "How do you get past Cerberus?"	Table H2	""	hint toggle rule
 "What do I do in the bedroom?"	Table H3	""	hint toggle rule
-"What is the Huka for?"	Table H4	""	hint toggle rule
+"What is the Hookah for?"	Table H4	""	hint toggle rule
 "How do you open the door?"	Table H5	""	hint toggle rule
 "It's to dark!"	Table H6	""	hint toggle rule
 "What do I do with Persephone?"	Table H7	""	hint toggle rule
@@ -514,7 +515,7 @@ hint	used
 "Use the key to unlock the drawer."
 "The diary only provides more back history and is not needed to win."
 
-Table H4 - Huka
+Table H4 - Hookah
 hint	used
 "Have you tried smoking it?"	a number
 "Really?! That is such a bad habit!"
@@ -538,16 +539,16 @@ Table H7 - Persephone
 hint	used
 "Have you asked her about [the strange woman]?"	a number
 "Have you asked her about talking to Hecate?"
-"You need to lead her to the Huka hut."
+"You need to lead her to the Hookah hut."
 
-Table H8 - Breaking the Huka
+Table H8 - Breaking the Hookah
 hint	used
-"Have you tried to break [the Huka]?"	a number
+"Have you tried to break [the Hookah]?"	a number
 "You need to distract [the strange woman]."
-"Did you try to break [the Huka] while Persephone distracted [the strange woman]?"
+"Did you try to break [the Hookah] while Persephone distracted [the strange woman]?"
 
 Rule for amusing a victorious player:
-	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Huka]?"
+	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Hookah]?"
 
 
 Section 13 - Testing - Not for release
@@ -562,18 +563,18 @@ When play begins:
 	say "[line break]TESTERS: Please read the notes on testing provided in the handbook ('READ BOOK').".
 
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
-Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test huka / test hecate / test cooks / test persephone / test ending / amusing / full".
+Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test hookah / test hecate / test cooks / test persephone / test ending / amusing / full".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / attack cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / attack cerberus / n / s" in the vestibule.
 Test diary with "look / x bed / take sheets / x sheets / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x skeleton key / unlock drawer with skeleton key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
-Test huka with "x cushions / x huka / sit on cushions / take huka / eat huka / drink huka / smoke huka / stand up / w / z / z / z / z / e" in the huka hut.
-Test hukadeath with "smoke huka / g / g / g / g" in the huka hut.
-Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / attack hecate / x stone / x rock / ask hecate about stone" in the huka hut.
+Test hookah with "x cushions / x hookah / sit on cushions / take hookah / eat hookah / drink hookah / smoke hookah / stand up / w / z / z / z / z / e" in the hookah hut.
+Test hookahdeath with "smoke hookah / g / g / g / g" in the hookah hut.
+Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / attack hecate / x stone / x rock / ask hecate about stone" in the hookah hut.
 Test cooks with "x cooks / attack cooks / x stool / x counter / x stove / x cooks / x bowl / x spoon / sit on counter / sit on stool / take bowl / take spoon / put pride in bowl / ask cooks about dog / touch stove / touch pot / smell pot / x pot / give pride to cooks / x pot / give sloth to cooks / x pot / give gluttony to cooks / x pot / x bowl / take bowl / x soup / smell soup / taste soup / eat soup / x key / take key / s / n / kiss cooks" in the dinner.
 Test ornatedoor with "x door / open door / unlock door with key / lock door with key / unlock door with key / open door / w / close door / l / n / s / open door / e" holding the ornate key and the glowing stone in the main hall.
 Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / attack persephone / persephone, go south / test following" in Persephone's Chamber.
 Test following with "stop following / persephone, go north / ask persephone about talking to hecate / s / unlock door with key / e / e / ask woman about dog / ask persephone about dog / z / w / w / n / ask persephone about talking / ask persephone about following / s / e / e / w / e / w / w / n / ask persephone about following / stop following / ask persephone about following / persephone, stop following / ask persephone about following / tell persephone to stop following" holding the ornate key and the glowing stone in Persephone's Chamber.
-Test ending with "ask persephone about talking to hecate / s / e / e / kick huka" holding the ornate key and the glowing stone in Persephone's Chamber.
+Test ending with "ask persephone about talking to hecate / s / e / e / kick hookah" holding the ornate key and the glowing stone in Persephone's Chamber.
 
 
 [ vim: set wrap ts=2 noet: ]
