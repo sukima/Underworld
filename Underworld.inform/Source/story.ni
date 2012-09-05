@@ -144,9 +144,10 @@ The Bedroom is southwest of the Main Hall. "A cozy bedroom with a king sized bed
 
 The bed is a supporter and enterable in the bedroom. The description is "This is a rather simple bed. Basic wood head board and a ragged spring mattress which is bare other then a simple sheet. There seems to be no blankets just another sheet crumpled at the foot of the bed. It looks as though it hasn't been slept in for some time."
 The head board, the mattress, and the sheets are part of the bed.
-Instead of looking under the bed, say "Unlike [the north dresser], the [the bed] has nothing but dust under it."
+Instead of looking under the bed, say "Unlike [the north dresser], under [the bed] is spotlessly clean except for a thick layer of dust."
 Instead of jumping while in the bed, say "One little monkey jumping on the bed.[line break]One fell off and bumped it's head.[line break]Moma called the doctor, and the doctor said.[line break]No, no, try doing something else instead."
 Instead of sleeping while in the bed, say "It's not polite to sleep in other peoples['] beds. Look what happened to Goldylocks."
+Instead of searching the bed, say "You find nothing but a bunch of used sheets."
 
 The skeleton key is a thing. The description is "Your basic metal skeleton key yet smaller then most."
 
@@ -155,8 +156,8 @@ The description is "This is a complete mess. Cloths are just poring out of the d
 The indefinite article is "the".
 Understand "mess" or "cloths" or "clothing" as the north dresser.
 Instead of searching the north dresser for the first time:
-	move the skeleton key to the player;
-	say "Against your better judgment you skillfully toss a few articles of clothing aside while holding your hand out at arms length and holding your nose closed with the other hand. Under one of the crusty undergarments you manage to discover [a skeleton key]."
+	move the skeleton key to the Bedroom;
+	say "Against your better judgment you skillfully toss a few articles of clothing aside while holding your hand out at arms length and holding your nose closed with the other hand. Under one of the crusty undergarments you manage to discover [a skeleton key] which slips and falls to the floor."
 Instead of searching the north dresser, say "As you shudder you resolve that there is no need to touch that mess again, really."
 Instead of smelling the north dresser, say "You attempt to take a whiff of the messy dresser and make it about a quarter of a sniff before you start to feel nauseous. The offensive oder emanating from years of dirty laundry is probably the most foul thing you could imagine. (Well that, and the oder that comes from your sisters cooking)."
 Before doing something with the north dresser:
@@ -174,6 +175,8 @@ Before inserting something into the south dresser: try inserting the noun into t
 Understand "top drawer" or "drawers" as the drawer.
 Understand "persephone's dresser" as the south dresser when the south dresser is proper-named.
 Does the player mean putting on the south dresser: it is very likely.
+Instead of opening the south dresser, try opening the drawer.
+Instead of closing the south dresser, try closing the drawer.
 
 The diary is in the drawer. The description is "[first time]You gently brush off a layer of dust to reveal the beautiful treasure.[paragraph break][only]An ornate book with the word 'diary' on the cover. It looks impressive because it is encrusted with jewels and sparkling sand. Many colors glisten as you hold the book in your hands."
 Instead of consulting the handbook about something, try examining the handbook.
@@ -566,7 +569,7 @@ When play begins:
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test hookah / test hecate / test cooks / test persephone / test ending / amusing / full".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / attack cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / attack cerberus / n / s" in the vestibule.
-Test diary with "look / x bed / take sheets / x sheets / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x skeleton key / unlock drawer with skeleton key / open drawer / take diary / x diary / x diary / put diary on dresser" in the bedroom.
+Test diary with "look / x bed / take sheets / search bed / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x skeleton key / unlock drawer with skeleton key / open south dresser / take diary / x diary / x diary / put diary on dresser" in the bedroom.
 Test hookah with "x cushions / x hookah / sit on cushions / take hookah / eat hookah / drink hookah / smoke hookah / stand up / w / z / z / z / z / e" in the hookah hut.
 Test hookahdeath with "smoke hookah / g / g / g / g" in the hookah hut.
 Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / attack hecate / x stone / x rock / ask hecate about stone" in the hookah hut.
