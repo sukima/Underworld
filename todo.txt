@@ -1,5 +1,3 @@
-(A) attach knob to door
-(A) examone throne
 (A) look under bed: confusing
 (A) open south dresser
 (A) search bed

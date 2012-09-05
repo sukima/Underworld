@@ -310,7 +310,7 @@ The silk is in the Pathway to Ascension. It is scenery. The description is "As s
 
 Persephone's Chamber is north of the Pathway to Ascension. "A large chamber made of crystal. Clear clean light descends from the crystal walls. The only exit is back to the south."
 Some crystals are here. They are scenery. The description is "Beautiful crystals line the chamber. They have an eerie glow coming from them. You also can not see what would be behind them as the crystals block any vision beyond them. You presume it's just part of the hut you in."
-The throne is here. It is a supporter. It is fixed in place. The description is "A standard ."
+The throne is here. It is a supporter. It is fixed in place. The description is "This is your basic throne. It sits in the center of the room. In fact it seems it is the only piece of furniture in the room at all! It does have some nice ornaments, a few jewels, some gold. But with the dust and tarnish it really isn't all that impressive."
 
 To send her home:
 	now Persephone is not following;
