@@ -29,10 +29,6 @@ A sin is a kind of thing. The description of a sin is "[if the player carries th
 Before listing contents: group sins together.
 Before printing the name of a sin while not grouping together, say "the sin of ".
 Instead of throwing or dropping a sin (called the sin): say "[one of]If only it was that easy![or]Perhaps it would be easier to give [the sin] to someone else.[or]I think you need something a bit more supernatural for that.[or]Is this a confession?[or]Avoidance is not a good solution.[or]I am not a priest, sorry, your stuck with [the sin] for now.[purely at random]".
-Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony are sins.
-The player carries Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony.
-
-The player has a number called smoke-count. The smoke-count of the player is 0.
 
 A thing can be examined or not. A thing is usually not examined.
 A thing can be out-of-reach.
@@ -56,7 +52,6 @@ Instead of reading the handbook:
 	carry out the displaying activity;
 	clear the screen;
 	try looking.
-The player carries the handbook.
 
 The help request rule is not listed in any rulebook.
 Carry out asking for help: say "You should have been given a copy of '[The handbook]'. Read the guide."
@@ -70,29 +65,23 @@ Talking is an action applying to one thing. Carry out talking:
 	say "It is possible that [the noun] would be more interested in a specific topic instead of idle chit-chat. Try asking [the noun] about a topic instead."
 Understand "talk to [a person]" as talking.
 
-Xyzzy is an action applying to nothing. Carry out xyzzy:
-	if the player is carrying a sin:
-		say "That kind of magic is too powerful to wield by someone still burdened by sin. Try again later perhaps.";
-	otherwise:
-		if the location of the player is:
-			-- the hookah hut: say "[one of]The smoke starts spinning faster and faster. Like a mini tornado swirling through the room.[paragraph break]The smoke begins to slow down and returns to it's usual floaty self.[or][the strange woman] gasps as [the hookah] begins to lift off the ground and hover in the sir for a few seconds before gently floating back to the ground.[or]The cushions begin to bounce and hop around the room in a wonderful display of dance for a few minutes before settling back down where they were before.[at random]";
-			-- the dinner: say "The three cooks suddenly start dancing. Spinning around. Waving their arms.[paragraph break]After a short and entertaining display they return facing towards you staring to a distant point. Their arms crossed and now motionless.";
-			-- the bedroom:
-				if the location of the bed is the bedroom:
-					say "[The bed] lurches and bangs against the wall while being engulfed in a bright glow. It then vanishes before your eyes.";
-					remove the bed from play;
-			-- otherwise: say "[one of]You are lifted from the ground about two feet. Dangling in mid air.[paragraph break]You gently float back to the ground.[or]For a moment you feel smarter then ever… for just a moment.[or]A bright ray of light shines on you nearly blinding you… Then it fades.[at random]".
-Understand "xyzzy" or "plugh" as xyzzy.
-
 The description of the player is "[one of]Gasp! you're missing a shoe! one shoe![or]You feel a wave of relief when you realize this is [bold type]not[roman type] one of those dreams where you find your self naked.[or]1…2…3…4…5. Yup you still have all your fingers.[or]No wait, vanity is a sin right? No it isn[']t. Or maybe… Nah could[']t be.[or]You look just smashing![at random]".
+
+Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony are sins.
+
+The player carries Wrath, Greed, Sloth, Pride, Lust, Envy, and Gluttony.
+The player has a number called smoke-count. The smoke-count of the player is 0.
+The player carries the handbook.
 
 
 Section 2 - Outside The Hut
 
+The Garden is a room. "You are at the bottom of a hill that is covered in flourishing flowers. This garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill."
+
 The brass door knob is a thing. The description is "A small plain brass door knob." The door knob can be found or lost. It is lost.
 
-The Garden is a room. "You are at the bottom of a hill that is covered in flourishing flowers. This garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill."
 Some trees and the hill are scenery in the garden.
+
 Some flowers are in the Garden. "The flowers are neatly arranged by color. They may be small but they have multiplied in such a manor to almost take over the boundaries of the garden. [if the door knob is lost]You notice something between the peddles that seems out of place.[end if]". They are scenery.
 Understand "garden" or "peddles" as flowers.
 Instead of smelling the flowers: say "The sweet scent of candy corn fills your nostrils."
@@ -355,24 +344,25 @@ Understand "tell persephone to stop following" as stop following.
 Understand "ask persephone to stop following" as stop following.
 
 Persephone is a goddess. She is on the throne. The description is "You recognize her as Persephone. Long silk white hair flows like water down her neck and back. Her eyes the color of deep green. Simply angelic."
-A person can be following.
-Instead of entering the throne when Persephone is on the throne, say "I doubt very much that Persephone would be pleased if you sat on her."
+A person can be following. A person can be idle.
+Instead of entering the throne when Persephone is on the throne, say "I doubt very much that [Persephone] would be pleased if you sat on her."
 Every turn when in Persephone's Chamber and the player can see Persephone and Persephone is not following:
-	if Persephone is on the throne:
-		if a random chance of 1 in 4 succeeds:
-			move Persephone to Persephone's Chamber;
-			say "Persephone stands up from [the throne].";
-		otherwise:
-			say "Persephone [one of]seems lost in thought.[or]says 'I just don[']t understand her.'[or]fidgets with her hands.[or]shifts herself uncomfortably from side to side.[or]mutters something under her breath.[or]begins to cry a little and then composes herself again.[or]slams her hand on the throne in anger.[at random]";
-	otherwise:
-		if a random chance of 1 in 3 succeeds:
-			if the player is on the throne:
-				say "[Persephone] says 'If you don't mind, I feel I might need to sit down.'";
+	if Persephone is not idle:
+		if Persephone is on the throne:
+			if a random chance of 1 in 4 succeeds:
+				move Persephone to Persephone's Chamber;
+				say "[Persephone] stands up from [the throne].";
 			otherwise:
-				move Persephone to the throne;
-				say "Persephone sits back down on [the throne] and leans on her elbow.";
+				say "[Persephone] [one of]seems lost in thought.[or]says 'I just don[']t understand her.'[or]fidgets with her hands.[or]shifts herself uncomfortably from side to side.[or]mutters something under her breath.[or]begins to cry a little and then composes herself again.[or]slams her hand on the throne in anger.[at random]";
 		otherwise:
-			say "Persephone [one of]begins pacing back and forth.[or]places her head in her hands for a few moments.[or]says 'You know what the worst part is? She doesn[']t even have the nerve to apologize!'[or]asks 'Is there something wrong with me?'[or]starts crying. She stops pacing to compose herself before continuing her pacing.[or]says 'I used to like [the Hookah] to. But something went wrong.'[at random]".
+			if a random chance of 1 in 3 succeeds:
+				if the player is on the throne:
+					say "[Persephone] says 'If you don't mind, I feel I might need to sit down.'";
+				otherwise:
+					move Persephone to the throne;
+					say "[Persephone] sits back down on [the throne] and leans on her elbow.";
+			otherwise:
+				say "[Persephone] [one of]begins pacing back and forth.[or]places her head in her hands for a few moments.[or]says 'You know what the worst part is? She doesn[']t even have the nerve to apologize!'[or]asks 'Is there something wrong with me?'[or]starts crying. She stops pacing to compose herself before continuing her pacing.[or]says 'I used to like [the Hookah] to. But something went wrong.'[at random]".
 Instead of telling Persephone about something, try asking Persephone about it.
 After asking Persephone about a topic:
 	if the topic understood includes "talk/talking/follow/following":
@@ -386,9 +376,8 @@ After asking Persephone about a topic:
 	otherwise:
 		say "She [if the location of Persephone is the Hookah Hut]ignores you[otherwise]replies 'I[']m sorry, I really can[']t think about that right now[end if].".
 After asking Persephone about a topic listed in the Table of Persephone's Replies, say "[Persephone] looks at you for a moment and says '[reply entry]'[paragraph break]".
-Instead of asking Persephone to try stop following:
-	try stop following.
-Instead of asking Persephone to try doing something, say "She seems to stand still despite your request."
+Instead of asking Persephone to try stop following, try stop following.
+Instead of asking Persephone to try doing something, say "She seems to [if persephone is on the throne]sit[otherwise]stand[end if] still despite your request."
 
 Every turn when Persephone is following:
 	if the location of Persephone is not the location of the player:
@@ -579,7 +568,34 @@ Rule for amusing a victorious player:
 	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about the meaning of life?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Hookah] a bunch of times?[line break]XYZZY; in various places?"
 
 
-Section 13 - Testing - Not for release
+Section 13 - XYZZY
+
+Xyzzy is an action applying to nothing.
+Understand "xyzzy" or "plugh" as xyzzy.
+Carry out xyzzy:
+	if the player is carrying a sin:
+		say "That kind of magic is too powerful to wield by someone still burdened by sin. Try again later perhaps.";
+	otherwise:
+		if the location of the player is:
+			-- the hookah hut:
+				say "[one of]The smoke starts spinning faster and faster. Like a mini tornado swirling through the room.[paragraph break]The smoke begins to slow down and returns to it's usual floaty self.[or][the strange woman] gasps as [the hookah] begins to lift off the ground and hover in the sir for a few seconds before gently floating back to the ground.[or]The cushions begin to bounce and hop around the room in a wonderful display of dance for a few minutes before settling back down where they were before.[at random][paragraph break][if Persephone is in the hookah hut]Oddly no one seems to notice.[else][the strange woman]looks around but acts as if it was a normal occurrence.[end if]";
+			-- the dinner:
+				say "The three cooks suddenly start dancing. Spinning around. Waving their arms.[paragraph break]After a short and entertaining display they return facing towards you staring to a distant point. Their arms crossed and now motionless.";
+			-- the Vestibule:
+				[xyzzy will not work when the player carries sins therefor there will never be a time when Cerberus is guarding and the player can use xyzzy (in the normal course of the game) assume Cerberus is not guarding]
+				say "[bold type]*** POOF ***[roman type][paragraph break]A big puff of smoke engulfs [Cerberus] and as it dissipates you find the he has been turned into a three headed rabbit![paragraph break][bold type]*** POOF ***[roman type][paragraph break]And as fast as he changed before he is now back to his slobbering self.";
+			-- Persephone's Chamber:
+				say "The throne suddenly lifts up into the air and shakes. [if Persephone is on the throne][Persephone] screams and shouts while holding on for dear life![else][Persephone] stops and stares at [the throne] in bewilderment.[end if][line break]";
+				if the player is on the throne, say "[Persephone] gasps and says 'Are you some kind of god?'[paragraph break]";
+				say "The throne then lowers to the ground gently. [if Persephone is on the throne][Persephone] gives out a huge sigh of relief and then continues to be lost in thought.[else][Persephone] scratches her head with a confused look on her face.[end if]";
+			-- the bedroom:
+				if the location of the bed is the bedroom:
+					say "[The bed] lurches and bangs against the wall while being engulfed in a bright glow. It then vanishes before your eyes.";
+					remove the bed from play;
+			-- otherwise: say "[one of]You are lifted from the ground about two feet. Dangling in mid air.[paragraph break]You gently float back to the ground.[or]For a moment you feel smarter then ever… for just a moment.[or]A bright ray of light shines on you nearly blinding you… Then it fades.[at random]".
+
+
+Section 14 - Testing - Not for release
 
 Table of Basic Help Options (continued)
 title	subtable	description
@@ -588,10 +604,43 @@ title	subtable	description
 Understand "* [text]" as a mistake ("Annotation noted.").
 
 When play begins:
+	seed the random-number generator with 1234;
 	say "[line break]TESTERS: Please read the notes on testing provided in the handbook ('READ BOOK').".
 
+[The game was designed to stop the player from dropping a sin. Therefore we add a test only command to do so for testing.]
+Freedom is an action applying to nothing. Carry out freedom:
+	if the player carries a sin:
+		repeat with the sin running through sins carried by player:
+			move the sin to the location of the player;
+			say "[the sin]: Dropped.";
+	otherwise:
+		say "You are already free of sin.".
+Understand "freedom" as freedom.
+
+[Allow commands to manipulate Persephone for testing]
+To cheat with Persephone:
+	now Persephone is idle;
+	say "[Persephone] has been trans-located and stops moving.".
+Instead of asking Persephone to try exiting:
+	move Persephone to Persephone's Chamber;
+	cheat with Persephone.
+Instead of asking Persephone to try entering:
+	move Persephone to the throne;
+	cheat with Persephone.
+Instead of asking Persephone to try jumping:
+	now Persephone is not idle;
+	say "[Persephone] starts moving again.".
+	
+[Allow commands to cheat with Cerberus]
+Instead of asking Cerberus to try sleeping:
+	now Cerberus is not guarding;
+	say "[Cerberus] lays down playfully.".
+Instead of asking Cerberus to try jumping:
+	now Cerberus is guarding;
+	say "[Cerberus] stands at attention.".
+
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
-Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test hookah / test hecate / test cooks / test persephone / test ending / amusing / full".
+Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test hookah / test hecate / test cooks / test persephone /  test ending / test xyzzy / amusing / full".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
 Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / attack cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / attack cerberus / n / s" in the vestibule.
 Test diary with "look / x bed / take sheets / search bed / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x skeleton key / unlock drawer with skeleton key / open south dresser / take diary / x diary / x diary / put diary on dresser" in the bedroom.
@@ -603,7 +652,7 @@ Test ornatedoor with "x door / open door / unlock door with key / lock door with
 Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / attack persephone / persephone, go south / test following" in Persephone's Chamber.
 Test following with "stop following / persephone, go north / ask persephone about talking to hecate / s / unlock door with key / e / e / ask woman about dog / ask persephone about dog / z / w / w / n / ask persephone about talking / ask persephone about following / s / e / e / w / e / w / w / n / ask persephone about following / stop following / ask persephone about following / persephone, stop following / ask persephone about following / tell persephone to stop following" holding the ornate key and the glowing stone in Persephone's Chamber.
 Test ending with "ask persephone about talking to hecate / s / e / e / kick hookah" holding the ornate key and the glowing stone in Persephone's Chamber.
-Test xyzzy with "* todo".
+Test xyzzy with "xyzzy / plugh / freedom / xyzzy / gonear throne / persephone, exit / xyzzy / sit on throne / xyzzy / stand / persephone, enter throne / xyzzy / persephone, jump / gonear dinner / xyzzy / gonear hookah hut / xyzzy / gonear bedroom / xyzzy / look / gonear Cerberus / Cerberus, sleep / xyzzy / Cerberus, jump / gonear the garden / take all" in the Garden.
 
 
 [ vim: set wrap ts=2 noet: ]
