@@ -70,7 +70,16 @@ Talking is an action applying to one thing. Carry out talking:
 	say "It is possible that [the noun] would be more interested in a specific topic instead of idle chit-chat. Try asking [the noun] about a topic instead."
 Understand "talk to [a person]" as talking.
 
-The description of the player is "[one of]Gasp! you're missing a shoe! one shoe![or]You feel a wave of relief when you realize this is [bold type]not[roman type] one of those dreams where you find your self naked.[or]1…2…3…4…5. Yup you still have all your fingers.[or]No wait, vanity is a sin right? No it isn[']t. Or maybe… Nah could[']t be.[or]You look just smashing![purely at random]".
+Xyzzy is an action applying to nothing. Carry out xyzzy:
+	if the player is carrying a sin:
+		say "That kind of magic is too powerful to wield by someone still burdened by sin. Try again later perhaps.";
+	otherwise:
+		if the location of the player is:
+			-- the dinner: say "The three cooks suddenly start dancing. Spinning around. Waving their arms.[paragraph break]After a short and entertaining display they return facing towards you staring to a distant point. Their arms crossed and now motionless.";
+			-- otherwise: say "[one of]You are lifted from the ground about two feet. Dangling in mid air.[paragraph break]You gently float back to the ground.[or]For a moment you feel smarter then ever… for a moment.[or]A bright ray of light shines on you nearly blinding you… Then it fades.[at random]".
+Understand "xyzzy" or "plugh" as xyzzy.
+
+The description of the player is "[one of]Gasp! you're missing a shoe! one shoe![or]You feel a wave of relief when you realize this is [bold type]not[roman type] one of those dreams where you find your self naked.[or]1…2…3…4…5. Yup you still have all your fingers.[or]No wait, vanity is a sin right? No it isn[']t. Or maybe… Nah could[']t be.[or]You look just smashing![at random]".
 
 
 Section 2 - Outside The Hut
@@ -340,7 +349,6 @@ Understand "stop following" as stop following.
 Understand "tell persephone to stop following" as stop following.
 Understand "ask persephone to stop following" as stop following.
 
-
 Persephone is a goddess. She is on the throne. The description is "You recognize her as Persephone. Long silk white hair flows like water down her neck and back. Her eyes the color of deep green. Simply angelic."
 A person can be following.
 Instead of entering the throne when Persephone is on the throne, say "I doubt very much that Persephone would be pleased if you sat on her."
@@ -563,7 +571,7 @@ hint	used
 "Did you try to break [the Hookah] while Persephone distracted [the strange woman]?"
 
 Rule for amusing a victorious player:
-	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about Medusa?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Hookah] a bunch of times?"
+	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about the meaning of life?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Hookah] a bunch of times?[line break]XYZZY; in various places?"
 
 
 Section 13 - Testing - Not for release

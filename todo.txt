@@ -1,5 +1,0 @@
-medusa: what point is this here
-plugh / xyzzy
-sit on flowers
-Make hints reveal only when available to the player (not worth it)
-You are carrying ["the sin of" / "the sins of"] ...
