@@ -75,8 +75,13 @@ Xyzzy is an action applying to nothing. Carry out xyzzy:
 		say "That kind of magic is too powerful to wield by someone still burdened by sin. Try again later perhaps.";
 	otherwise:
 		if the location of the player is:
+			-- the hookah hut: say "[one of]The smoke starts spinning faster and faster. Like a mini tornado swirling through the room.[paragraph break]The smoke begins to slow down and returns to it's usual floaty self.[or][the strange woman] gasps as [the hookah] begins to lift off the ground and hover in the sir for a few seconds before gently floating back to the ground.[or]The cushions begin to bounce and hop around the room in a wonderful display of dance for a few minutes before settling back down where they were before.[at random]";
 			-- the dinner: say "The three cooks suddenly start dancing. Spinning around. Waving their arms.[paragraph break]After a short and entertaining display they return facing towards you staring to a distant point. Their arms crossed and now motionless.";
-			-- otherwise: say "[one of]You are lifted from the ground about two feet. Dangling in mid air.[paragraph break]You gently float back to the ground.[or]For a moment you feel smarter then ever… for a moment.[or]A bright ray of light shines on you nearly blinding you… Then it fades.[at random]".
+			-- the bedroom:
+				if the location of the bed is the bedroom:
+					say "[The bed] lurches and bangs against the wall while being engulfed in a bright glow. It then vanishes before your eyes.";
+					remove the bed from play;
+			-- otherwise: say "[one of]You are lifted from the ground about two feet. Dangling in mid air.[paragraph break]You gently float back to the ground.[or]For a moment you feel smarter then ever… for just a moment.[or]A bright ray of light shines on you nearly blinding you… Then it fades.[at random]".
 Understand "xyzzy" or "plugh" as xyzzy.
 
 The description of the player is "[one of]Gasp! you're missing a shoe! one shoe![or]You feel a wave of relief when you realize this is [bold type]not[roman type] one of those dreams where you find your self naked.[or]1…2…3…4…5. Yup you still have all your fingers.[or]No wait, vanity is a sin right? No it isn[']t. Or maybe… Nah could[']t be.[or]You look just smashing![at random]".
@@ -598,6 +603,7 @@ Test ornatedoor with "x door / open door / unlock door with key / lock door with
 Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / attack persephone / persephone, go south / test following" in Persephone's Chamber.
 Test following with "stop following / persephone, go north / ask persephone about talking to hecate / s / unlock door with key / e / e / ask woman about dog / ask persephone about dog / z / w / w / n / ask persephone about talking / ask persephone about following / s / e / e / w / e / w / w / n / ask persephone about following / stop following / ask persephone about following / persephone, stop following / ask persephone about following / tell persephone to stop following" holding the ornate key and the glowing stone in Persephone's Chamber.
 Test ending with "ask persephone about talking to hecate / s / e / e / kick hookah" holding the ornate key and the glowing stone in Persephone's Chamber.
+Test xyzzy with "* todo".
 
 
 [ vim: set wrap ts=2 noet: ]
