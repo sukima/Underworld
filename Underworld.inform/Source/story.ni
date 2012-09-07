@@ -61,6 +61,8 @@ Instead of attacking a goddess, say "It is not polite to be violent towards a go
 
 Understand "kick [something]" or "punch [something]" as attacking.
 
+Understand "search [any room]" as a mistake ("That would take too long. Try being more specific on what to search.").
+
 Talking is an action applying to one thing. Carry out talking:
 	say "It is possible that [the noun] would be more interested in a specific topic instead of idle chit-chat. Try asking [the noun] about a topic instead."
 Understand "talk to [a person]" as talking.
@@ -76,14 +78,14 @@ The player carries the handbook.
 
 Section 2 - Outside The Hut
 
-The Garden is a room. "You are at the bottom of a hill that is covered in flourishing flowers. This garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill."
+The Garden is a room. "You are at the bottom of a hill that is covered in flourishing flowers. This garden surrounds you. Little ankle high flowers fill the dirt that surrounds a small warn path. The path heads up a hill. [if the door knob is lost]A glint under the flowers catches your eye.[end if]".
 
 The brass door knob is a thing. The description is "A small plain brass door knob." The door knob can be found or lost. It is lost.
 
 Some trees and the hill are scenery in the garden.
 
-Some flowers are in the Garden. "The flowers are neatly arranged by color. They may be small but they have multiplied in such a manor to almost take over the boundaries of the garden. [if the door knob is lost]You notice something between the peddles that seems out of place.[end if]". They are scenery.
-Understand "garden" or "peddles" as flowers.
+Some flowers are in the Garden. "The flowers are neatly arranged by color. They may be small but they have multiplied in such a manor to almost take over the boundaries of the garden. [if the door knob is lost]You notice something between the petals that seems out of place.[end if]". They are scenery.
+Understand "flower" or "garden" or "petals" as flowers.
 Instead of smelling the flowers: say "The sweet scent of candy corn fills your nostrils."
 Instead of searching the flowers when the door knob is lost:
 	now the door knob is found;
@@ -99,8 +101,8 @@ The Front Yard is north of the Garden. "This looks like the side of a hill and i
 Instead of going up in the Garden: try going north.
 Instead of going down in the Front Yard: try going south.
 
-Some round windows are in the Front Yard. "The windows are part of a round inset in the hill. You can see a slight glow coming from them but quickly realize that the chilled air has fogged them up so you can't see through them. Despite the fog you do notice some movement within." They are scenery.
-Understand "glow" or "movement" or "inset" as round windows.
+The round windows are scenery in the Front Yard. "The windows are part of a round inset in the hill. You can see a slight glow coming from them but quickly realize that the chilled air has fogged them up so you can't see through them. Despite the fog you do notice some movement within."
+Understand "window" or "glow" or "movement" or "inset" as the round windows.
 
 The wooden door is north of the Front Yard and south of the Vestibule. It is a locked door and scenery. It is not lockable. The description is "An ornate wooden door is set into the round alcove of the hill. [if locked]You notice that the door knob has gone missing and there no way to open it now.[end if]".
 Instead of opening the wooden door when the wooden door is locked: say "You cannot open this door with out replacing the missing door knob."
@@ -111,6 +113,7 @@ To fix the door:
 	score the achievement with message "fixing the wooden door".
 Instead of putting the door knob on the wooden door, fix the door.
 Instead of tying the door knob to the wooden door, fix the door.
+Instead of inserting the door knob into the wooden door, fix the door.
 Instead of unlocking the wooden door with the door knob: try putting the door knob on the wooden door.
 Does the player mean doing something to the wooden door: it is very likely.
 Does the player mean putting something on the wooden door: it is likely.
@@ -118,12 +121,14 @@ Does the player mean putting something on the wooden door: it is likely.
 
 Section 3 - Cerberus
 
-The Vestibule has a description "A rounded room that looks very much like the inside of a very large tree. The ceiling has candelabras hanging from it which gives a soothing glow to the room. An opening the size of the wall opens north to another room. A small door leads outside to the south."
+The Vestibule is a room. "A rounded room that looks very much like the inside of a very large tree. The ceiling has candelabras hanging from it which gives a soothing glow to the room. An opening the size of the wall opens north to another room. A small door leads outside to the south."
 Some Candelabras are scenery in The Vestibule. "They provide a soothing glow to the interior of the hut."
-Cerberus is an animal. Cerberus is male. Cerberus is in the vestibule. "You can see Cerberus, a giant three headed dog, laying here." He has a description "It is a giant three headed dog! In fact it is a giant three headed [bold type]bull[roman type] dog! There is a tag hanging from one of the necks that reads 'Cerberus'. Each head has glistening teeth and has varying degrees of slobber dripping from it's curled mouths.[unless Cerberus is carrying more than 2 sins] All six eyes are staring at you intensely.[end if][if Cerberus is carrying a sin] He is chewing on [the list of sins carried by Cerberus].[end if]".
+
+Cerberus is an animal. Cerberus is male. Cerberus is in the vestibule. "You can see [one of][or]Cerberus, [stopping]a giant three headed dog[one of][or],[stopping] laying here.[first time] He has a name tag labeled 'Cerberus'[only]". He has a description "It is a giant three headed dog! In fact it is a giant three headed [bold type]bull[roman type] dog! There is a tag hanging from one of the necks that reads 'Cerberus'. Each head has glistening teeth and has varying degrees of slobber dripping from it's curled mouths.[unless Cerberus is carrying more than 2 sins] All six eyes are staring at you intensely.[end if][if Cerberus is carrying a sin] He is chewing on [the list of sins carried by Cerberus].[end if]".
 Cerberus can be guarding. He is guarding.
 Understand "dog" or "hound" or "three headed" as Cerberus.
 Understand "pet [something]" as touching.
+
 Every turn when the player can see Cerberus: 
 	say "One of Cerberus's heads [one of]licks his paws[or]growls at you and attempts to snap at you[or]shakes violently sending spit in every direction[or]sticks out it's tongue and starts panting[or]starts drooling profusely[or]twitches as his paw scratches behind the ear[at random]."
 Instead of smelling Cerberus, say "The intoxicating aroma of… wet dog?! Yuck!"
@@ -148,7 +153,7 @@ Before going north from the vestibule when Cerberus is guarding:
 		say "[Cerberus] lurches at you barking loudly. There is no way to pass without risking a limb.";
 		stop the action.
 
-The Main Hall is north of The Vestibule. "A room devoid of any home pleasantries. It seems it is used purely to move to and from the four adjoining rooms. To the east is a room bellowing out smoke. To the north is a small dinner. To the west is a large and beautiful ornate door. And your way back to the vestibule is to the south. There is also a small doorway to the southwest that you almost missed at first glance."
+The Main Hall is north of The Vestibule. "A room devoid of any home pleasantries. It seems it is used purely to move to and from the four adjoining rooms. To the east is a room bellowing out smoke. To the north is a small diner. To the west is a large and beautiful ornate door. And your way back to the vestibule is to the south. There is also a small passage to the southwest that you almost missed at first glance."
 
 
 Section 4 - The Bedroom
@@ -211,7 +216,7 @@ Understand "journal" as the diary.
 
 Section 5 - The Hookah Hut
 
-The Hookah hut is east of the Main Hall. "This room has large cushions laying about the floor. All of then colored in tie die. The room is filled with smoke. No doubt from the large Hookah standing in the center of the room."
+The Hookah hut is east of the Main Hall. "This room has large cushions laying about the floor. All of them colored in tie dye. The room is filled with smoke. No doubt from the large Hookah standing in the center of the room."
 Understand "huka" or "hukka" or "huqqah" or "waterpipe" or "pipe" as the hookah.
 Some cushions are enterable, scenery and supporters in the Hookah hut. "The cushions are large and made of a tough knitted fabric styled like a tie died T-Shirt. They look very comfortable to sit in."
 Understand "cushion" as the cushions.
@@ -272,13 +277,13 @@ Every turn when the smoke-count of the player is greater than 0 and the player c
 	say "[one of]The fog seems to be lifting[or]The spinning world slows down a bit[or]You feel like your standing on both feet again[or]You begin to feel a bit calmer[at random]."
 
 
-Section 6 - The Dinner
+Section 6 - The Diner
 
-The Dinner is north of the Main Hall. "A small dinner. It has a counter an only one stool. Behind the counter is a stove and a boiling pot. You also see three Italian cooks standing motionless in a row behind the counter."
-The counter is scenery and a supporter in the dinner. The description is "A plain laminated counter with rounded corners. It is white."
-The stool is enterable, scenery and a supporter in the dinner. The description is "A white stool. It[']s base is made of aluminum and it[']s seat is a white vinyl cushion."
+The Diner is north of the Main Hall. "A small diner. It has a counter an only one stool. Behind the counter is a stove and a boiling pot. You also see three Italian cooks standing motionless in a row behind the counter."
+The counter is scenery and a supporter in the diner. The description is "A plain laminated counter with rounded corners. It is white."
+The stool is enterable, scenery and a supporter in the diner. The description is "A white stool. It[']s base is made of aluminum and it[']s seat is a white vinyl cushion."
 Understand "aluminum" or "vinyl" or "cushion" as the stool. 
-The stove is a supporter in the dinner. The stove is scenery. The description is "Your basic stove on which is a large pot that is boiling. The cooks seem disinterested." The stove is out-of-reach.
+The stove is a supporter in the diner. The stove is scenery. The description is "Your basic stove on which is a large pot that is boiling. The cooks seem disinterested." The stove is out-of-reach.
 The boiling pot is a container on the stove. The description is "A metal pot sits on [the stove].[if the pot contains 1 sin] A great deal of steam is puring out of [the pot].[otherwise if the pot contains 2 sins] [The pot] is bubbling and frothing over.[end if]". The pot is scenery. The pot is out-of-reach.
 Things can be a utensil.
 The bowl is a container on the counter. The description is "A plain white bowl. No doubt to eat from." It is a utensil.
@@ -297,7 +302,7 @@ Before of eating the soup:
 	stop the action.
 The description of the ornate key is "A very detailed key made of cast metal. It has a intricate design in the handle and a simple tooth at the other end.[first time][paragraph break]You wipe off some left over soup that was still on it.[only]".
 
-Some cooks are male people in the dinner. The cooks are scenery. The description of the cooks is "Three mean looking Italian style cooks stand in a row behind the counter. They all look exactly the same and all stand motionless. Each has his arms crossed and is facing towards you. They all gaze forward never looking at you." The indefinite article is "three".
+Some cooks are male people in the diner. The cooks are scenery. The description of the cooks is "Three mean looking Italian style cooks stand in a row behind the counter. They all look exactly the same and all stand motionless. Each has his arms crossed and is facing towards you. They all gaze forward never looking at you." The indefinite article is "three".
 The cooks can be full-of-sin.
 Understand "cook" or "Italian" or "Italians" as the cooks.
 Instead of doing something except examining with the cooks, say "They remain motionless. Arms still crossed and a dead stare at some distant object far away."
@@ -387,7 +392,7 @@ Every turn when Persephone is following:
 		say "[Persephone] [one of]asks, 'You really think this will work?'[or]looks nervous[or]gives out a long sigh.[purely at random]";
 	if the location of Persephone is the Hookah hut:
 		now Persephone is not following;
-		Persephone leaves in 3 turns from now;
+		Persephone leaves in 5 turns from now; [one less from the conversation steps below]
 		say "As Persephone enters [the Hookah hut], [the strange woman] stands up and turns to meet her."
 The argument counter is a number variable.
 At the time when Persephone leaves:
@@ -400,7 +405,9 @@ Every turn when the location of Persephone is the Hookah hut:
 			-- 1: say "[Persephone] asks [the strange woman] 'Please, I beg you, can we talk?'";
 			-- 2: say "[the strange woman] replies 'And what's to say? You'll just complain about my [Hookah].'";
 			-- 3: say "[Persephone] says 'Well your always so consumed by the damn thing.'";
-			-- 4: say "[the strange woman] shouts 'See I told you so. Now get out!' and she sits back down and takes another puff of [the Hookah].";
+			-- 4: say "[the strange woman] says 'And why not? It's a good thing. If I recall you were the one to suggest we get it!'";
+			-- 5: say "[Persephone] shouts 'It's not fair! I want that [hookah] gone!'";
+			-- 6: say "[the strange woman] replies 'NO!'[paragraph break][Persephone] growls and attempts to smash [the hookah] but [the strange woman] jumps in front of her.[paragraph break][the strange woman] screams 'How dare you! Now get out!' and she sits back down to examine [the hookah] for any broken parts.";
 	otherwise:
 		say "You can hear an argument unsung in the distance.".
 
@@ -434,14 +441,17 @@ Topic	Reply
 "Persephone"	"She seems upset with me. I found it easier to deal with the problem by smoking more from my [Hookah]."
 "dark/darkness"	"I know of a stone that glows like the sun."
 "Medusa"	"I dated her once. Let[']s just say it was a little [italic type]hard[roman type] to deal with. And all I got out of it was [a glowing stone]."
-"apology/sorry/apologize"	"Why should I when all I need is right here in this room?"
+"apology/sorry/apologize/appologizing"	"Why should I when all I need is right here in this room?"
 "diary/journal"	"Really, why would anyone waste time writing in a diary when they can contemplate the universe right here with this [Hookah]."
 
 Table of Persephone's Replies
 Topic	Reply
-"woman/Hecate"	"Hecate and I used to be very close. We had a small argument a while back and ever since she has been completely consumed with [the Hookah]."
-"Hookah/smoke/smoking"	"I used to like that to. But after seeing what it does to Hecate… I just wish [the Hookah] was gone."
-"diary/journal"	"Yes I wrote in a diary some time ago. It makes me long for how things used to be. Sigh."
+"persephone/herself"	"My mind is too occupied right now. Why don't you read my diary. You can find it in my dresser in the bedroom."
+"what went wrong / what is wrong/crying/sad/sadness"	"Hecate won't pay any more attention to me. She just argues when ever I try to talk to her. Oh there is no hope. I wish [the hookah] was never brought here."
+"the strange woman/woman"	"I'm sorry, who do you mean?"
+"Hecate"	"Hecate and I used to be very close. We had a small argument a while back and ever since she has been completely consumed with that damn [hookah]."
+"Hookah/huka/smoke/smoking"	"I used to like that to. But after seeing what it does to Hecate… I just wish [the hookah] was gone."
+"diary/journal"	"Yes I wrote in a diary some time ago. It makes me long for how things used to be. I think I left it on my dresser in the bedroom."
 "soup"	"Don't eat it it tastes awful."
 "cook/cooks"	"You need to be careful with them. They make a nasty soup."
 
@@ -462,7 +472,7 @@ Section 10 - Diary Entries
 Table of Diary Entries
 title	subtable	description
 "Imbolc"	--	"I can't believe it. I met someone today. She is so pretty. I was out in the garden tending to some flowers when I heard Cerberus barking. When I looked up I saw her. With hair the color of the sun, the moon, and fire all at the same time. Her body shaped to please anyone men, women, or animal. I was in awe and had to force myself to close my mouth as she approached.[paragraph break]I think I blushed when she greeted me. I asked her what she was doing in this part of the multiverse and she explained how she had gotten lost and really had no where to go but to walk. I asked if she wanted to come inside and relax for a while. I offered tea.[paragraph break]She told me all about the world of magic from her past and I told her all about myself (blushing of course). I even offered her to stay over night. She was very happy and I was infatuated with her smile."
-"Ostara"	--	"So I offered Hecate a place to stay for a while. It seemed a nice thing to do. Even so I have to admit the offer was a bit selfish. I asked her out on a date. I nearly fainted when she said 'Yes'.[paragraph break]I went to work right away with the cooks to make the best dinner ever. I instructed them on making the perfect soup. I was so happy to have a date with Hecate.[paragraph break]To bad the cooks can't make soup. Sigh, It was a disaster. I nearly spit the soup all over poor Hecate. Strangely she loved the soup. I just don't get how she could have like it but we laughed till we fell asleep in each other's arms."
+"Ostara"	--	"So I offered Hecate a place to stay for a while. It seemed a nice thing to do. Even so I have to admit the offer was a bit selfish. I asked her out on a date. I nearly fainted when she said 'Yes'.[paragraph break]I went to work right away with the cooks to make the best diner ever. I instructed them on making the perfect soup. I was so happy to have a date with Hecate.[paragraph break]To bad the cooks can't make soup. Sigh, It was a disaster. I nearly spit the soup all over poor Hecate. Strangely she loved the soup. I just don't get how she could have like it but we laughed till we fell asleep in each other's arms."
 "Beltane"	--	"Tonight was the most amazing night ever. Hecate and I spent the day picking flowers and playing little tickle games. Then she kissed me! Oh, I can not begin to explain how electrifying it was. I love her so much. We laid down together and found ways of pleasing each other that I didn't know could exist. I will never forget this night. Sigh."
 "Litha"	--	"Hecate and I went out on a little road trip. We found a small tree on  a hill and decided to 'cuddle' under it. We were kissing when a little gnome showed up and said he knew just how to brighten our day even further. He explained how he has a magical smoking bottle that makes the feelings you have now even more fantastic. I asked him his name and he simply replied it wasn't important.[paragraph break]We followed him to a little cave and we found this large bottle with smoke coming out it and a few hoses attached. The gnome said it was a hookah and you just inhale the smoke. He then said we could have it for only a few gold pieces. Hecate convinced me it was a good deal and we purchased it from the little gnome.[paragraph break]It was late when we got home so we put the hookah in the living room and went to bed."
 "Lammas"	--	"We tried the hookah today. It was exquisite. I felt all tingling all over. Hecate and I were laughing and giggling. It was a lot of fun. We kissed and hugged. The room got so smoky that I could barely see.[paragraph break]After some time I asked if Hecate wanted anything to eat and she refused. I even offered the cooks to make some soup and she said 'sure' in a noncommittal way which seemed a little unusual for her. She loves that stuff?!"
@@ -579,7 +589,7 @@ Carry out xyzzy:
 		if the location of the player is:
 			-- the hookah hut:
 				say "[one of]The smoke starts spinning faster and faster. Like a mini tornado swirling through the room.[paragraph break]The smoke begins to slow down and returns to it's usual floaty self.[or][the strange woman] gasps as [the hookah] begins to lift off the ground and hover in the sir for a few seconds before gently floating back to the ground.[or]The cushions begin to bounce and hop around the room in a wonderful display of dance for a few minutes before settling back down where they were before.[at random][paragraph break][if Persephone is in the hookah hut]Oddly no one seems to notice.[else][the strange woman]looks around but acts as if it was a normal occurrence.[end if]";
-			-- the dinner:
+			-- the diner:
 				say "The three cooks suddenly start dancing. Spinning around. Waving their arms.[paragraph break]After a short and entertaining display they return facing towards you staring to a distant point. Their arms crossed and now motionless.";
 			-- the Vestibule:
 				[xyzzy will not work when the player carries sins therefor there will never be a time when Cerberus is guarding and the player can use xyzzy (in the normal course of the game) assume Cerberus is not guarding]
@@ -642,17 +652,17 @@ Instead of asking Cerberus to try jumping:
 [Any test involving death can not be tested using the automated "test me" command. They are defined but the user has to test them manually.]
 Test me with "test woodendoor / test ornatedoor / test cerberus / test diary / test hookah / test hecate / test cooks / test persephone /  test ending / test xyzzy / amusing / full".
 Test woodendoor with "smell flowers / x flowers / search flowers / take knob / x knob / n / x door / put knob on door / open door / n / s / s" in the garden.
-Test cerberus with "x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / attack cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / attack cerberus / n / s" in the vestibule.
+Test cerberus with "look / g / search vestibule / x cerberus / pet cerberus / touch cerberus / smell cerberus / kiss cerberus / attack cerberus / give wrath to cerberus / x cerberus / give greed to cerberus / x cerberus / give envy to cerberus / x cerberus / pet cerberus / kiss cerberus / attack cerberus / n / s" in the vestibule.
 Test diary with "look / x bed / take sheets / search bed / take bed / get on bed / jump  / sleep / get off bed / look under bed / search bed / x north dresser / take cloths / smell north dresser / x south dresser / smell south dresser / take south dresser / x drawer / open drawer / take drawers / search north dresser / g / x skeleton key / unlock drawer with skeleton key / open south dresser / take diary / x diary / x diary / put diary on dresser" in the bedroom.
 Test hookah with "x cushions / x hookah / sit on cushions / take hookah / eat hookah / drink hookah / smoke hookah / stand up / w / z / z / z / z / e" in the hookah hut.
 Test hookahdeath with "smoke hookah / g / g / g / g" in the hookah hut.
 Test hecate with "x hecate / x woman / x girl / ask woman about herself / x hecate / ask hecate about an unknown topic / ask hecate about stone / kiss hecate / give lust to hecate / kiss hecate / attack hecate / x stone / x rock / ask hecate about stone" in the hookah hut.
-Test cooks with "x cooks / attack cooks / x stool / x counter / x stove / x cooks / x bowl / x spoon / sit on counter / sit on stool / take bowl / take spoon / put pride in bowl / ask cooks about dog / touch stove / touch pot / smell pot / x pot / give pride to cooks / x pot / give sloth to cooks / x pot / give gluttony to cooks / x pot / x bowl / take bowl / x soup / smell soup / taste soup / eat soup / x key / take key / s / n / kiss cooks" in the dinner.
+Test cooks with "x cooks / attack cooks / x stool / x counter / x stove / x cooks / x bowl / x spoon / sit on counter / sit on stool / take bowl / take spoon / put pride in bowl / ask cooks about dog / touch stove / touch pot / smell pot / x pot / give pride to cooks / x pot / give sloth to cooks / x pot / give gluttony to cooks / x pot / x bowl / take bowl / x soup / smell soup / taste soup / eat soup / x key / take key / s / n / kiss cooks" in the diner.
 Test ornatedoor with "x door / open door / unlock door with key / lock door with key / unlock door with key / open door / w / close door / l / n / s / open door / e" holding the ornate key and the glowing stone in the main hall.
-Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / attack persephone / persephone, go south / test following" in Persephone's Chamber.
-Test following with "stop following / persephone, go north / ask persephone about talking to hecate / s / unlock door with key / e / e / ask woman about dog / ask persephone about dog / z / w / w / n / ask persephone about talking / ask persephone about following / s / e / e / w / e / w / w / n / ask persephone about following / stop following / ask persephone about following / persephone, stop following / ask persephone about following / tell persephone to stop following" holding the ornate key and the glowing stone in Persephone's Chamber.
+Test persephone with "l / sit on throne / z / z / z / tell Persephone about dog / ask Persephone about hecate / attack persephone / persephone, go south / ask persephone about herself / ask persephone about the strange woman / ask persephone about what is wrong / test following" in Persephone's Chamber.
+Test following with "stop following / persephone, go north / ask persephone about talking to hecate / s / unlock door with key / e / e / ask woman about dog / ask persephone about dog / z / z / z / w / w / n / ask persephone about talking / ask persephone about following / s / e / e / w / e / w / z / w / n / ask persephone about following / stop following / ask persephone about following / persephone, stop following / ask persephone about following / tell persephone to stop following" holding the ornate key and the glowing stone in Persephone's Chamber.
 Test ending with "ask persephone about talking to hecate / s / e / e / kick hookah" holding the ornate key and the glowing stone in Persephone's Chamber.
-Test xyzzy with "xyzzy / plugh / freedom / xyzzy / gonear throne / persephone, exit / xyzzy / sit on throne / xyzzy / stand / persephone, enter throne / xyzzy / persephone, jump / gonear dinner / xyzzy / gonear hookah hut / xyzzy / gonear bedroom / xyzzy / look / gonear Cerberus / Cerberus, sleep / xyzzy / Cerberus, jump / gonear the garden / take all" in the Garden.
+Test xyzzy with "xyzzy / plugh / freedom / xyzzy / gonear throne / persephone, exit / xyzzy / sit on throne / xyzzy / stand / persephone, enter throne / xyzzy / persephone, jump / gonear diner / xyzzy / gonear hookah hut / xyzzy / gonear bedroom / xyzzy / look / gonear Cerberus / Cerberus, sleep / xyzzy / Cerberus, jump / gonear the garden / take all" in the Garden.
 
 
 [ vim: set wrap ts=2 noet: ]
