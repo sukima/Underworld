@@ -521,6 +521,7 @@ title	subtable	description	toggle
 "It's to dark!"	Table H6	""	hint toggle rule
 "What do I do with Persephone?"	Table H7	""	hint toggle rule
 "How do I get Persephone and Hecate to stop arguing?"	Table H8	""	hint toggle rule
+"Why is the plot so simple and boring?"	Table H9	""	hint toggle rule
 
 Table H1 - Outside the Hut
 hint	used
@@ -573,6 +574,13 @@ hint	used
 "Have you tried to break [the Hookah]?"	a number
 "You need to distract [the strange woman]."
 "Did you try to break [the Hookah] while Persephone distracted [the strange woman]?"
+
+Table H9 - Plot
+hint	used
+"It was my first game."	a number
+"I was only seeing what I could do."
+"I never thought it would go this far"
+"My next game will have a better plot… promise."
 
 Rule for amusing a victorious player:
 	say "Thanks for playing. I know this was short but it's my first.[paragraph break]Did you try…[paragraph break]Asking [the strange woman] about the different sins?[line break]Asking her about the meaning of life?[line break]Kissing her?[line break]Petting [Cerberus] after he has some chew toys?[line break]Sitting in Persephone's throne?[line break]Smoking [the Hookah] a bunch of times?[line break]XYZZY; in various places?"
